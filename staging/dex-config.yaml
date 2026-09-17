@@ -1,0 +1,16 @@
+issuer: http://localhost:5556/dex
+storage:
+  type: memory
+web:
+  http: 0.0.0.0:5556
+staticClients:
+  - id: ai-daily-ops
+    redirectURIs:
+      - 'http://localhost:4174/auth/callback'
+    name: AI Daily Operations
+    secret: staging-client-secret
+staticPasswords:
+  - email: operator@example.com
+    hash: '$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy'
+    username: operator
+    userID: staging-operator

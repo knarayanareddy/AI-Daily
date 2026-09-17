@@ -1,0 +1,29 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: ai_daily
+      POSTGRES_USER: ai_daily
+      POSTGRES_PASSWORD: change-me-staging-only
+    ports:
+      - "5433:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ai_daily -d ai_daily"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+    volumes:
+      - ai-daily-pg:/var/lib/postgresql/data
+  dex:
+    image: ghcr.io/dexidp/dex:v2.41.1
+    command: ["dex", "serve", "/etc/dex/config.yaml"]
+    ports:
+      - "5556:5556"
+    volumes:
+      - ./dex-config.yaml:/etc/dex/config.yaml:ro
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+volumes:
+  ai-daily-pg:

@@ -1,0 +1,7 @@
+{
+  "edition": 0,
+  "collected_at": null,
+  "run_id": null,
+  "stories": [],
+  "pipeline": {"sources_scanned": 0, "items_clustered": 0, "consensus_rate": 0, "status": "awaiting_review"}
+}
