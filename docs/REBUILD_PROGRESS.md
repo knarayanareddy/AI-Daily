@@ -1,16 +1,28 @@
 # Wholesome rebuild progress
 
-**Current phase:** Phase 1 — semantic foundation  
-**Overall rebuild:** approximately 20% complete  
+**Current phase:** Phase 2 — signal-ticket Read mode  
+**Overall rebuild:** approximately 40% complete  
 **Last updated:** 2026-09-17
 
 ## Phase status
 
 - [x] Phase 1 — Add editorial signal and typed relationship contracts
-- [ ] Phase 2 — Redesign Read mode around signal tickets
+- [x] Phase 2 — Redesign Read mode around signal tickets
 - [ ] Phase 3 — Upgrade the 2D Signal Field
 - [ ] Phase 4 — Implement the optional React Three Fiber Signal Field
 - [ ] Phase 5 — Validate novelty, accessibility, performance, and production readiness
+
+## Phase 2 completed
+
+- Redesigned story cards as signal tickets.
+- Added visible evidence posture.
+- Added Move and Consequence sections.
+- Added optional Tension section.
+- Added explicit unverified language when approved signal semantics are absent.
+- Added “Evidence Desk · Pull the thread” action language.
+- Added source receipt counts.
+- Added signal-ticket responsive styling and posture states.
+- Added signal-ticket test coverage.
 
 ## Phase 1 completed
 
@@ -25,9 +37,9 @@
 
 ## Next phase
 
-**Phase 2 — Redesign Read mode around signal tickets.**
+**Phase 3 — Upgrade the 2D Signal Field.**
 
-The next implementation will introduce the Move, Consequence, Tension, Receipt, and evidence-posture presentation without adding 3D yet. Read mode remains the canonical, fast, accessible path.
+The next implementation will add typed relationship rendering, a legend, relationship explanations, tension/corroboration controls, and the optional Follow the disturbance route. Read mode remains the canonical, fast, accessible path.
 
 ## Rebuild rule
 
