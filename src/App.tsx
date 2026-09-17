@@ -34,7 +34,7 @@ export default function App() {
     const onPopState = () => { setRouteDate(editionDateFromLocation()); setSelected(null); };
     window.addEventListener('popstate', onPopState);
     setLoadState('loading');
-    const editionPath = routeDate ? `/data/editions/${routeDate}.json` : '/data/news.json';
+    const editionPath = routeDate ? `/data/editions/${routeDate}.json` : '/data/publications/current.json';
     Promise.all([fetch(editionPath).then(response => { if (!response.ok) throw Error(`Edition ${routeDate || 'current'} is unavailable (${response.status})`); return response.json(); }), fetch('/data/corrections.json').then(response => response.json()).catch(() => ({}))]).then(([rawEdition, corrections]) => {
       const parsed = normalizeEdition(rawEdition);
       if (!parsed?.stories.length) throw Error('The edition failed its public data contract.');

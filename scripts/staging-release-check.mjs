@@ -2,13 +2,15 @@ import { access, readFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 
 const root = new URL('../', import.meta.url);
-const required = ['dist/index.html', 'dist/archive.html', 'dist/rss.xml', 'dist/sitemap.xml', 'public/_headers', 'data/news.json', 'data/publication-manifest.json'];
+const required = ['dist/index.html', 'dist/archive.html', 'dist/rss.xml', 'dist/sitemap.xml', 'public/_headers', 'data/news.json', 'data/publication-manifest.json', 'data/publications/current.json'];
 for (const file of required) await access(new URL(file, root));
 const origin = process.env.PUBLIC_ORIGIN || '';
 if (origin && (!/^https:\/\/[^/]+$/.test(origin) || origin.includes('example.'))) throw Error('PUBLIC_ORIGIN must be a real HTTPS staging/production host');
 const news = await readFile(new URL('data/news.json', root), 'utf8');
 const manifest = JSON.parse(await readFile(new URL('data/publication-manifest.json', root), 'utf8'));
 if (manifest.checksum !== createHash('sha256').update(news).digest('hex')) throw Error('publication manifest checksum does not match news.json');
+const current = JSON.parse(await readFile(new URL('data/publications/current.json', root), 'utf8'));
+if (!current.publication?.artifact || current.publication.checksum !== manifest.checksum) throw Error('atomic publication pointer is missing or inconsistent');
 const headers = await readFile(new URL('public/_headers', root), 'utf8');
 for (const requiredHeader of ['Content-Security-Policy', 'Strict-Transport-Security', 'X-Content-Type-Options', 'X-Frame-Options']) if (!headers.includes(requiredHeader)) throw Error(`missing static security header: ${requiredHeader}`);
 const rss = await readFile(new URL('dist/rss.xml', root), 'utf8');
