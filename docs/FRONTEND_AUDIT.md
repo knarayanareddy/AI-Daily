@@ -8,7 +8,9 @@
 - Story-list selection exposes `aria-pressed` state.
 - Explore layout is responsive at the 800px mobile breakpoint.
 - Archive, RSS, and sitemap presentation are available as static, crawlable documents.
+- Archive, RSS, and sitemap are copied through `public/` and verified in the production output.
 - The production bundle keeps the visualization in a separate Explore chunk.
+- React Three Fiber remains out of scope until a user-visible 3D requirement justifies its runtime and accessibility cost.
 
 ## Verification checklist
 

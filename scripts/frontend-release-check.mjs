@@ -1,7 +1,7 @@
 import { access, readdir, readFile } from 'node:fs/promises';
 
 const root = new URL('../', import.meta.url);
-const required = ['index.html', 'archive.html', 'rss.xml', 'sitemap.xml', 'data/editions/2026-09-17.json'];
+const required = ['index.html', 'archive.html', 'rss.xml', 'sitemap.xml', 'data/editions/2026-09-17.json', 'public/archive.html', 'public/rss.xml', 'public/sitemap.xml'];
 for (const file of required) await access(new URL(file, root));
 const index = await readFile(new URL('index.html', root), 'utf8');
 if (!index.includes('<html lang="en">') || !index.includes('id="root"')) throw Error('index.html lacks the required document landmarks');
@@ -9,6 +9,7 @@ const rss = await readFile(new URL('rss.xml', root), 'utf8');
 if (!rss.includes('<rss') || !rss.includes('<channel>')) throw Error('RSS document is malformed');
 const sitemap = await readFile(new URL('sitemap.xml', root), 'utf8');
 if (!sitemap.includes('<urlset') || !sitemap.includes('/archive.html')) throw Error('sitemap is missing the archive URL');
+for (const file of ['archive.html', 'rss.xml', 'sitemap.xml']) await access(new URL(`dist/${file}`, root));
 try {
   const assets = await readdir(new URL('dist/assets/', root));
   const js = assets.filter(file => file.endsWith('.js'));

@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "preview": "vite preview",
     "build": "tsc --noEmit && vite build",
     "frontend:release-check": "node scripts/frontend-release-check.mjs",
     "frontend:device-check": "node scripts/frontend-device-check.mjs",
