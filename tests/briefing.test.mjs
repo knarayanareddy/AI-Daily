@@ -29,3 +29,8 @@ test('public edition validation rejects pending stories', () => {
   const base = item('Validated public story');
   assert.throws(() => validateEdition({ edition: 1, run_id: 'x', stories: [{ ...base, claims: [{ claim: 'A validated claim', supported: true, evidence_urls: [base.url] }], review: { state: 'pending', evidence_urls: [base.url] } }] }));
 });
+
+test('public edition validation rejects non-HTTPS evidence', () => {
+  const base = item('Insecure evidence story', 'http://example.test/story');
+  assert.throws(() => validateEdition({ edition: 1, run_id: 'x', stories: [{ ...base, claims: [{ claim: 'A validated claim', supported: true, evidence_urls: [base.url] }], review: { state: 'approved', evidence_urls: [base.url] } }] }));
+});

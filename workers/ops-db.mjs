@@ -2,7 +2,8 @@ import pg from 'pg';
 import { createHash, randomBytes } from 'node:crypto';
 const { Pool } = pg;
 
-export const pool = new Pool({ connectionString: process.env.DATABASE_URL, max: Number(process.env.DB_POOL_SIZE || 5), ssl: process.env.DATABASE_SSL === 'false' ? false : { rejectUnauthorized: false } });
+const databaseSsl = process.env.DATABASE_SSL === 'false' ? false : { rejectUnauthorized: process.env.DATABASE_SSL_REJECT_UNAUTHORIZED !== 'false', ...(process.env.DATABASE_SSL_CA ? { ca: process.env.DATABASE_SSL_CA } : {}) };
+export const pool = new Pool({ connectionString: process.env.DATABASE_URL, max: Number(process.env.DB_POOL_SIZE || 5), ssl: databaseSsl });
 export const hash = value => createHash('sha256').update(value).digest('hex');
 export const token = () => randomBytes(32).toString('base64url');
 

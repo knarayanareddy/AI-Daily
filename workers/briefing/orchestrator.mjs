@@ -73,10 +73,11 @@ async function main() {
       await log('review', 'blocked', { reason: 'no validated reviews artifact', queue: `data/review-queue-${runId}.json` });
       return 2;
     }
-    const operatorState = process.env.DATABASE_URL ? (await migrate(), await getState()) : await (async () => { try { return JSON.parse(await readFile(dataUrl('operator-state.json'), 'utf8')); } catch { return { kill_switch: false }; } })();
+    if (!process.env.DATABASE_URL) throw new Error('DATABASE_URL is required before publication; JSON operator-state fallback is disabled');
+    const operatorState = (await migrate(), await getState());
     if (operatorState.kill_switch) { await log('publish', 'blocked', { reason: 'operator kill switch is active' }); return 2; }
     const reviewsByCluster = new Map(reviews.map(item => [item.cluster_id, item.reviewers]));
-    const operatorDecisions = process.env.DATABASE_URL ? (await decisions(runId)).map(item => ({ ...item, state: item.decision })) : await (async () => { try { return JSON.parse(await readFile(dataUrl('operator-decisions.json'), 'utf8')); } catch { return []; } })();
+    const operatorDecisions = (await decisions(runId)).map(item => ({ ...item, state: item.decision }));
     const edition = buildEdition({ runId, editionNumber, clusters, reviewsByCluster, operatorDecisions });
     if (dryRun) { await log('publish', 'dry-run', { approved: edition.stories.length }); return 0; }
     await publishEdition(edition);

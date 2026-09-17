@@ -23,6 +23,8 @@ jobs:
       # exists, it uploads a queue and leaves the last-known-good edition intact.
       - name: Verify frontend release contract
         run: npm ci && npm run build && npm run frontend:release-check && npm run frontend:device-check
+      - name: Verify dependency and secret safety
+        run: npm audit --audit-level=high && npm run security:check && npm sbom --sbom-format cyclonedx > sbom.json
       - name: Run orchestrated briefing pipeline
         run: node workers/briefing/orchestrator.mjs
         env:
@@ -41,4 +43,5 @@ jobs:
             data/health/last-run.json
             data/health/history/*.json
             data/health/sources/index.json
+            sbom.json
           retention-days: 14
