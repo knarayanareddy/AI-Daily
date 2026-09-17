@@ -1,7 +1,7 @@
 # Wholesome rebuild progress
 
-**Current phase:** Phase 4 — optional React Three Fiber Signal Field
-**Overall rebuild:** approximately 80% complete
+**Current phase:** Phase 5 — validation and production readiness
+**Overall rebuild:** approximately 90% complete
 **Last updated:** 2026-09-17
 
 ## Phase status
@@ -63,11 +63,31 @@
 - Preserved backward compatibility for existing relationship records by normalizing missing kinds to `same_event` during frontend migration.
 - Added contract test coverage.
 
-## Next phase
+## Phase 5 validation in progress
 
-**Phase 5 — Validate novelty, accessibility, performance, and production readiness.**
+### Implementation progress
 
-The next implementation will measure whether the new signal tickets, 2D Field, guided route, and optional 3D lens improve comprehension without harming accessibility, bundle performance, mobile behavior, or editorial trust.
+Approximately 90% complete. Repository-level production checks pass; browser, assistive-technology, and real-device checks remain environment-dependent.
+
+### Completed
+
+- Added `npm run phase5:check` for demand rendering, low-power WebGL, fallback content, reduced motion, accessible story-list parity, Evidence Desk selection, lazy chunking, and initial-bundle isolation.
+- Added the Phase 5 check to the daily briefing CI workflow.
+- Confirmed the initial bundle is 3D-runtime-free and the 3D chunk is 245.12 KB gzip.
+- Confirmed backend tests (12), frontend tests (13), production build, staging release check, and `npm audit --audit-level=high` (zero vulnerabilities).
+- Recorded the full validation matrix in `docs/PHASE5_VALIDATION.md`.
+
+### Next step
+
+Run the pending browser/device and staging-canary validation, then decide whether the 3D chunk needs further reduction before release.
+
+### Remaining frontend work
+
+- Browser E2E across Chromium, Firefox/WebKit, including keyboard and focus order.
+- NVDA/VoiceOver verification of the canonical Read mode and accessible story list.
+- WebGL context-loss, low-memory, mobile battery, and reduced-motion verification on representative devices.
+- Human comprehension/novelty review and a 14-edition sampled canary.
+- Production-host verification for security headers, caching, RSS, and sitemap behavior.
 
 ## Rebuild rule
 

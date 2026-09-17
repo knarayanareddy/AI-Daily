@@ -22,7 +22,7 @@ jobs:
       # The orchestrator always fails closed. Until a validated reviews artifact
       # exists, it uploads a queue and leaves the last-known-good edition intact.
       - name: Verify frontend release contract
-        run: npm ci && npm run build && npm run frontend:release-check && npm run frontend:device-check && npm run staging:check
+        run: npm ci && npm run build && npm run frontend:release-check && npm run frontend:device-check && npm run staging:check && npm run phase5:check
       - name: Verify dependency and secret safety
         run: npm audit --audit-level=high && npm run security:check && npm sbom --sbom-format cyclonedx > sbom.json
       - name: Run orchestrated briefing pipeline

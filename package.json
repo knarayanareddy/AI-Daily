@@ -11,6 +11,7 @@
     "frontend:device-check": "node scripts/frontend-device-check.mjs",
     "security:check": "node scripts/security-check.mjs",
     "staging:check": "node scripts/staging-release-check.mjs",
+    "phase5:check": "node scripts/phase5-check.mjs",
     "typecheck": "tsc --noEmit",
     "test:backend": "node --test tests/*.test.mjs",
     "test:frontend": "vitest run",
