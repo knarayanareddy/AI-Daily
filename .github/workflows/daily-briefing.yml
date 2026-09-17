@@ -22,7 +22,7 @@ jobs:
       # The orchestrator always fails closed. Until a validated reviews artifact
       # exists, it uploads a queue and leaves the last-known-good edition intact.
       - name: Verify frontend release contract
-        run: npm ci && npm run build && npm run frontend:release-check
+        run: npm ci && npm run build && npm run frontend:release-check && npm run frontend:device-check
       - name: Run orchestrated briefing pipeline
         run: node workers/briefing/orchestrator.mjs
         env:

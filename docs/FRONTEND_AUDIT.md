@@ -17,6 +17,6 @@
 - [x] Map selection and list selection invoke the same story action.
 - [x] Loading, stale, fallback, and immutable-edition error states remain explicit.
 - [x] Mobile map uses a fluid SVG and single-column story controls.
-- [ ] Automated visual regression baselines.
+- [x] Automated visual regression baseline for the Signal Map structure.
 - [ ] Real-device battery and low-end mobile measurements.
 - [ ] Production host verification for RSS and sitemap absolute URLs.
