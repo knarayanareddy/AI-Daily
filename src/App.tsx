@@ -6,6 +6,7 @@ import { MethodSection } from './components/MethodSection';
 import { NewsletterCard } from './components/NewsletterCard';
 import { SiteHeader } from './components/SiteHeader';
 const SignalMapSvg = lazy(() => import('./components/SignalMapSvg').then(module => ({ default: module.SignalMapSvg })));
+const SignalField3d = lazy(() => import('./components/SignalField3d').then(module => ({ default: module.SignalField3d })));
 function MapLoading() { return <section className="signal-map map-loading" role="status"><p className="eyebrow">OPENING THE FIELD</p><h2>Arranging today’s signals…</h2><p>The reading list remains available below.</p></section>; }
 import { StoryDrawer } from './components/StoryDrawer';
 import { StoryList } from './components/StoryList';
@@ -26,6 +27,7 @@ export default function App() {
   const [loadState, setLoadState] = useState<'loading' | 'live' | 'stale' | 'fallback' | 'error'>('loading');
   const [routeDate, setRouteDate] = useState<string | null>(editionDateFromLocation());
   const [explore, setExplore] = useState(new URLSearchParams(window.location.search).get('view') === 'explore');
+  const [field3d, setField3d] = useState(new URLSearchParams(window.location.search).get('mode') === 'signal');
   const [errorMessage, setErrorMessage] = useState('The approved edition is unavailable right now.');
   const stories = useMemo(() => edition.stories.filter(story => (active === 'all' || story.category === active) && `${story.title} ${story.dek} ${story.source}`.toLowerCase().includes(query.toLowerCase())), [edition.stories, active, query]);
   const counts = useMemo(() => edition.stories.reduce<Record<string, number>>((result, story) => { result.all = (result.all || 0) + 1; result[story.category] = (result[story.category] || 0) + 1; return result; }, {}), [edition.stories]);
@@ -52,7 +54,8 @@ export default function App() {
   const notice = loadState === 'stale' ? 'This edition is older than 36 hours. We are keeping the last-known-good signal visible.' : loadState === 'fallback' ? 'Live data is unavailable. Showing the last-known-good edition.' : null;
   const retry = () => setRouteDate(editionDateFromLocation());
   const goCurrent = () => { window.history.pushState({}, '', '/'); setRouteDate(null); };
-  const toggleExplore = () => { const next = !explore; const url = new URL(window.location.href); if(next) url.searchParams.set('view','explore'); else url.searchParams.delete('view'); window.history.pushState({ view: next ? 'explore' : 'read' }, '', `${url.pathname}${url.search}`); setExplore(next); };
+  const toggleExplore = () => { const next = !explore; const url = new URL(window.location.href); if(next) url.searchParams.set('view','explore'); else { url.searchParams.delete('view'); url.searchParams.delete('mode'); } window.history.pushState({ view: next ? 'explore' : 'read' }, '', `${url.pathname}${url.search}`); setExplore(next); if (!next) setField3d(false); };
+  const toggle3d = () => { const next = !field3d; const url = new URL(window.location.href); url.searchParams.set('view', 'explore'); if(next) url.searchParams.set('mode', 'signal'); else url.searchParams.delete('mode'); window.history.pushState({ view: 'explore', mode: next ? 'signal' : '2d' }, '', `${url.pathname}${url.search}`); setExplore(true); setField3d(next); };
 
   return <div className={dark ? 'react-shell dark' : 'react-shell'}>
     <a className="skip-link" href="#briefing">Skip to briefing</a>
@@ -61,7 +64,7 @@ export default function App() {
     {notice && <div className={`edition-notice ${loadState}`} role="status"><span>●</span>{notice}</div>}
     {loadState === 'loading' && <LoadingState />}
     {loadState === 'error' && <EditionError message={errorMessage} onRetry={retry} onBack={goCurrent} />}
-    {loadState !== 'loading' && loadState !== 'error' && <main id="top"><EditionHeader edition={edition} visibleStories={stories.length} /><TopicFilters active={active} query={query} counts={counts} onFilter={setActive} onSearch={setQuery} /><div className="explore-bar"><button type="button" className={explore ? 'explore-toggle active' : 'explore-toggle'} onClick={toggleExplore}>{explore ? '← Return to reading' : 'Explore the field ↗'}</button></div>{explore && <Suspense fallback={<MapLoading />}><SignalMapSvg stories={stories} selected={selected} onSelect={openStory} /></Suspense>}
+    {loadState !== 'loading' && loadState !== 'error' && <main id="top"><EditionHeader edition={edition} visibleStories={stories.length} /><TopicFilters active={active} query={query} counts={counts} onFilter={setActive} onSearch={setQuery} /><div className="explore-bar"><button type="button" className={explore ? 'explore-toggle active' : 'explore-toggle'} onClick={toggleExplore}>{explore ? '← Return to reading' : 'Explore the field ↗'}</button></div>{explore && <Suspense fallback={<MapLoading />}>{field3d ? <SignalField3d stories={stories} selected={selected} onSelect={openStory} onBack={toggle3d} /> : <SignalMapSvg stories={stories} selected={selected} onSelect={openStory} onOpen3d={toggle3d} />}</Suspense>}
       <section className="content-grid"><StoryList stories={stories} total={stories.length} onOpenEvidence={openStory} /><aside className="aside-column"><div className="aside-card consensus-card"><div className="card-kicker"><span className="spark">✦</span> EDITORIAL CONSENSUS</div><h3>Evidence comes first.</h3><p>Every published story carries its claims and the sources used to check them. Open Evidence Desk on any story to inspect the reasoning.</p><a href="#method" className="text-link">See the method <span>↗</span></a></div><NewsletterCard onSubscribe={subscribe} /></aside></section>
       <MethodSection />
     </main>}

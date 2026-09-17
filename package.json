@@ -22,19 +22,23 @@
     "canary:check": "node scripts/canary-check.mjs"
   },
   "dependencies": {
+    "@react-three/fiber": "^9.7.0",
     "d3-force": "^3.0.0",
     "fast-xml-parser": "^5.11.1",
     "jose": "^6.2.12",
     "pg": "^8.23.0",
     "react": "^19.3.0",
-    "react-dom": "^19.3.0"
+    "react-dom": "^19.3.0",
+    "three": "^0.186.0"
   },
   "devDependencies": {
+    "@testing-library/dom": "^10.4.2",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.3",
     "@types/d3-force": "^3.0.10",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
+    "@types/three": "^0.186.0",
     "@vitejs/plugin-react": "^5.2.0",
     "jsdom": "^26.1.0",
     "typescript": "^5.9.3",

@@ -14,8 +14,9 @@ try {
   const assets = await readdir(new URL('dist/assets/', root));
   const js = assets.filter(file => file.endsWith('.js'));
   const initial = await Promise.all(js.filter(file => file.startsWith('index-')).map(file => readFile(new URL(`dist/assets/${file}`, root), 'utf8')));
-  if (initial.some(content => content.includes('forceSimulation') || content.includes('d3-force'))) throw Error('visualization code leaked into the initial bundle');
-  if (!assets.some(file => file.startsWith('SignalMapSvg-') && file.endsWith('.js'))) throw Error('visualization chunk is missing');
+  if (initial.some(content => content.includes('forceSimulation') || content.includes('d3-force') || content.includes('@react-three/fiber') || content.includes('WebGLRenderer'))) throw Error('visualization code leaked into the initial bundle');
+  if (!assets.some(file => file.startsWith('SignalMapSvg-') && file.endsWith('.js'))) throw Error('2D visualization chunk is missing');
+  if (!assets.some(file => file.startsWith('SignalField3d-') && file.endsWith('.js'))) throw Error('3D visualization chunk is missing');
 } catch (error) {
   if (error.code === 'ENOENT') throw Error('run npm run build before the frontend release check');
   throw error;

@@ -1,7 +1,7 @@
 # Wholesome rebuild progress
 
-**Current phase:** Phase 3 — 2D Signal Field  
-**Overall rebuild:** approximately 60% complete  
+**Current phase:** Phase 4 — optional React Three Fiber Signal Field
+**Overall rebuild:** approximately 80% complete
 **Last updated:** 2026-09-17
 
 ## Phase status
@@ -9,8 +9,24 @@
 - [x] Phase 1 — Add editorial signal and typed relationship contracts
 - [x] Phase 2 — Redesign Read mode around signal tickets
 - [x] Phase 3 — Upgrade the 2D Signal Field
-- [ ] Phase 4 — Implement the optional React Three Fiber Signal Field
+- [x] Phase 4 — Implement the optional React Three Fiber Signal Field
 - [ ] Phase 5 — Validate novelty, accessibility, performance, and production readiness
+
+## Phase 4 completed
+
+- Added optional React Three Fiber Signal Field.
+- Added explicit URL-addressable `mode=signal` Explore state.
+- Added lazy-loaded 3D chunk separate from Read mode and 2D mode.
+- Added orthographic camera and demand rendering.
+- Added deterministic depth positions based on the approved story set.
+- Added typed relationship tethers between story nodes.
+- Added category-aware signal nodes.
+- Added selected-story synchronization with Evidence Desk.
+- Added accessible story list equivalent below the canvas.
+- Added reduced-motion static notice and no animation loop.
+- Added Return to 2D field control.
+- Added mobile sizing and a bounded canvas.
+- Kept 3D opt-in rather than making it the homepage default.
 
 ## Phase 3 completed
 
@@ -49,9 +65,9 @@
 
 ## Next phase
 
-**Phase 4 — Implement the optional React Three Fiber Signal Field.**
+**Phase 5 — Validate novelty, accessibility, performance, and production readiness.**
 
-The next implementation will add an explicit opt-in 3D lens over the approved graph. It must remain lazy-loaded, demand-rendered, reduced-motion safe, accessible through the canonical list, and useful for provenance or consequence rather than decoration.
+The next implementation will measure whether the new signal tickets, 2D Field, guided route, and optional 3D lens improve comprehension without harming accessibility, bundle performance, mobile behavior, or editorial trust.
 
 ## Rebuild rule
 
