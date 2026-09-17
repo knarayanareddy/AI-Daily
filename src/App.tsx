@@ -36,7 +36,7 @@ export default function App() {
     const onPopState = () => { setRouteDate(editionDateFromLocation()); setSelected(null); };
     window.addEventListener('popstate', onPopState);
     setLoadState('loading');
-    const assetBase = import.meta.env.BASE_URL;
+    const assetBase = window.location.hostname.endsWith('github.io') ? '/AI-Daily/' : import.meta.env.BASE_URL;
     const editionPath = routeDate ? `${assetBase}data/editions/${routeDate}.json` : `${assetBase}data/publications/current.json`;
     Promise.all([fetch(editionPath).then(response => { if (!response.ok) throw Error(`Edition ${routeDate || 'current'} is unavailable (${response.status})`); return response.json(); }), fetch(`${assetBase}data/corrections.json`).then(response => response.json()).catch(() => ({}))]).then(([rawEdition, corrections]) => {
       const parsed = normalizeEdition(rawEdition);
