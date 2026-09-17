@@ -25,7 +25,7 @@ export function StoryDrawer({ story, onClose }: Props) {
   }, [story, onClose]);
 
   if (!story) return null;
-  const claims = story.claims.length ? story.claims : [{ claim: story.title, supported: true as const, evidence_urls: story.url ? [story.url] : [], excerpt: 'Primary source link retained for the reviewed edition.' }];
+  const claims = story.claims;
   return <>
     <div className="story-drawer-backdrop" onClick={onClose} aria-hidden="true" />
     <aside className="story-drawer open" role="dialog" aria-modal="true" aria-labelledby="drawerTitle">
@@ -34,11 +34,11 @@ export function StoryDrawer({ story, onClose }: Props) {
       <h2 id="drawerTitle">{story.title}</h2>
       <p className="drawer-why">{story.dek}</p>
       <div className="drawer-section"><p className="drawer-label">CLAIMS WE CHECKED</p>
-        {claims.map((claim, index) => <div className="claim" key={`${claim.claim}-${index}`}>
+        {claims.length ? claims.map((claim, index) => <div className="claim" key={`${claim.claim}-${index}`}>
           <p>{claim.claim}</p><span className="claim-status">Supported by the panel</span>
           <div className="claim-evidence">{claim.evidence_urls.map((url, evidenceIndex) => <a href={url} key={url} target="_blank" rel="noreferrer">Source {evidenceIndex + 1} ↗</a>)}</div>
           {claim.excerpt && <p className="evidence-excerpt">“{claim.excerpt}”</p>}
-        </div>)}
+        </div>) : <p role="status" className="evidence-excerpt">Claim-level evidence is not available for this fallback story. Open the primary source and treat the summary as unverified.</p>}
       </div>
       {story.corrections.length > 0 && <div className="drawer-section"><p className="drawer-label">CORRECTION HISTORY</p>{story.corrections.map((correction, index) => <div className="correction" key={correction.id || index}><strong>{correction.correction}</strong><div>Changed from: {correction.claim}</div><time>{correction.created_at} · {correction.reason}</time></div>)}</div>}
       <a className="drawer-source" href={story.url || '#'} target="_blank" rel="noreferrer">Open primary source ↗</a>
