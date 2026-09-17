@@ -23,6 +23,16 @@ describe('App shell', () => {
     expect(screen.getByRole('button', { name: /try again/i })).toBeInTheDocument();
   });
 
+  it('exposes keyboard navigation landmarks and crawlable footer links', async () => {
+    vi.stubGlobal('fetch', fetchMock({ edition: 185, run_id: 'run', stories: [{ id: 'landmark-story', title: 'Landmark story', source: 'Source', category: 'research', dek: 'Context', url: 'https://example.com', claims: [] }] }));
+    render(<App />);
+    await waitFor(() => expect(screen.getByRole('main')).toBeInTheDocument());
+    expect(screen.getByRole('link', { name: /skip to briefing/i })).toHaveAttribute('href', '#briefing');
+    expect(screen.getByRole('navigation', { name: /footer navigation/i })).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: 'RSS' })).toHaveAttribute('href', '/rss.xml');
+    expect(screen.getByRole('link', { name: 'Sitemap' })).toHaveAttribute('href', '/sitemap.xml');
+  });
+
   it('opens a story from a deep link', async () => {
     window.history.replaceState({}, '', '/story/a-new-benchmark-asks-what-models-do-after-the-answer');
     vi.stubGlobal('fetch', fetchMock({ edition: 185, run_id: 'run', stories: [{ event_id: 'a-new-benchmark-asks-what-models-do-after-the-answer', title: 'Deep linked story', source: 'Source', category: 'research', dek: 'Context', url: 'https://example.com', claims: [{ claim: 'A supported claim', supported: true, evidence_urls: ['https://example.com'] }] }] }));

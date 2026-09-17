@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
+    "frontend:release-check": "node scripts/frontend-release-check.mjs",
     "typecheck": "tsc --noEmit",
     "test:backend": "node --test tests/*.test.mjs",
     "test:frontend": "vitest run",
