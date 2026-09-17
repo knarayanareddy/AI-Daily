@@ -17,7 +17,10 @@ export type Correction = {
   created_at: string;
 };
 
-export type Relationship = { from_story_id: string; to_story_id: string; reason: string };
+export type EvidencePosture = 'verified' | 'corroborated' | 'disputed' | 'developing' | 'corrected';
+export type RelationshipKind = 'same_event' | 'corroborates' | 'contradicts' | 'depends_on' | 'consequence_of';
+export type EditorialSignal = { move: string; consequence: string; tension?: string; why_now?: string; evidence_posture: EvidencePosture };
+export type Relationship = { from_story_id: string; to_story_id: string; reason: string; kind?: RelationshipKind; evidence_urls?: string[] };
 
 export type Story = {
   id?: string;
@@ -33,6 +36,8 @@ export type Story = {
   claims: Claim[];
   corrections: Correction[];
   related_sources?: string[];
+  signal?: EditorialSignal;
+  evidence_posture?: EvidencePosture;
   relationships?: Relationship[];
 };
 
@@ -58,6 +63,11 @@ export function isClaim(value: unknown): value is Claim {
   return typeof claim.claim === 'string' && claim.supported === true && Array.isArray(claim.evidence_urls) && claim.evidence_urls.length > 0 && claim.evidence_urls.every(isSafeHttpsUrl);
 }
 
+const evidencePostures = new Set<EvidencePosture>(['verified', 'corroborated', 'disputed', 'developing', 'corrected']);
+const relationshipKinds = new Set<RelationshipKind>(['same_event', 'corroborates', 'contradicts', 'depends_on', 'consequence_of']);
+function normalizeSignal(value: unknown): EditorialSignal | undefined { if (!value || typeof value !== 'object') return undefined; const input = value as Partial<EditorialSignal>; if (typeof input.move !== 'string' || typeof input.consequence !== 'string' || !evidencePostures.has(input.evidence_posture as EvidencePosture)) return undefined; return { move: input.move, consequence: input.consequence, tension: input.tension, why_now: input.why_now, evidence_posture: input.evidence_posture as EvidencePosture }; }
+function normalizeRelationships(value: unknown): Relationship[] { if (!Array.isArray(value)) return []; return value.filter(item => item && typeof item === 'object' && typeof (item as Relationship).from_story_id === 'string' && typeof (item as Relationship).to_story_id === 'string' && typeof (item as Relationship).reason === 'string').map(item => ({ ...(item as Relationship), kind: relationshipKinds.has((item as Relationship).kind as RelationshipKind) ? (item as Relationship).kind : 'same_event' })); }
+
 export function normalizeStory(value: unknown): Story | null {
   if (!value || typeof value !== 'object') return null;
   const input = value as Partial<Story>;
@@ -71,6 +81,9 @@ export function normalizeStory(value: unknown): Story | null {
     dek: input.dek || 'A new development worth understanding in the fast-moving AI landscape.',
     claims: Array.isArray(input.claims) ? input.claims.filter(isClaim) : [],
     corrections: Array.isArray(input.corrections) ? input.corrections as Correction[] : [],
+    signal: normalizeSignal(input.signal),
+    evidence_posture: evidencePostures.has(input.evidence_posture as EvidencePosture) ? input.evidence_posture as EvidencePosture : undefined,
+    relationships: normalizeRelationships(input.relationships),
   } as Story;
 }
 

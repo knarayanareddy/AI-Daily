@@ -1,4 +1,6 @@
 export const REVIEW_STATES = new Set(['approved', 'rejected', 'pending', 'escalated']);
+export const EVIDENCE_POSTURES = new Set(['verified', 'corroborated', 'disputed', 'developing', 'corrected']);
+export const RELATIONSHIP_KINDS = new Set(['same_event', 'corroborates', 'contradicts', 'depends_on', 'consequence_of']);
 
 export function assert(condition, message) {
   if (!condition) throw new Error(`Schema validation failed: ${message}`);
@@ -11,6 +13,18 @@ export function validateCandidate(item) {
   assert(typeof item.source === 'string' && item.source.length > 0, 'candidate.source');
   assert(Number.isInteger(item.tier) && item.tier >= 1 && item.tier <= 3, 'candidate.tier');
   assert(!Number.isNaN(Date.parse(item.published_at)), 'candidate.published_at');
+  if (item.evidence_posture !== undefined) assert(EVIDENCE_POSTURES.has(item.evidence_posture), 'candidate.evidence_posture');
+  if (item.signal !== undefined) {
+    assert(item.signal && typeof item.signal.move === 'string' && item.signal.move.length >= 8, 'candidate.signal.move');
+    assert(typeof item.signal.consequence === 'string' && item.signal.consequence.length >= 8, 'candidate.signal.consequence');
+    assert(EVIDENCE_POSTURES.has(item.signal.evidence_posture), 'candidate.signal.evidence_posture');
+  }
+  if (item.relationships !== undefined) for (const relationship of item.relationships) {
+    assert(relationship && typeof relationship.from_story_id === 'string' && typeof relationship.to_story_id === 'string', 'relationship story IDs');
+    assert(RELATIONSHIP_KINDS.has(relationship.kind), 'relationship.kind');
+    assert(typeof relationship.reason === 'string' && relationship.reason.length >= 8, 'relationship.reason');
+    if (relationship.evidence_urls !== undefined) assert(Array.isArray(relationship.evidence_urls) && relationship.evidence_urls.every(url => /^https:\/\//.test(url)), 'relationship.evidence_urls');
+  }
   return item;
 }
 
