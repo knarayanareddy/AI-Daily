@@ -1,0 +1,20 @@
+{
+  "schema_version": 2,
+  "edition": 184,
+  "run_id": "202609170600",
+  "published_at": "2026-09-17T06:42:00Z",
+  "stories": [
+    {
+      "id": "fixture-research-184",
+      "event_id": "fixture-research-184",
+      "title": "A new benchmark asks what models do after the answer",
+      "dek": "Researchers introduce a test for long-horizon reliability — and find that confident models still lose the plot when tools enter the loop.",
+      "source": "NATURE AI",
+      "url": "https://www.nature.com/",
+      "category": "research",
+      "published_at": "2026-09-17T04:42:00Z",
+      "claims": [{"claim":"The benchmark evaluates long-horizon tool-use reliability.","supported":true,"evidence_urls":["https://www.nature.com/"],"excerpt":"Primary evidence retained by the reviewed edition."}],
+      "corrections": []
+    }
+  ]
+}

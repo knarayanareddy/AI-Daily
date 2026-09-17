@@ -1,0 +1,121 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SignalMapSvg visual contract > keeps the map canvas and equivalent controls structurally stable 1`] = `
+<section
+  aria-labelledby="signalMapTitle"
+  class="signal-map"
+>
+  <div
+    class="signal-map-header"
+  >
+    <div>
+      <p
+        class="eyebrow"
+      >
+        EXPLORE THE FIELD
+      </p>
+      <h2
+        id="signalMapTitle"
+      >
+        Today’s constellation.
+      </h2>
+      <p>
+        Lines show explicit editorial relationships. Select a signal to inspect its evidence.
+      </p>
+    </div>
+    <span
+      class="map-count"
+    >
+      2
+       nodes · 
+      1
+       links
+    </span>
+  </div>
+  <div
+    class="map-canvas"
+  >
+    <svg
+      aria-labelledby="signalMapTitle signalMapDescription"
+      role="img"
+      viewBox="0 0 680 360"
+    >
+      <desc
+        id="signalMapDescription"
+      >
+        An interactive map of today’s approved AI stories. The text list below is an equivalent accessible view.
+      </desc>
+      <line
+        class="map-edge"
+        x1="406.42168848643666"
+        x2="273.57831151356334"
+        y1="180.00000000024357"
+        y2="179.99999999975645"
+      />
+      <g
+        aria-label="Open story: Research signal"
+        class="map-node"
+        role="button"
+        tabindex="0"
+      >
+        <circle
+          cx="406.42168848643666"
+          cy="180.00000000024357"
+          r="14"
+        />
+        <text
+          text-anchor="middle"
+          x="406.42168848643666"
+          y="214.00000000024357"
+        >
+          Research signal
+        </text>
+      </g>
+      <g
+        aria-label="Open story: Product signal"
+        class="map-node"
+        role="button"
+        tabindex="0"
+      >
+        <circle
+          cx="273.57831151356334"
+          cy="179.99999999975645"
+          r="14"
+        />
+        <text
+          text-anchor="middle"
+          x="273.57831151356334"
+          y="213.99999999975645"
+        >
+          Product signal
+        </text>
+      </g>
+    </svg>
+  </div>
+  <div
+    aria-label="Accessible story list"
+    class="map-list"
+  >
+    <button
+      aria-pressed="false"
+      class="map-list-item"
+      type="button"
+    >
+      Research signal
+      <span>
+        research
+      </span>
+    </button>
+    <button
+      aria-pressed="false"
+      class="map-list-item"
+      type="button"
+    >
+      Product signal
+      <span>
+        product
+      </span>
+    </button>
+  </div>
+</section>
+`;

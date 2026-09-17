@@ -1,0 +1,19 @@
+{
+  "edition": 184,
+  "published_at": "2026-09-17T06:23:42.851Z",
+  "run_id": "202609170623",
+  "stories": [],
+  "pipeline": {
+    "sources_scanned": 12,
+    "items_clustered": 86,
+    "consensus_rate": 0.33
+  },
+  "publication": {
+    "schema_version": 2,
+    "edition": 184,
+    "run_id": "202609170623",
+    "checksum": "07b711d7fb3022a93815c10b4c8abd05a070a32957c7e9f14252767117ffd4f0",
+    "published_at": "2026-09-17T06:23:42.851Z",
+    "artifact": "publications/184-202609170623.json"
+  }
+}

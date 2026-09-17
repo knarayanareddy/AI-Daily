@@ -1,0 +1,10 @@
+[
+  {"id":"openai-news","name":"OpenAI News","url":"https://openai.com/news/rss.xml","tier":1,"category":"product","topics":["models","product"],"license_policy":"link-and-short-summary","max_age_hours":36,"timeout_ms":15000,"enabled":true},
+  {"id":"deepmind-blog","name":"Google DeepMind","url":"https://deepmind.google/blog/rss.xml","tier":1,"category":"research","topics":["research","models"],"license_policy":"link-and-short-summary","max_age_hours":36,"timeout_ms":15000,"enabled":true},
+  {"id":"anthropic-news","name":"Anthropic","url":"https://www.anthropic.com/rss.xml","tier":1,"category":"product","topics":["models","safety"],"license_policy":"link-and-short-summary","max_age_hours":36,"timeout_ms":15000,"enabled":true},
+  {"id":"microsoft-research","name":"Microsoft Research","url":"https://www.microsoft.com/en-us/research/feed/","tier":1,"category":"research","topics":["research","infrastructure"],"license_policy":"link-and-short-summary","max_age_hours":36,"timeout_ms":15000,"enabled":true},
+  {"id":"huggingface-blog","name":"Hugging Face","url":"https://huggingface.co/blog/feed.xml","tier":1,"category":"product","topics":["open-models","tools"],"license_policy":"link-and-short-summary","max_age_hours":36,"timeout_ms":15000,"enabled":true},
+  {"id":"mit-tech-review","name":"MIT Technology Review","url":"https://www.technologyreview.com/feed/","tier":2,"category":"policy","topics":["policy","society"],"license_policy":"link-only-until-reviewed","max_age_hours":36,"timeout_ms":15000,"enabled":true},
+  {"id":"the-verge-ai","name":"The Verge AI","url":"https://www.theverge.com/rss/ai-artificial-intelligence/index.xml","tier":2,"category":"product","topics":["product","business"],"license_policy":"link-only-until-reviewed","max_age_hours":36,"timeout_ms":15000,"enabled":true},
+  {"id":"ars-technica-ai","name":"Ars Technica AI","url":"https://feeds.arstechnica.com/arstechnica/technology-lab","tier":2,"category":"research","topics":["research","infrastructure"],"license_policy":"link-only-until-reviewed","max_age_hours":36,"timeout_ms":15000,"enabled":true}
+]

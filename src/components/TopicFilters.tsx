@@ -1,0 +1,4 @@
+type Props = { active: string; query: string; counts: Record<string, number>; onFilter: (value: string) => void; onSearch: (value: string) => void };
+export function TopicFilters({ active, query, counts, onFilter, onSearch }: Props) {
+  return <section className="toolbar" aria-label="Story filters"><div className="filter-label">FILTER BY <span>↘</span></div><div className="filters">{['all','research','product','policy'].map(filter => <button className={active === filter ? 'filter active' : 'filter'} key={filter} onClick={() => onFilter(filter)}>{filter === 'all' ? 'All stories' : filter[0].toUpperCase() + filter.slice(1)} <b>{String(counts[filter] || 0).padStart(2, '0')}</b></button>)}</div><label className="search"><span>⌕</span><input value={query} onChange={event => onSearch(event.target.value)} type="search" placeholder="Search the briefing" aria-label="Search the briefing" /></label></section>;
+}
