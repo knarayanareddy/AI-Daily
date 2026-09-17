@@ -1,0 +1,38 @@
+{
+  "name": "ai-daily",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit",
+    "test:backend": "node --test tests/*.test.mjs",
+    "test:frontend": "vitest run",
+    "test": "npm run test:backend && npm run test:frontend",
+    "briefing:dry": "node workers/briefing/orchestrator.mjs --skip-fetch --dry-run",
+    "briefing:run": "node workers/briefing/orchestrator.mjs",
+    "briefing:review": "node workers/briefing/reviewer-runner.mjs",
+    "ops:server": "node ops-server.mjs",
+    "canary:check": "node scripts/canary-check.mjs"
+  },
+  "dependencies": {
+    "d3-force": "^3.0.0",
+    "fast-xml-parser": "^5.11.1",
+    "jose": "^6.2.12",
+    "pg": "^8.23.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.3",
+    "@types/d3-force": "^3.0.10",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^5.2.0",
+    "jsdom": "^26.1.0",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.6",
+    "vitest": "^3.2.7"
+  }
+}

@@ -1,0 +1,28 @@
+import { createServer } from 'node:http';
+import { spawn } from 'node:child_process';
+import { readFile, readdir } from 'node:fs/promises';
+import { extname, join, normalize } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { migrate, getState, setState, saveDecision, decisions, audit, createCorrection, corrections } from './workers/ops-db.mjs';
+import { callback, currentUser, login, logout } from './workers/ops-auth.mjs';
+
+const root=fileURLToPath(new URL('./',import.meta.url)),data=join(root,'data'),port=Number(process.env.PORT||4174);const types={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'text/javascript; charset=utf-8','.json':'application/json; charset=utf-8'};
+const json=(res,status,body)=>{res.writeHead(status,{'content-type':'application/json; charset=utf-8','cache-control':'no-store','access-control-allow-origin':'same-origin'});res.end(JSON.stringify(body))};
+async function body(req){let raw='';for await(const chunk of req)raw+=chunk;if(raw.length>100000)throw Error('request too large');return raw?JSON.parse(raw):{}}
+async function readJson(path,fallback){try{return JSON.parse(await readFile(join(data,path),'utf8'))}catch{return fallback}}
+async function latest(prefix){try{const files=(await readdir(data)).filter(f=>f.startsWith(prefix)&&f.endsWith('.json')).sort();return files.length?readJson(files.at(-1),null):null}catch{return null}}
+async function operator(req,res,url){const user=await currentUser(req);if(!user)return json(res,401,{error:'authentication required',login:'/auth/login'});
+ if(req.method==='GET'&&url.pathname==='/api/ops/health')return json(res,200,await readJson('health/last-run.json',{status:'unknown',alerts:[]}));
+ if(req.method==='GET'&&url.pathname==='/api/ops/sources')return json(res,200,{registry:await readJson('sources.json',[]),health:await readJson('health/sources/index.json',{}),state:await getState()});
+ if(req.method==='GET'&&url.pathname==='/api/ops/alerts')return json(res,200,{health:await readJson('health/last-run.json',{alerts:[]}),state:await readJson('health/alert-state.json',{})});
+ if(req.method==='GET'&&url.pathname==='/api/ops/corrections')return json(res,200,{corrections:await corrections(url.searchParams.get('edition_id'))});
+ if(req.method==='GET'&&url.pathname==='/api/ops/review-queue')return json(res,200,await latest('review-queue-')||{review_queue:[],status:'empty'});
+ if(req.method==='POST'&&url.pathname==='/api/ops/decisions'){const input=await body(req);if(!input.cluster_id||!['approved','rejected','escalated'].includes(input.state))return json(res,400,{error:'cluster_id and valid state are required'});return json(res,200,{ok:true,decision:await saveDecision({clusterId:input.cluster_id,runId:input.run_id,decision:input.state,reason:String(input.reason||'').slice(0,1000),actor:user})});}
+ if(req.method==='POST'&&url.pathname==='/api/ops/corrections'){const input=await body(req);if(!input.edition_id||!input.story_id||!input.claim||!input.correction||!input.reason)return json(res,400,{error:'edition_id, story_id, claim, correction, and reason are required'});return json(res,201,{ok:true,correction:await createCorrection({editionId:input.edition_id,storyId:input.story_id,claim:String(input.claim).slice(0,500),correction:String(input.correction).slice(0,1000),reason:String(input.reason).slice(0,1000),actor:user})});}
+ if(req.method==='POST'&&url.pathname==='/api/ops/sources/pause'){const input=await body(req);if(!input.source_id)return json(res,400,{error:'source_id is required'});const state=await getState();const paused=state.paused_sources||[];state.paused_sources=[...new Set(input.paused===false?paused.filter(id=>id!==input.source_id):[...paused,input.source_id])];await setState('paused_sources',state.paused_sources,user);return json(res,200,{ok:true,state});}
+ if(req.method==='POST'&&url.pathname==='/api/ops/publishing/kill-switch'){const input=await body(req);await setState('kill_switch',Boolean(input.enabled),user);return json(res,200,{ok:true,state:await getState()});}
+ const publishMatch=url.pathname.match(/^\/api\/ops\/runs\/([^/]+)\/publish$/);if(req.method==='POST'&&publishMatch){const state=await getState();if(state.kill_switch)return json(res,409,{error:'publishing kill switch is active'});await audit({type:'publish_requested',run_id:publishMatch[1]},user);const child=spawn(process.execPath,[join(root,'workers/briefing/orchestrator.mjs'),'--skip-fetch','--run-id',publishMatch[1]],{detached:true,stdio:'ignore',env:process.env});child.unref();return json(res,202,{ok:true,run_id:publishMatch[1],status:'started'});}
+ return json(res,404,{error:'not found'});
+}
+const server=createServer(async(req,res)=>{try{const url=new URL(req.url,`http://${req.headers.host}`);if(url.pathname==='/auth/login')return login(res,url.searchParams.get('returnTo')||'/ops.html');if(url.pathname==='/auth/callback')return await callback(res,url.searchParams);if(url.pathname==='/auth/logout')return logout(req,res);if(url.pathname.startsWith('/api/'))return await operator(req,res,url);let pathname=normalize(decodeURIComponent(url.pathname));if(pathname==='/'||pathname==='/ops')pathname='/ops.html';if(pathname.includes('..'))return json(res,400,{error:'invalid path'});const file=join(root,pathname);const content=await readFile(file);res.writeHead(200,{'content-type':types[extname(file)]||'application/octet-stream'});res.end(content)}catch(error){console.error(error);json(res,error.code==='ENOENT'?404:500,{error:error.message})}});
+await migrate();server.listen(port,'0.0.0.0',()=>console.log(`AI Daily authenticated operations API listening on 0.0.0.0:${port}`));
