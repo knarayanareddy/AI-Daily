@@ -40,3 +40,5 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
+# Pages deployment is enabled through repository settings.
