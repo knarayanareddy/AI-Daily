@@ -55,6 +55,7 @@ export default function App() {
   const toggleExplore = () => { const next = !explore; const url = new URL(window.location.href); if(next) url.searchParams.set('view','explore'); else url.searchParams.delete('view'); window.history.pushState({ view: next ? 'explore' : 'read' }, '', `${url.pathname}${url.search}`); setExplore(next); };
 
   return <div className={dark ? 'react-shell dark' : 'react-shell'}>
+    <a className="skip-link" href="#briefing">Skip to briefing</a>
     <div className="topline"><span className="live-dot" /> Edition {edition.edition || '—'} · Thursday, September 17, 2026 <span className="topline-right">Free daily briefing <span className="arrow">↗</span></span></div>
     <SiteHeader dark={dark} onToggleTheme={() => setDark(value => !value)} />
     {notice && <div className={`edition-notice ${loadState}`} role="status"><span>●</span>{notice}</div>}
@@ -64,6 +65,6 @@ export default function App() {
       <section className="content-grid"><StoryList stories={stories} total={stories.length} onOpenEvidence={openStory} /><aside className="aside-column"><div className="aside-card consensus-card"><div className="card-kicker"><span className="spark">✦</span> EDITORIAL CONSENSUS</div><h3>Evidence comes first.</h3><p>Every published story carries its claims and the sources used to check them. Open Evidence Desk on any story to inspect the reasoning.</p><a href="#method" className="text-link">See the method <span>↗</span></a></div><NewsletterCard onSubscribe={subscribe} /></aside></section>
       <MethodSection />
     </main>}
-    <footer><a className="wordmark" href="#top"><span>AI</span> DAILY<span className="mark">.</span></a><p>Thoughtful coverage for an accelerating field.</p></footer><StoryDrawer story={selected} onClose={closeStory} />
+    <footer><a className="wordmark" href="#top"><span>AI</span> DAILY<span className="mark">.</span></a><p>Thoughtful coverage for an accelerating field.</p><nav className="footer-links" aria-label="Footer navigation"><a href="/archive.html">Archive</a><a href="/rss.xml">RSS</a><a href="/sitemap.xml">Sitemap</a></nav></footer><StoryDrawer story={selected} onClose={closeStory} />
   </div>;
 }
