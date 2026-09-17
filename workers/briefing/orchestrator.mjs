@@ -80,6 +80,7 @@ async function main() {
     const operatorDecisions = (await decisions(runId)).map(item => ({ ...item, state: item.decision }));
     const edition = buildEdition({ runId, editionNumber, clusters, reviewsByCluster, operatorDecisions });
     if (dryRun) { await log('publish', 'dry-run', { approved: edition.stories.length }); return 0; }
+    if (process.env.ENABLE_AUTONOMOUS_PUBLISH !== 'true') { await log('publish', 'blocked', { reason: 'autonomous publication is disabled until staging gates and canary sign-off pass' }); return 2; }
     await publishEdition(edition);
     await log('publish', 'complete', { approved: edition.stories.length });
     return 0;
