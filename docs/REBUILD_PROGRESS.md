@@ -1,16 +1,28 @@
 # Wholesome rebuild progress
 
-**Current phase:** Phase 2 — signal-ticket Read mode  
-**Overall rebuild:** approximately 40% complete  
+**Current phase:** Phase 3 — 2D Signal Field  
+**Overall rebuild:** approximately 60% complete  
 **Last updated:** 2026-09-17
 
 ## Phase status
 
 - [x] Phase 1 — Add editorial signal and typed relationship contracts
 - [x] Phase 2 — Redesign Read mode around signal tickets
-- [ ] Phase 3 — Upgrade the 2D Signal Field
+- [x] Phase 3 — Upgrade the 2D Signal Field
 - [ ] Phase 4 — Implement the optional React Three Fiber Signal Field
 - [ ] Phase 5 — Validate novelty, accessibility, performance, and production readiness
+
+## Phase 3 completed
+
+- Added typed relationship filtering controls.
+- Added relationship legend and visual grammar.
+- Added accessible relationship explanation cards.
+- Added relationship selection parity with story selection.
+- Added contradiction, corroboration, dependency, consequence, and same-event semantics.
+- Added Follow the disturbance guided route.
+- Added next-signal and inspect-evidence controls.
+- Preserved list-only and reduced-motion behavior.
+- Added 2D Signal Field interaction and visual snapshot coverage.
 
 ## Phase 2 completed
 
@@ -37,9 +49,9 @@
 
 ## Next phase
 
-**Phase 3 — Upgrade the 2D Signal Field.**
+**Phase 4 — Implement the optional React Three Fiber Signal Field.**
 
-The next implementation will add typed relationship rendering, a legend, relationship explanations, tension/corroboration controls, and the optional Follow the disturbance route. Read mode remains the canonical, fast, accessible path.
+The next implementation will add an explicit opt-in 3D lens over the approved graph. It must remain lazy-loaded, demand-rendered, reduced-motion safe, accessible through the canonical list, and useful for provenance or consequence rather than decoration.
 
 ## Rebuild rule
 

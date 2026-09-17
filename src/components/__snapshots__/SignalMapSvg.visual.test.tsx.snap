@@ -20,16 +20,97 @@ exports[`SignalMapSvg visual contract > keeps the map canvas and equivalent cont
         Today’s constellation.
       </h2>
       <p>
-        Lines show explicit editorial relationships. Select a signal to inspect its evidence.
+        Threads show approved relationships. Select a thread to see why it exists.
       </p>
     </div>
     <span
       class="map-count"
     >
       2
-       nodes · 
+       nodes ·
       1
        links
+    </span>
+  </div>
+  <div
+    aria-label="Signal Field controls"
+    class="map-controls"
+  >
+    <div
+      aria-label="Filter relationships"
+      class="relationship-filters"
+    >
+      <button
+        aria-pressed="true"
+        class="map-control active"
+        type="button"
+      >
+        All threads
+      </button>
+      <button
+        aria-pressed="false"
+        class="map-control"
+        type="button"
+      >
+        Corroborates
+      </button>
+      <button
+        aria-pressed="false"
+        class="map-control"
+        type="button"
+      >
+        Contradicts
+      </button>
+      <button
+        aria-pressed="false"
+        class="map-control"
+        type="button"
+      >
+        Depends on
+      </button>
+      <button
+        aria-pressed="false"
+        class="map-control"
+        type="button"
+      >
+        Consequence of
+      </button>
+    </div>
+    <button
+      aria-pressed="false"
+      class="map-control guided"
+      type="button"
+    >
+      Follow the disturbance ↗
+    </button>
+  </div>
+  <div
+    aria-label="Relationship legend"
+    class="map-legend"
+  >
+    <span>
+      <i
+        class="legend-line same_event"
+      />
+      Same event
+    </span>
+    <span>
+      <i
+        class="legend-line corroborates"
+      />
+      Corroborates
+    </span>
+    <span>
+      <i
+        class="legend-line contradicts"
+      />
+      Contradicts
+    </span>
+    <span>
+      <i
+        class="legend-line consequence_of"
+      />
+      Consequence
     </span>
   </div>
   <div
@@ -46,7 +127,7 @@ exports[`SignalMapSvg visual contract > keeps the map canvas and equivalent cont
         An interactive map of today’s approved AI stories. The text list below is an equivalent accessible view.
       </desc>
       <line
-        class="map-edge"
+        class="map-edge same_event"
         x1="406.42168848643666"
         x2="273.57831151356334"
         y1="180.00000000024357"
@@ -115,6 +196,32 @@ exports[`SignalMapSvg visual contract > keeps the map canvas and equivalent cont
       <span>
         product
       </span>
+    </button>
+  </div>
+  <div
+    aria-label="Accessible relationship explanations"
+    class="map-relationships"
+  >
+    <p
+      class="signal-label"
+    >
+      WHY THESE SIGNALS CONNECT
+    </p>
+    <button
+      class="relationship-explanation"
+      type="button"
+    >
+      <span>
+        Research signal
+         →
+        Product signal
+      </span>
+      <strong>
+        Same event
+      </strong>
+      <small>
+        same event
+      </small>
     </button>
   </div>
 </section>
