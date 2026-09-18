@@ -106,5 +106,5 @@ export function normalizeEdition(value: unknown): Edition | null {
   const input = value as Partial<Edition>;
   if (!Array.isArray(input.stories)) return null;
   const stories = input.stories.map(normalizeStory).filter((story): story is Story => Boolean(story));
-  return { edition: Number(input.edition || 0), run_id: String(input.run_id || 'fallback'), published_at: input.published_at, stories };
+  return { edition: Number(input.edition || 0), run_id: String(input.run_id || 'fallback'), published_at: input.published_at, stories, ...(input.tool_focus ? { tool_focus: input.tool_focus } : {}), ...(input.cool_project_alert ? { cool_project_alert: input.cool_project_alert } : {}), ...(input.five_minute_experiment ? { five_minute_experiment: input.five_minute_experiment } : {}) };
 }
