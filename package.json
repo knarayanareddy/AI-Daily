@@ -20,7 +20,8 @@
     "briefing:run": "node workers/briefing/orchestrator.mjs",
     "briefing:review": "node workers/briefing/reviewer-runner.mjs",
     "ops:server": "node ops-server.mjs",
-    "canary:check": "node scripts/canary-check.mjs"
+    "canary:check": "node scripts/canary-check.mjs",
+    "archive:build": "node scripts/build-archive.mjs"
   },
   "dependencies": {
     "@react-three/fiber": "^9.7.0",

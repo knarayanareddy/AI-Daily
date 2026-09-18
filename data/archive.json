@@ -1,0 +1,354 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-09-18T09:06:13.802Z",
+  "editions": [
+    {
+      "date": "2026-09-17",
+      "edition": 186,
+      "run_id": "showcase-council-20260917",
+      "published_at": "2026-09-17T12:00:00.000Z",
+      "story_count": 25,
+      "stories": [
+        {
+          "event_id": "openai-misalignment-framework",
+          "title": "OpenAI turns model misalignment reports into a standing disclosure system",
+          "source": "OPENAI",
+          "category": "policy",
+          "keywords": [
+            "policy",
+            "Safety"
+          ]
+        },
+        {
+          "event_id": "anthropic-evaluation-boundary",
+          "title": "A sealed cyber test was not sealed: Anthropic finds three real-world incidents",
+          "source": "ANTHROPIC",
+          "category": "research",
+          "keywords": [
+            "research",
+            "Evaluation",
+            "Safety"
+          ]
+        },
+        {
+          "event_id": "gpt-live-api",
+          "title": "Voice agents get a shorter path from listening to doing",
+          "source": "OPENAI",
+          "category": "product",
+          "keywords": [
+            "product",
+            "Voice agents",
+            "What shipped"
+          ]
+        },
+        {
+          "event_id": "ai-policy-window",
+          "title": "The frontier debate is becoming a pacing debate",
+          "source": "THE GUARDIAN",
+          "category": "policy",
+          "keywords": [
+            "policy",
+            "Governance",
+            "The argument"
+          ]
+        },
+        {
+          "event_id": "gpt-live-finance",
+          "title": "OpenAI packages voice, agents, and finance as one enterprise bet",
+          "source": "OPENAI",
+          "category": "compute",
+          "keywords": [
+            "compute",
+            "Enterprise",
+            "Enterprise stakes"
+          ]
+        },
+        {
+          "event_id": "king-ai-summit",
+          "title": "King Charles puts frontier AI leaders in the same room — but not on the same page",
+          "source": "CNBC",
+          "category": "policy",
+          "keywords": [
+            "policy",
+            "Governance"
+          ]
+        },
+        {
+          "event_id": "cyber-model-access",
+          "title": "Three cyber models, three access rules: the new frontier is permissioning",
+          "source": "THE HACKER NEWS",
+          "category": "security",
+          "keywords": [
+            "security",
+            "Cyber",
+            "Safety and control"
+          ]
+        },
+        {
+          "event_id": "independent-evaluators",
+          "title": "The watchdogs are moving inside the labs",
+          "source": "TECHCRUNCH",
+          "category": "policy",
+          "keywords": [
+            "policy",
+            "Oversight",
+            "Safety and control"
+          ]
+        },
+        {
+          "event_id": "safety-standards-talks",
+          "title": "Rivals discuss a safety standards body while still racing on capability",
+          "source": "TECHCRUNCH",
+          "category": "policy",
+          "keywords": [
+            "policy",
+            "Standards",
+            "Governance"
+          ]
+        },
+        {
+          "event_id": "anthropic-hardware-standard",
+          "title": "Claude gets a lab coat: models begin operating physical experiments",
+          "source": "ANTHROPIC",
+          "category": "research",
+          "keywords": [
+            "research",
+            "Embodied AI",
+            "Research"
+          ]
+        },
+        {
+          "event_id": "apple-private-siri",
+          "title": "Apple’s AI assistant arrives with a privacy boundary — and a geography problem",
+          "source": "AI WEEKLY",
+          "category": "product",
+          "keywords": [
+            "product",
+            "Consumer AI",
+            "Agents at work"
+          ]
+        },
+        {
+          "event_id": "neuralink-speech",
+          "title": "A brain implant says “I love you”: the interface is emotional before it is ordinary",
+          "source": "THE NEURON",
+          "category": "society",
+          "keywords": [
+            "society",
+            "Interfaces",
+            "Human stakes"
+          ]
+        },
+        {
+          "event_id": "chatgpt-ads",
+          "title": "The sponsored agent is here: when an answer becomes a marketplace",
+          "source": "THE NEURON",
+          "category": "product",
+          "keywords": [
+            "product",
+            "Commerce",
+            "Agents at work"
+          ]
+        },
+        {
+          "event_id": "databricks-astra",
+          "title": "Databricks rolls a frontier model through thousands of engineers",
+          "source": "THE NEURON",
+          "category": "product",
+          "keywords": [
+            "product",
+            "Enterprise",
+            "Agents at work"
+          ]
+        },
+        {
+          "event_id": "cuda-rust",
+          "title": "NVIDIA opens a door into CUDA with Rust",
+          "source": "THE NEURON",
+          "category": "compute",
+          "keywords": [
+            "compute",
+            "Developer tools",
+            "Infrastructure"
+          ]
+        },
+        {
+          "event_id": "mozilla-mistral-browser",
+          "title": "Firefox’s AI browser bet puts choice before convenience",
+          "source": "MISTRAL AI",
+          "category": "product",
+          "keywords": [
+            "product",
+            "Browsers",
+            "Agents at work"
+          ]
+        },
+        {
+          "event_id": "frontier-data-centers",
+          "title": "Scotland pauses new AI data-centre planning",
+          "source": "THE GUARDIAN",
+          "category": "society",
+          "keywords": [
+            "society",
+            "Energy",
+            "Infrastructure"
+          ]
+        },
+        {
+          "event_id": "ratepayer-protection",
+          "title": "The electricity bill becomes an AI policy document",
+          "source": "THE NEURON",
+          "category": "policy",
+          "keywords": [
+            "policy",
+            "Infrastructure"
+          ]
+        },
+        {
+          "event_id": "australia-scraping",
+          "title": "Australia considers rules for online data scraped into AI",
+          "source": "THE GUARDIAN",
+          "category": "policy",
+          "keywords": [
+            "policy",
+            "Data rights",
+            "Human stakes"
+          ]
+        },
+        {
+          "event_id": "open-code-review",
+          "title": "Alibaba releases a hybrid code-review system",
+          "source": "AI TOOLLY",
+          "category": "product",
+          "keywords": [
+            "product",
+            "Open source",
+            "Open frontier"
+          ]
+        },
+        {
+          "event_id": "colibri-runtime",
+          "title": "A tiny C runtime tries to make giant MoE models fit ordinary hardware",
+          "source": "AI TOOLLY",
+          "category": "compute",
+          "keywords": [
+            "compute",
+            "Open models",
+            "Open frontier"
+          ]
+        },
+        {
+          "event_id": "voicestudio-languages",
+          "title": "A local voice stack claims 646 languages",
+          "source": "AI TOOLLY",
+          "category": "research",
+          "keywords": [
+            "research",
+            "Speech",
+            "Open frontier"
+          ]
+        },
+        {
+          "event_id": "arlo-threat-assessment",
+          "title": "Home cameras learn to call something a threat",
+          "source": "ANDROID GUYS",
+          "category": "product",
+          "keywords": [
+            "product",
+            "Ambient AI",
+            "Human stakes"
+          ]
+        },
+        {
+          "event_id": "deepmind-recursive",
+          "title": "AI systems start improving the experiments that improve AI systems",
+          "source": "ANALYTICS INDIA MAGAZINE",
+          "category": "research",
+          "keywords": [
+            "research",
+            "Research loops",
+            "Research"
+          ]
+        },
+        {
+          "event_id": "huawei-chips",
+          "title": "Huawei speeds an AI-chip push against Nvidia",
+          "source": "THE INFORMATION",
+          "category": "compute",
+          "keywords": [
+            "compute",
+            "Chips",
+            "Infrastructure"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-09-17",
+      "edition": 185,
+      "run_id": "showcase-20260917",
+      "published_at": "2026-09-17T10:00:00.000Z",
+      "story_count": 5,
+      "stories": [
+        {
+          "event_id": "openai-misalignment-framework",
+          "title": "OpenAI turns model misalignment reports into a standing disclosure system",
+          "source": "OPENAI",
+          "category": "policy",
+          "keywords": [
+            "policy",
+            "Safety"
+          ]
+        },
+        {
+          "event_id": "anthropic-evaluation-boundary",
+          "title": "A sealed cyber test was not sealed: Anthropic finds three real-world incidents",
+          "source": "ANTHROPIC",
+          "category": "research",
+          "keywords": [
+            "research",
+            "Evaluation"
+          ]
+        },
+        {
+          "event_id": "gpt-live-api",
+          "title": "Voice agents get a shorter path from listening to doing",
+          "source": "OPENAI",
+          "category": "product",
+          "keywords": [
+            "product",
+            "Voice agents"
+          ]
+        },
+        {
+          "event_id": "ai-policy-window",
+          "title": "The frontier debate is becoming a pacing debate",
+          "source": "THE GUARDIAN",
+          "category": "policy",
+          "keywords": [
+            "policy",
+            "Governance"
+          ]
+        },
+        {
+          "event_id": "gpt-live-finance",
+          "title": "OpenAI packages voice, agents, and finance as one enterprise bet",
+          "source": "OPENAI",
+          "category": "compute",
+          "keywords": [
+            "compute",
+            "Enterprise"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-09-17",
+      "edition": 184,
+      "run_id": "202609170623",
+      "published_at": "2026-09-17T06:23:42.851Z",
+      "story_count": 0,
+      "stories": []
+    }
+  ]
+}

@@ -24,11 +24,15 @@ jobs:
           node-version: 20
           cache: npm
       - run: npm ci --legacy-peer-deps
+      - run: npm run archive:build
       - run: npm run build
         env:
           GITHUB_ACTIONS: true
       - run: cp dist/index.html dist/404.html
-      - run: cp -R data dist/data
+      - run: |
+          mkdir -p dist/data
+          cp -R data/editions data/publications dist/data/
+          cp data/news.json data/publication-manifest.json data/sources.json data/archive.json data/search-index.json dist/data/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
