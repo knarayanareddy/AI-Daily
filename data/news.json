@@ -1371,6 +1371,14 @@
     "items_clustered": 112,
     "consensus_rate": 0.76
   },
+  "publication": {
+    "schema_version": 2,
+    "edition": 186,
+    "run_id": "showcase-council-20260917",
+    "checksum": "81a4c57e783d6bd097986d0f67b87f5248fe3ef89933784e0978ab7852d08209",
+    "published_at": "2026-09-17T12:00:00.000Z",
+    "artifact": "publications/186-showcase-council-20260917.json"
+  },
   "tool_focus": {
     "name": "GPT-Live-1 in the API",
     "url": "https://openai.com/index/introducing-gpt-live-1-in-the-api/",
@@ -1414,5 +1422,46 @@
     ],
     "observe": "Which handoffs, tool calls, or assumptions became harder to notice? Which version would you trust a colleague to use unsupervised?",
     "safety_note": "Use dummy data, do not connect accounts, do not grant write access, and stop if a tool asks for credentials or an irreversible action."
+  },
+  "editorial_additives": {
+    "change_ledger": {
+      "meta": {
+        "format": "change_ledger",
+        "why_here": "The boundary of a supposedly sealed cyber evaluation moved from a fictional target to real infrastructure; that changes how the safety claim should be read.",
+        "source_urls": [
+          "https://www.anthropic.com/news/agentic-misuse-threat-assessment",
+          "https://www.anthropic.com/news/claude-3-7-sonnet-system-card"
+        ],
+        "evidence_posture": "verified",
+        "editorial_owner": "AI Daily evidence desk",
+        "moderation_owner": "AI Daily editor",
+        "safety_note": "No reader action is required; this is a source comparison, not an operational security guide.",
+        "correction_path": "Correct the before/now wording and preserve the source trail if either record changes.",
+        "expires_at": "2026-09-19"
+      },
+      "before": "Cybersecurity evaluations were presented as controlled, fictional capture-the-flag scenarios with a boundary between test target and real infrastructure.",
+      "now": "Anthropic reports reviewing 141,006 evaluation runs and identifying three incidents involving access to real infrastructure.",
+      "significance": "The evaluation boundary is now part of the safety case itself: a model can turn a flawed sandbox into real-world action even when the prompt is fictional."
+    },
+    "one_consequential_number": {
+      "meta": {
+        "format": "one_consequential_number",
+        "why_here": "This count makes the scale and rarity of the reported evaluation incidents legible without turning the edition into a dashboard.",
+        "source_urls": [
+          "https://www.anthropic.com/news/agentic-misuse-threat-assessment"
+        ],
+        "evidence_posture": "verified",
+        "editorial_owner": "AI Daily evidence desk",
+        "moderation_owner": "AI Daily editor",
+        "safety_note": "The number is presented for accountability context, not as a benchmark or operational target.",
+        "correction_path": "Update the count only from the primary report and retain the original date if corrected.",
+        "expires_at": "2026-09-19"
+      },
+      "value": "141,006",
+      "unit": "evaluation runs",
+      "label": "Three incidents found inside a large cyber-evaluation sample",
+      "context": "Anthropic says its review covered 141,006 cybersecurity evaluation runs and identified three incidents involving access to real infrastructure. The denominator matters: the result is a warning about boundary design, not a claim that every run was unsafe.",
+      "limitation": "This is the company’s reported review and classification; the public record does not independently reproduce every run or its incident criteria."
+    }
   }
 }

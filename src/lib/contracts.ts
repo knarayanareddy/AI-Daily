@@ -51,6 +51,10 @@ export type Story = {
 export type ToolFocus = { name: string; url: string; what: string; why_now: string; how_to_try: string[]; catch: string; rave: string; reality: string; evidence_posture: EvidencePosture; alternative: string; image_url?: string; related_signal_number?: number };
 export type CoolProjectAlert = { name: string; repository_url: string; maintainer: string; license: string; why_cool: string; why_useful: string; try_first: string; project_health: string; caveat: string; verdict: 'worth_trying_now' | 'worth_watching' | 'narrow_audience' | 'immature'; image_url?: string; related_signal_number?: number };
 export type FiveMinuteExperiment = { title: string; premise: string; steps: string[]; observe: string; safety_note: string };
+export type AdditiveMeta = { format: string; why_here: string; source_urls: string[]; evidence_posture: EvidencePosture; editorial_owner: string; moderation_owner: string; safety_note: string; correction_path: string; expires_at: string };
+export type ChangeLedger = { meta: AdditiveMeta; before: string; now: string; significance: string };
+export type OneConsequentialNumber = { meta: AdditiveMeta; value: string; unit: string; label: string; context: string; limitation: string };
+export type EditorialAdditives = { change_ledger?: ChangeLedger; one_consequential_number?: OneConsequentialNumber };
 
 export type Edition = {
   edition: number;
@@ -60,6 +64,7 @@ export type Edition = {
   tool_focus?: ToolFocus;
   cool_project_alert?: CoolProjectAlert;
   five_minute_experiment?: FiveMinuteExperiment;
+  editorial_additives?: EditorialAdditives;
 };
 
 export const fallbackStories: Story[] = [
@@ -106,5 +111,5 @@ export function normalizeEdition(value: unknown): Edition | null {
   const input = value as Partial<Edition>;
   if (!Array.isArray(input.stories)) return null;
   const stories = input.stories.map(normalizeStory).filter((story): story is Story => Boolean(story));
-  return { edition: Number(input.edition || 0), run_id: String(input.run_id || 'fallback'), published_at: input.published_at, stories, ...(input.tool_focus ? { tool_focus: input.tool_focus } : {}), ...(input.cool_project_alert ? { cool_project_alert: input.cool_project_alert } : {}), ...(input.five_minute_experiment ? { five_minute_experiment: input.five_minute_experiment } : {}) };
+  return { edition: Number(input.edition || 0), run_id: String(input.run_id || 'fallback'), published_at: input.published_at, stories, ...(input.tool_focus ? { tool_focus: input.tool_focus } : {}), ...(input.cool_project_alert ? { cool_project_alert: input.cool_project_alert } : {}), ...(input.five_minute_experiment ? { five_minute_experiment: input.five_minute_experiment } : {}), ...(input.editorial_additives ? { editorial_additives: input.editorial_additives } : {}) };
 }

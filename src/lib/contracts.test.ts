@@ -13,6 +13,9 @@ describe('edition contract', () => {
     expect(edition?.tool_focus?.name).toBe('Tool');
     expect(edition?.cool_project_alert?.name).toBe('Project');
     expect(edition?.five_minute_experiment?.title).toBe('Experiment');
+    expect(edition?.editorial_additives).toBeUndefined();
+    const withAdditive = normalizeEdition({ edition: 186, run_id: 'run', stories: [{ title: 'Story', source: 'Source', category: 'research', claims: [] }], editorial_additives: { one_consequential_number: { meta: { format: 'one_consequential_number', why_here: 'Reason', source_urls: ['https://example.com/source'], evidence_posture: 'verified', editorial_owner: 'Editor', moderation_owner: 'Editor', safety_note: 'Safe', correction_path: 'Correct', expires_at: '2026-09-19' }, value: '1', unit: 'test', label: 'Number', context: 'Context', limitation: 'Limit' } } });
+    expect(withAdditive?.editorial_additives?.one_consequential_number?.value).toBe('1');
   });
 
   it('normalizes editorial signal posture and legacy relationships', () => {
