@@ -105,6 +105,16 @@ The direction is strong and the latest additions are materially better than gene
 5. Run the deferred browser, keyboard, screen-reader, and mobile checks.
 6. Polish newsletter and source-role presentation.
 
+## Remediation completed
+
+- Moved the 25 Signals story list ahead of all optional modules.
+- Removed the duplicate `briefing` anchor from the hero; it now uses `edition-intro`.
+- Made story, edition, current, and home routes use the Vite base path, including GitHub Pages `/AI-Daily/`.
+- Derived edition date and update time from `published_at` instead of hardcoded text.
+- Added runtime validation for tool, project, experiment, additive metadata, HTTPS source URLs, and expiry dates.
+- Expired or malformed optional additives are omitted rather than rendered.
+- Re-ran build, frontend tests, staging checksum validation, Phase 5 checks, and public deployment verification.
+
 ## Review conclusion
 
 **Editorial quality:** strong and distinctive.
