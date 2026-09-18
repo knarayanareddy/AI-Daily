@@ -127,7 +127,7 @@ Deploy the Phase 6 showcase artifact and review the rhythm of the 25-story issue
 
 ### Validation status
 
-Build and automated tests are pending for this follow-up. Public deployment verification is intentionally not claimed until those checks pass.
+Production build, frontend tests (13/13), staging release check, and `git diff --check` pass. Commit `d349b53` is deployed by Pages workflow `35307483791` with successful build and deploy jobs. The public URL responds with Edition 186 and all 25 stories; the public text fetch still appears CDN-cached before the new contents strip, so latest-change public verification remains pending.
 
 ## Rebuild rule
 
