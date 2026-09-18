@@ -129,6 +129,18 @@ Deploy the Phase 6 showcase artifact and review the rhythm of the 25-story issue
 
 Production build, frontend tests (13/13), staging release check, and `git diff --check` pass. Commit `d349b53` is deployed by Pages workflow `35307483791` with successful build and deploy jobs. The public URL responds with Edition 186 and all 25 stories; the public text fetch still appears CDN-cached before the new contents strip, so latest-change public verification remains pending.
 
+## Phase 6 follow-up — dynamic additive council
+
+### Completed
+
+- Ran a fresh council session on how to keep the publication dynamic without mundane filler or engagement decoration.
+- Recorded research, rejected formats, proof-of-value gate, eight candidate formats, rotation model, and implementation recommendation in `docs/COUNCIL_REVIEW_DYNAMIC_ADDITIVES.md`.
+- Council recommendation: prioritize Change Ledger and One Consequential Number; add no format when no edition-specific evidence clears the gate.
+
+### Decision
+
+Do not implement permanent decorative blocks. First represent a reviewed additive manifest with source, evidence, moderation, privacy, safety, expiry, correction, and edition-specific rationale fields. The existing three showcase modules remain optional and continue to rotate by edition.
+
 ## Rebuild rule
 
 Only one phase advances at a time. After each phase, update this file with:
