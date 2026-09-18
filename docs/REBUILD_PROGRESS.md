@@ -139,7 +139,7 @@ Production build, frontend tests (13/13), staging release check, and `git diff -
 
 ### Decision
 
-Do not implement permanent decorative blocks. First represent a reviewed additive manifest with source, evidence, moderation, privacy, safety, expiry, correction, and edition-specific rationale fields. The existing three showcase modules remain optional and continue to rotate by edition.
+Do not implement permanent decorative blocks. First represent a reviewed additive manifest with source, evidence, moderation, privacy, safety, expiry, correction, and edition-specific rationale fields. The existing three showcase modules remain optional and continue to rotate by edition. Edition 186 now carries the first two approved entries: Change Ledger and One Consequential Number. Their source trails, evidence posture, ownership, safety, correction, and expiry fields are present in the publication payload.
 
 ## Rebuild rule
 

@@ -100,4 +100,4 @@ No format is mandatory. If none passes the gate, publish only the 25 Signals and
 
 Do not add eight permanent blocks. Add a typed, editorially reviewed additive manifest and render only selected entries. Keep the visible Edition Guide limited to the entries actually present. Preserve the text-first fallback and canonical Read mode for every format.
 
-The first two candidates worth implementing are **Change Ledger** and **One Consequential Number** because they are high-value, sourceable, compact, and naturally edition-dependent. Builder Watch and Unanswered Question should follow once their source and review fields are represented in the publication contract.
+The first two candidates worth implementing are **Change Ledger** and **One Consequential Number** because they are high-value, sourceable, compact, and naturally edition-dependent. They are now implemented as optional typed manifest entries in Edition 186. Builder Watch and Unanswered Question should follow only when their source and review fields are represented in the publication contract.
