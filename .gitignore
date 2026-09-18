@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.env
+.env.*
+.DS_Store
+data/http-cache/
+data/.candidates.*.tmp.json
+data/.news.*.tmp.json
+data/.briefing.lock
+data/review-queue-*.json
+data/reviews-*.json
+data/operator-state.json
+data/operator-decisions.json
+data/operator-audit.jsonl
+data/corrections.json
+data/canary-runs.json
+data/health/
