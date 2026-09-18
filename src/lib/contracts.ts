@@ -86,6 +86,23 @@ const evidencePostures = new Set<EvidencePosture>(['verified', 'corroborated', '
 const relationshipKinds = new Set<RelationshipKind>(['same_event', 'corroborates', 'contradicts', 'depends_on', 'consequence_of']);
 function normalizeSignal(value: unknown): EditorialSignal | undefined { if (!value || typeof value !== 'object') return undefined; const input = value as Partial<EditorialSignal>; if (typeof input.move !== 'string' || typeof input.consequence !== 'string' || !evidencePostures.has(input.evidence_posture as EvidencePosture)) return undefined; return { move: input.move, consequence: input.consequence, tension: input.tension, why_now: input.why_now, evidence_posture: input.evidence_posture as EvidencePosture }; }
 function normalizeRelationships(value: unknown): Relationship[] { if (!Array.isArray(value)) return []; return value.filter(item => item && typeof item === 'object' && typeof (item as Relationship).from_story_id === 'string' && typeof (item as Relationship).to_story_id === 'string' && typeof (item as Relationship).reason === 'string').map(item => ({ ...(item as Relationship), kind: relationshipKinds.has((item as Relationship).kind as RelationshipKind) ? (item as Relationship).kind : 'same_event' })); }
+function isRecord(value: unknown): value is Record<string, unknown> { return Boolean(value && typeof value === 'object' && !Array.isArray(value)); }
+function strings(value: unknown, count: number) { return Array.isArray(value) && value.length >= count && value.every(item => typeof item === 'string' && item.trim().length > 0); }
+function normalizeToolFocus(value: unknown): ToolFocus | undefined { if (!isRecord(value) || !isSafeHttpsUrl(value.url) || !strings(value.how_to_try, 1) || !['name','what','why_now','catch','rave','reality','alternative'].every(key => typeof value[key] === 'string' && String(value[key]).trim())) return undefined; if (!evidencePostures.has(value.evidence_posture as EvidencePosture)) return undefined; return value as unknown as ToolFocus; }
+function normalizeProject(value: unknown): CoolProjectAlert | undefined { if (!isRecord(value) || !isSafeHttpsUrl(value.repository_url) || !['name','maintainer','license','why_cool','why_useful','try_first','project_health','caveat'].every(key => typeof value[key] === 'string' && String(value[key]).trim()) || !['worth_trying_now','worth_watching','narrow_audience','immature'].includes(String(value.verdict))) return undefined; return value as unknown as CoolProjectAlert; }
+function normalizeExperiment(value: unknown): FiveMinuteExperiment | undefined { if (!isRecord(value) || !['title','premise','observe','safety_note'].every(key => typeof value[key] === 'string' && String(value[key]).trim()) || !strings(value.steps, 1)) return undefined; return value as unknown as FiveMinuteExperiment; }
+function normalizeAdditiveMeta(value: unknown): AdditiveMeta | undefined { if (!isRecord(value) || !strings(value.source_urls, 1) || !(value.source_urls as unknown[]).every(isSafeHttpsUrl) || !evidencePostures.has(value.evidence_posture as EvidencePosture) || !/^\d{4}-\d{2}-\d{2}$/.test(String(value.expires_at)) || !['format','why_here','editorial_owner','moderation_owner','safety_note','correction_path'].every(key => typeof value[key] === 'string' && String(value[key]).trim())) return undefined; return value as unknown as AdditiveMeta; }
+function normalizeAdditives(value: unknown): EditorialAdditives | undefined {
+  if (!isRecord(value)) return undefined;
+  const result: EditorialAdditives = {};
+  const ledgerInput = isRecord(value.change_ledger) ? value.change_ledger : undefined;
+  const numberInput = isRecord(value.one_consequential_number) ? value.one_consequential_number : undefined;
+  const ledger = ledgerInput && normalizeAdditiveMeta(ledgerInput.meta) && ['before', 'now', 'significance'].every(key => typeof ledgerInput[key] === 'string' && String(ledgerInput[key]).trim()) ? ledgerInput as unknown as ChangeLedger : undefined;
+  const number = numberInput && normalizeAdditiveMeta(numberInput.meta) && ['value', 'unit', 'label', 'context', 'limitation'].every(key => typeof numberInput[key] === 'string' && String(numberInput[key]).trim()) ? numberInput as unknown as OneConsequentialNumber : undefined;
+  if (ledger && new Date(`${ledger.meta.expires_at}T23:59:59Z`).getTime() >= Date.now()) result.change_ledger = ledger;
+  if (number && new Date(`${number.meta.expires_at}T23:59:59Z`).getTime() >= Date.now()) result.one_consequential_number = number;
+  return result.change_ledger || result.one_consequential_number ? result : undefined;
+}
 
 export function normalizeStory(value: unknown): Story | null {
   if (!value || typeof value !== 'object') return null;
@@ -111,5 +128,9 @@ export function normalizeEdition(value: unknown): Edition | null {
   const input = value as Partial<Edition>;
   if (!Array.isArray(input.stories)) return null;
   const stories = input.stories.map(normalizeStory).filter((story): story is Story => Boolean(story));
-  return { edition: Number(input.edition || 0), run_id: String(input.run_id || 'fallback'), published_at: input.published_at, stories, ...(input.tool_focus ? { tool_focus: input.tool_focus } : {}), ...(input.cool_project_alert ? { cool_project_alert: input.cool_project_alert } : {}), ...(input.five_minute_experiment ? { five_minute_experiment: input.five_minute_experiment } : {}), ...(input.editorial_additives ? { editorial_additives: input.editorial_additives } : {}) };
+  const tool_focus = normalizeToolFocus(input.tool_focus);
+  const cool_project_alert = normalizeProject(input.cool_project_alert);
+  const five_minute_experiment = normalizeExperiment(input.five_minute_experiment);
+  const editorial_additives = normalizeAdditives(input.editorial_additives);
+  return { edition: Number(input.edition || 0), run_id: String(input.run_id || 'fallback'), published_at: input.published_at, stories, ...(tool_focus ? { tool_focus } : {}), ...(cool_project_alert ? { cool_project_alert } : {}), ...(five_minute_experiment ? { five_minute_experiment } : {}), ...(editorial_additives ? { editorial_additives } : {}) };
 }
