@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-18T09:06:13.803Z",
+  "generated_at": "2026-09-18T09:08:22.845Z",
   "documents": [
     {
       "event_id": "openai-misalignment-framework",
@@ -323,66 +323,6 @@
       ],
       "date": "2026-09-17",
       "edition": 186
-    },
-    {
-      "event_id": "openai-misalignment-framework",
-      "title": "OpenAI turns model misalignment reports into a standing disclosure system",
-      "source": "OPENAI",
-      "category": "policy",
-      "keywords": [
-        "policy",
-        "Safety"
-      ],
-      "date": "2026-09-17",
-      "edition": 185
-    },
-    {
-      "event_id": "anthropic-evaluation-boundary",
-      "title": "A sealed cyber test was not sealed: Anthropic finds three real-world incidents",
-      "source": "ANTHROPIC",
-      "category": "research",
-      "keywords": [
-        "research",
-        "Evaluation"
-      ],
-      "date": "2026-09-17",
-      "edition": 185
-    },
-    {
-      "event_id": "gpt-live-api",
-      "title": "Voice agents get a shorter path from listening to doing",
-      "source": "OPENAI",
-      "category": "product",
-      "keywords": [
-        "product",
-        "Voice agents"
-      ],
-      "date": "2026-09-17",
-      "edition": 185
-    },
-    {
-      "event_id": "ai-policy-window",
-      "title": "The frontier debate is becoming a pacing debate",
-      "source": "THE GUARDIAN",
-      "category": "policy",
-      "keywords": [
-        "policy",
-        "Governance"
-      ],
-      "date": "2026-09-17",
-      "edition": 185
-    },
-    {
-      "event_id": "gpt-live-finance",
-      "title": "OpenAI packages voice, agents, and finance as one enterprise bet",
-      "source": "OPENAI",
-      "category": "compute",
-      "keywords": [
-        "compute",
-        "Enterprise"
-      ],
-      "date": "2026-09-17",
-      "edition": 185
     }
   ]
 }

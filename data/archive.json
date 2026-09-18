@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-18T09:06:13.802Z",
+  "generated_at": "2026-09-18T09:08:22.843Z",
   "editions": [
     {
       "date": "2026-09-17",
@@ -282,73 +282,6 @@
           ]
         }
       ]
-    },
-    {
-      "date": "2026-09-17",
-      "edition": 185,
-      "run_id": "showcase-20260917",
-      "published_at": "2026-09-17T10:00:00.000Z",
-      "story_count": 5,
-      "stories": [
-        {
-          "event_id": "openai-misalignment-framework",
-          "title": "OpenAI turns model misalignment reports into a standing disclosure system",
-          "source": "OPENAI",
-          "category": "policy",
-          "keywords": [
-            "policy",
-            "Safety"
-          ]
-        },
-        {
-          "event_id": "anthropic-evaluation-boundary",
-          "title": "A sealed cyber test was not sealed: Anthropic finds three real-world incidents",
-          "source": "ANTHROPIC",
-          "category": "research",
-          "keywords": [
-            "research",
-            "Evaluation"
-          ]
-        },
-        {
-          "event_id": "gpt-live-api",
-          "title": "Voice agents get a shorter path from listening to doing",
-          "source": "OPENAI",
-          "category": "product",
-          "keywords": [
-            "product",
-            "Voice agents"
-          ]
-        },
-        {
-          "event_id": "ai-policy-window",
-          "title": "The frontier debate is becoming a pacing debate",
-          "source": "THE GUARDIAN",
-          "category": "policy",
-          "keywords": [
-            "policy",
-            "Governance"
-          ]
-        },
-        {
-          "event_id": "gpt-live-finance",
-          "title": "OpenAI packages voice, agents, and finance as one enterprise bet",
-          "source": "OPENAI",
-          "category": "compute",
-          "keywords": [
-            "compute",
-            "Enterprise"
-          ]
-        }
-      ]
-    },
-    {
-      "date": "2026-09-17",
-      "edition": 184,
-      "run_id": "202609170623",
-      "published_at": "2026-09-17T06:23:42.851Z",
-      "story_count": 0,
-      "stories": []
     }
   ]
 }

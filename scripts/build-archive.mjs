@@ -24,7 +24,7 @@ for (const file of files) {
     })),
   });
 }
-const unique = [...new Map(editions.map(item => [`${item.date}:${item.run_id}`, item])).values()].sort((a, b) => b.published_at.localeCompare(a.published_at));
+const unique = [...new Map(editions.map(item => [item.date, item])).values()].sort((a, b) => b.published_at.localeCompare(a.published_at));
 await writeFile(join(root, 'data', 'archive.json'), JSON.stringify({ schema_version: 1, generated_at: new Date().toISOString(), editions: unique }, null, 2) + '\n');
 await writeFile(join(root, 'data', 'search-index.json'), JSON.stringify({ schema_version: 1, generated_at: new Date().toISOString(), documents: unique.flatMap(edition => edition.stories.map(story => ({ ...story, date: edition.date, edition: edition.edition }))) }, null, 2) + '\n');
 console.log(`Indexed ${unique.length} editions and ${unique.reduce((sum, edition) => sum + edition.story_count, 0)} stories.`);
