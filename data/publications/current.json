@@ -1375,7 +1375,7 @@
     "schema_version": 2,
     "edition": 186,
     "run_id": "showcase-council-20260917",
-    "checksum": "f62284f98135473782e3edbec2a531c279bd388c0ecede5a0e30dcf07c381a2d",
+    "checksum": "81a4c57e783d6bd097986d0f67b87f5248fe3ef89933784e0978ab7852d08209",
     "published_at": "2026-09-17T12:00:00.000Z",
     "artifact": "publications/186-showcase-council-20260917.json"
   },
@@ -1394,7 +1394,8 @@
     "reality": "This showcase does not independently benchmark the API; pricing, access, and backend-model behavior should be checked before adoption.",
     "evidence_posture": "verified",
     "alternative": "Use a text-first workflow or a local speech stack when inspectability, cost, or data locality matters more than conversational smoothness.",
-    "image_url": "/images/gpt-live.jpg"
+    "image_url": "/images/gpt-live.jpg",
+    "related_signal_number": 3
   },
   "cool_project_alert": {
     "name": "nanochat",
@@ -1407,7 +1408,8 @@
     "project_health": "Public repository with a clear README and active community interest; verify latest commits, releases, and dependencies before relying on it.",
     "caveat": "A readable training stack is not automatically a production system. Hardware cost, reproducibility, license terms, and dependency security still need local review.",
     "verdict": "worth_watching",
-    "image_url": "/images/colibri-runtime.jpg"
+    "image_url": "/images/colibri-runtime.jpg",
+    "related_signal_number": 21
   },
   "five_minute_experiment": {
     "title": "Can you hear when an agent crosses a permission boundary?",

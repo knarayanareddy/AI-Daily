@@ -5,7 +5,7 @@ const assetUrl = (url: string) => url.startsWith('/') ? `${import.meta.env.BASE_
 
 export function ToolFocus({ tool }: Props) {
   return <section className="showcase-module tool-focus" aria-labelledby="toolFocusTitle">
-    <div className="showcase-module-kicker">FIELD TEST · TOOL FOCUS</div>
+    <div className="showcase-module-kicker">FIELD TEST · TOOL FOCUS {tool.related_signal_number && <span className="signal-reference">· RELATED SIGNAL {String(tool.related_signal_number).padStart(2, '0')}</span>}</div>
     <div className="showcase-module-grid">
       {tool.image_url && <img className="showcase-image" src={assetUrl(tool.image_url)} alt="" loading="lazy" />}
       <div><p className="showcase-verdict">{tool.evidence_posture.replace('_', ' ')}</p><h2 id="toolFocusTitle">{tool.name}</h2><p className="showcase-dek">{tool.what}</p><a className="showcase-link" href={tool.url} target="_blank" rel="noreferrer">Open the tool record ↗</a></div>

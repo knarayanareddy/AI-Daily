@@ -48,8 +48,8 @@ export type Story = {
   relationships?: Relationship[];
 };
 
-export type ToolFocus = { name: string; url: string; what: string; why_now: string; how_to_try: string[]; catch: string; rave: string; reality: string; evidence_posture: EvidencePosture; alternative: string; image_url?: string };
-export type CoolProjectAlert = { name: string; repository_url: string; maintainer: string; license: string; why_cool: string; why_useful: string; try_first: string; project_health: string; caveat: string; verdict: 'worth_trying_now' | 'worth_watching' | 'narrow_audience' | 'immature'; image_url?: string };
+export type ToolFocus = { name: string; url: string; what: string; why_now: string; how_to_try: string[]; catch: string; rave: string; reality: string; evidence_posture: EvidencePosture; alternative: string; image_url?: string; related_signal_number?: number };
+export type CoolProjectAlert = { name: string; repository_url: string; maintainer: string; license: string; why_cool: string; why_useful: string; try_first: string; project_health: string; caveat: string; verdict: 'worth_trying_now' | 'worth_watching' | 'narrow_audience' | 'immature'; image_url?: string; related_signal_number?: number };
 export type FiveMinuteExperiment = { title: string; premise: string; steps: string[]; observe: string; safety_note: string };
 
 export type Edition = {

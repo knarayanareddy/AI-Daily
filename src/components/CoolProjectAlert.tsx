@@ -6,7 +6,7 @@ const verdicts: Record<CoolProjectAlert['verdict'], string> = { worth_trying_now
 
 export function CoolProjectAlert({ project }: Props) {
   return <section className="showcase-module cool-project" aria-labelledby="projectAlertTitle">
-    <div className="showcase-module-kicker">BUILDER SIGNAL · COOL PROJECT ALERT</div>
+    <div className="showcase-module-kicker">BUILDER SIGNAL · COOL PROJECT ALERT {project.related_signal_number && <span className="signal-reference">· RELATED SIGNAL {String(project.related_signal_number).padStart(2, '0')}</span>}</div>
     <div className="showcase-module-grid">
       {project.image_url && <img className="showcase-image" src={assetUrl(project.image_url)} alt="" loading="lazy" />}
       <div><p className="showcase-verdict">{verdicts[project.verdict]}</p><h2 id="projectAlertTitle">{project.name}</h2><p className="showcase-dek">{project.why_cool}</p><p className="project-meta">Maintainer: {project.maintainer} · License: {project.license}</p><a className="showcase-link" href={project.repository_url} target="_blank" rel="noreferrer">Inspect the repository ↗</a></div>
