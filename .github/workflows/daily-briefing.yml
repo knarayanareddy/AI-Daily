@@ -1,0 +1,48 @@
+name: Collect daily briefing candidates
+
+on:
+  schedule:
+    # Run at 06:00 UTC every day; stagger if upstream providers have a busy window.
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: write
+
+jobs:
+  collect-review-publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      # The orchestrator always fails closed. Until a validated reviews artifact
+      # exists, it uploads a queue and leaves the last-known-good edition intact.
+      - name: Verify frontend release contract
+        run: npm ci && npm run build && npm run frontend:release-check && npm run frontend:device-check && npm run staging:check && npm run phase5:check
+      - name: Verify dependency and secret safety
+        run: npm audit --audit-level=high && npm run security:check && npm sbom --sbom-format cyclonedx > sbom.json
+      - name: Run orchestrated briefing pipeline
+        run: node workers/briefing/orchestrator.mjs
+        env:
+          ALERT_WEBHOOK_URL: ${{ secrets.ALERT_WEBHOOK_URL }}
+          ALERT_WEBHOOK_KIND: ${{ vars.ALERT_WEBHOOK_KIND || 'generic' }}
+          ALERT_MIN_SEVERITY: critical
+          EDITION_NUMBER: ${{ vars.EDITION_NUMBER }}
+          ENABLE_AUTONOMOUS_PUBLISH: 'false'
+      - name: Store review queue and candidates
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: briefing-run-${{ github.run_id }}
+          path: |
+            data/candidates.json
+            data/review-queue-*.json
+            data/health/last-run.json
+            data/health/history/*.json
+            data/health/sources/index.json
+            sbom.json
+          retention-days: 14

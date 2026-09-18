@@ -1,0 +1,50 @@
+name: Deploy AI Daily showcase to GitHub Pages
+
+on:
+  push:
+    branches: [arena/01a0ae06-ai-daily]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci --legacy-peer-deps
+      - run: npm run archive:build
+      - run: npm run build
+        env:
+          GITHUB_ACTIONS: true
+      - run: cp dist/index.html dist/404.html
+      - run: |
+          mkdir -p dist/data
+          cp -R data/editions data/publications dist/data/
+          cp data/news.json data/publication-manifest.json data/sources.json data/archive.json data/search-index.json dist/data/
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
+
+# Pages deployment is enabled through repository settings.
+# Phase 6 uses treatment-aware cards and the same canonical data artifact.

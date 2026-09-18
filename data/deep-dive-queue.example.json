@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "status": "candidate_only",
+  "deep_dive": {
+    "story_event_id": "existing-story-event-id",
+    "question": "What changed, and what does the evidence justify us concluding?",
+    "short_answer": "A bounded answer based only on the approved record.",
+    "sections": [
+      {"id": "record", "label": "The record", "body": "Primary record and independently checked facts.", "claim_ids": ["claim-1"]},
+      {"id": "pressure-test", "label": "The pressure test", "body": "Strongest supported limitation or alternative interpretation."},
+      {"id": "point-of-view", "label": "AI Daily analysis", "body": "Clearly labeled editorial judgment with a confidence level.", "confidence": "developing"}
+    ],
+    "expert_perspectives": [],
+    "what_would_change_our_mind": ["A new primary record or independently replicated result."],
+    "source_trail": [{"url": "https://example.com/primary-record", "tier": 1, "role": "primary_record", "retrieved_at": "2026-09-18T09:00:00Z"}]
+  }
+}
