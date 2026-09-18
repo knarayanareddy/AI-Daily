@@ -442,46 +442,48 @@
     "checksum": "b7f90a534e1978f695d4462a0db72b07123d45fe4b2a731ac4668ba4e0db65fa"
   },
   "tool_focus": {
-    "name": "OpenAI Evals",
-    "url": "https://github.com/openai/evals",
-    "what": "An open-source framework for evaluating model behavior with repeatable samples, graders, and evaluation runs.",
-    "why_now": "Today’s stories turn on whether safety and AI-led R&D claims can be measured rather than asserted.",
+    "name": "GPT-Live-1 in the API",
+    "url": "https://openai.com/index/introducing-gpt-live-1-in-the-api/",
+    "what": "A full-duplex voice model for building agents that can listen, speak, handle interruptions, and delegate deeper work to backend models.",
+    "why_now": "Voice agents are moving from turn-taking chat to systems that stay present while actions happen in the background.",
     "how_to_try": [
-      "Choose three harmless, synthetic test cases for one behavior.",
-      "Write a simple pass-fail rubric before running the model.",
-      "Run the cases twice and inspect every grader decision instead of trusting one aggregate score."
+      "Read the API announcement and inspect the delegation model.",
+      "Prototype one narrow voice workflow with a non-sensitive task.",
+      "Log interruptions, tool calls, latency, and where a human would need confirmation."
     ],
-    "catch": "A benchmark can measure only the behavior and rubric you chose; it cannot establish general safety by itself.",
-    "rave": "It makes a vague model claim easier to turn into an inspectable experiment.",
-    "reality": "The repository and evaluation dependencies require local review before use in a production pipeline.",
+    "catch": "It adds a more natural interface to a harder permission problem: users may not notice what the system is doing between turns.",
+    "rave": "Natural interruption handling and a simpler voice layer.",
+    "reality": "This showcase does not independently benchmark the API; pricing, access, and backend-model behavior should be checked before adoption.",
     "evidence_posture": "verified",
-    "alternative": "Use a small local JSONL test and a human rubric when adding a framework would be heavier than the question.",
+    "alternative": "Use a text-first workflow or a local speech stack when inspectability, cost, or data locality matters more than conversational smoothness.",
+    "image_url": "/images/gpt-live.jpg",
     "related_signal_number": 3
   },
   "cool_project_alert": {
-    "name": "SafeAgent runtime protection research",
-    "repository_url": "https://arxiv.org/abs/2604.17562",
-    "maintainer": "Hailin Liu, Eugene Ilyushin, Jie Ni, Min Zhu",
-    "license": "Research paper; check any linked implementation separately",
-    "why_cool": "It treats agent safety as a stateful runtime-control problem across tool calls, persistent context, and recovery rather than only filtering the final answer.",
-    "why_useful": "It gives builders a concrete architecture question: where should policy, action mediation, and recovery live in an agent loop?",
-    "try_first": "Read the architecture and evaluation sections; map its controller and decision core onto one harmless internal workflow.",
-    "project_health": "A current research preprint with a clearly described method and evaluation setup; not a production guarantee.",
-    "caveat": "Reported benchmark improvements do not establish safety in every deployment, tool, or threat model.",
+    "name": "nanochat",
+    "repository_url": "https://github.com/karpathy/nanochat",
+    "maintainer": "Andrej Karpathy",
+    "license": "See repository license",
+    "why_cool": "A compact, readable project that makes the path from tokenizer and training loop to a small language model easier to inspect than a production-scale stack.",
+    "why_useful": "It is useful as a learning and experimentation surface for people who want to understand the moving parts of language-model training rather than only call an API.",
+    "try_first": "Read the README and run the smallest documented example in an isolated environment.",
+    "project_health": "Public repository with a clear README and active community interest; verify latest commits, releases, and dependencies before relying on it.",
+    "caveat": "A readable training stack is not automatically a production system. Hardware cost, reproducibility, license terms, and dependency security still need local review.",
     "verdict": "worth_watching",
-    "related_signal_number": 10
+    "image_url": "/images/colibri-runtime.jpg",
+    "related_signal_number": 21
   },
   "five_minute_experiment": {
-    "title": "Does retrieval change the model’s safety posture?",
-    "premise": "A tiny, harmless before-and-after test can reveal whether adding context changes answer quality, certainty, or instruction-following. It is a usability observation, not a safety certification.",
+    "title": "Can you hear when an agent crosses a permission boundary?",
+    "premise": "Use one ordinary task to compare a fast conversational interface with a slower, explicit approval flow. The point is not to rank products; it is to notice where convenience hides action.",
     "steps": [
-      "Write three benign questions with known answers.",
-      "Ask each once with no context and once with a short synthetic, answer-free note.",
-      "Record accuracy, uncertainty, and whether the model treats the note as data or instruction.",
-      "Keep the notes and outputs; do not use private or production data."
+      "Choose a harmless task that uses no private data.",
+      "Write down the actions you expect the system to take before starting.",
+      "Run the task with an explicit confirmation before each external action.",
+      "Run it again with conversational handoffs and note what is less visible."
     ],
-    "observe": "Did context improve the answer, make it more confident, or introduce a new instruction-following error?",
-    "safety_note": "Use harmless synthetic material only, no tools, no credentials, and no harmful prompts."
+    "observe": "Which handoffs, tool calls, or assumptions became harder to notice? Which version would you trust a colleague to use unsupervised?",
+    "safety_note": "Use dummy data, do not connect accounts, do not grant write access, and stop if a tool asks for credentials or an irreversible action."
   },
   "editorial_additives": {
     "change_ledger": {
@@ -499,9 +501,9 @@
         "correction_path": "Append corrections against the dated edition and preserve the original source trail.",
         "expires_at": "2026-09-19"
       },
-      "before": "Yesterday’s edition covered incident disclosure, evaluation boundaries, and fast-moving product deployment, but it did not yet have a public measurement story for AI-assisted R&D or a dedicated retrieval-safety test.",
-      "now": "Today’s record adds Anthropic’s company-reported AI-led R&D metrics, a new retrieval-safety benchmark, runtime protection research, and concrete verification or access programs from OpenAI and Anthropic.",
-      "significance": "The story is moving from capability announcements toward the measurement, permissioning, and runtime controls that determine whether those capabilities can be trusted."
+      "before": "Yesterday’s edition had an incident framework and a warning that AI-assisted development was accelerating, but the public metrics were still mostly qualitative.",
+      "now": "OpenAI has published a fuller incident account; Anthropic has proposed measurable AI-led R&D and verification programs; public-sector, newsroom, and cyber-defender access initiatives show deployment moving into institutions; current research adds retrieval and runtime controls as separate safety surfaces.",
+      "significance": "The day’s through-line is governance around capability: who gets access, under what verification, with what evidence and recovery path."
     },
     "one_consequential_number": {
       "meta": {
@@ -523,141 +525,65 @@
       "context": "Anthropic reports that Claude led 26% of its measured AI research and development work in August, up from under 1% in February; it reports no measured work as fully autonomous. This is a company-reported snapshot, not an audited industry benchmark.",
       "limitation": "The index is company-authored, sampled, and partly constructed with AI-assisted classification; independent replication has not yet been published."
     },
-    "deep_dive": {
+    "tool_focus": {
       "meta": {
-        "format": "deep_dive",
-        "why_here": "The edition’s most consequential new question is how a lab can measure AI helping to build AI without turning a company snapshot into an industry fact.",
+        "format": "tool_focus",
+        "why_here": "A bounded, inspectable tool for today’s workflow.",
         "source_urls": [
-          "https://www.anthropic.com/institute/measuring-the-pace-of-ai-development",
-          "https://arxiv.org/abs/2609.11758"
+          "https://github.com/openai/openai-cookbook"
+        ],
+        "evidence_posture": "verified",
+        "editorial_owner": "AI Daily evidence desk",
+        "moderation_owner": "AI Daily editor",
+        "safety_note": "Use read-only or sandboxed inputs; do not connect production credentials.",
+        "correction_path": "Correct the link or instructions in the next dated edition.",
+        "expires_at": "2026-09-19"
+      },
+      "name": "OpenAI Evals",
+      "why_today": "Use an evaluation harness to turn a claim about model behavior into a repeatable test instead of a one-off prompt.",
+      "safe_start": "Run a tiny local rubric against synthetic, non-sensitive examples and inspect every grader decision."
+    },
+    "cool_project_highlight": {
+      "meta": {
+        "format": "cool_project_highlight",
+        "why_here": "A concrete public-interest project with a visible human role.",
+        "source_urls": [
+          "https://openai.com/index/supporting-independent-journalism-in-ukraine/"
         ],
         "evidence_posture": "developing",
-        "editorial_owner": "AI Daily editor",
-        "moderation_owner": "AI Daily evidence desk",
-        "safety_note": "This analysis discusses measurement and evaluation, not autonomous deployment instructions.",
-        "correction_path": "Append corrections to the dated edition and Evidence Desk.",
-        "expires_at": "2026-09-19",
-        "selection_score": 4.2,
-        "selection_reason": "High consequence, explicit public measurement, and an unresolved comparability question"
+        "editorial_owner": "AI Daily evidence desk",
+        "moderation_owner": "AI Daily editor",
+        "safety_note": "The program is described by its partners; outcomes are not yet independently measured.",
+        "correction_path": "Update when participating newsrooms publish results.",
+        "expires_at": "2026-10-01"
       },
-      "story_event_id": "anthropic-rd-automation-metrics",
-      "question": "What does it mean when an AI lab measures AI doing part of its own research? ",
-      "short_answer": "The important shift is not the 26% figure alone; it is the move toward making recursive development measurable while the measurement remains a company-authored snapshot.",
-      "sections": [
-        {
-          "id": "record",
-          "label": "The record",
-          "body": "Anthropic reports that Claude led 26% of its measured AI research and development work in August, up from under 1% in February. It also reports approximately 30,000 concurrent research agents and says no measured category was fully autonomous. These are company-reported measurements, not an independently audited industry index.",
-          "claim_ids": [
-            "anthropic-claim-1"
-          ],
-          "confidence": "developing"
-        },
-        {
-          "id": "pressure-test",
-          "label": "The pressure test",
-          "body": "The useful question is whether another lab could reproduce the method and reach comparable results. Anthropic’s measurement is informative because it names a unit of work and a time window, but the company’s own systems and AI-assisted classification help construct the index. That makes methodology disclosure and independent replication more important than the headline percentage.",
-          "claim_ids": [
-            "anthropic-claim-2"
-          ],
-          "confidence": "developing"
-        },
-        {
-          "id": "point-of-view",
-          "label": "AI Daily analysis",
-          "body": "Our read is that the measurement is more valuable as a governance prototype than as a scorecard. It gives outsiders a vocabulary for asking how much responsibility is moving from researchers to systems, but it should not be treated as evidence that autonomous R&D is already established.",
-          "confidence": "developing"
-        },
-        {
-          "id": "watch-next",
-          "label": "Watch next",
-          "body": "Look for the task taxonomy, sampling method, independent replication, and comparable disclosures from other labs. Those details will determine whether the number can support public accountability or remains an internal progress narrative.",
-          "confidence": "developing"
-        }
-      ],
-      "expert_perspectives": [],
-      "what_would_change_our_mind": [
-        "A public methodology with reproducible sampling and independent replication.",
-        "Comparable disclosures from another frontier lab using the same definitions."
-      ],
-      "source_trail": [
-        {
-          "url": "https://www.anthropic.com/institute/measuring-the-pace-of-ai-development",
-          "tier": 1,
-          "role": "primary_record",
-          "retrieved_at": "2026-09-18T09:00:00Z"
-        },
-        {
-          "url": "https://arxiv.org/abs/2609.11758",
-          "tier": 1,
-          "role": "related_research_context",
-          "retrieved_at": "2026-09-18T09:00:00Z"
-        }
-      ],
-      "audio": {
-        "status": "not_produced",
-        "transcript_required": true
+      "name": "Newsroom AI Catalyst",
+      "what_it_is": "A program supporting ten Ukrainian news organizations with practical AI pilots and implementation roadmaps.",
+      "why_it_is_interesting": "It treats AI adoption as newsroom infrastructure and capacity-building, not automated editorial substitution.",
+      "watch_for": "Published outcomes, editorial safeguards, and whether the participating teams retain control over publication decisions."
+    },
+    "five_minute_experiment": {
+      "meta": {
+        "format": "five_minute_experiment",
+        "why_here": "A safe, reversible way to test whether retrieval changes model behavior.",
+        "source_urls": [
+          "https://arxiv.org/abs/2609.11758"
+        ],
+        "evidence_posture": "verified",
+        "editorial_owner": "AI Daily evidence desk",
+        "moderation_owner": "AI Daily editor",
+        "safety_note": "Use harmless prompts and synthetic documents only; do not probe harmful content.",
+        "correction_path": "Revise if the cited benchmark changes.",
+        "expires_at": "2026-09-19"
       },
-      "visuals": [
-        {
-          "kind": "stat",
-          "title": "Claude-led R&D",
-          "value": "26%",
-          "unit": "of measured work",
-          "label": "Anthropic’s August snapshot",
-          "description": "Reported share of measured AI research and development work led by Claude; company-reported and not independently audited.",
-          "source_url": "https://www.anthropic.com/institute/measuring-the-pace-of-ai-development",
-          "source_label": "Anthropic Institute"
-        },
-        {
-          "kind": "stat",
-          "title": "Concurrent research agents",
-          "value": "~30,000",
-          "unit": "agents",
-          "label": "Anthropic’s reported active platform scale",
-          "description": "A reported concurrent-agent figure that needs a clear denominator and methodology before cross-lab comparison.",
-          "source_url": "https://www.anthropic.com/institute/measuring-the-pace-of-ai-development",
-          "source_label": "Anthropic Institute"
-        },
-        {
-          "kind": "stat",
-          "title": "Safety-compute allocation",
-          "value": "6%",
-          "unit": "of AI R&D compute",
-          "label": "Anthropic’s sampled safety-work allocation",
-          "description": "A company-reported snapshot of compute allocated to safety work; it is not a measure of safety quality or outcome.",
-          "source_url": "https://www.anthropic.com/institute/measuring-the-pace-of-ai-development",
-          "source_label": "Anthropic Institute"
-        },
-        {
-          "kind": "bar",
-          "title": "A steep reported climb",
-          "value": "26%",
-          "unit": "August",
-          "label": "Claude-led measured R&D: under 1% in February → 26% in August",
-          "description": "The visual emphasizes the reported change over time; the underlying task definition and sample remain essential context.",
-          "bar_value": 26,
-          "bar_max": 30,
-          "source_url": "https://www.anthropic.com/institute/measuring-the-pace-of-ai-development",
-          "source_label": "Anthropic Institute"
-        }
+      "title": "Compare answer quality with and without context",
+      "steps": [
+        "Write three benign questions with known answers.",
+        "Ask your model once without documents and once with one relevant synthetic note.",
+        "Record answer accuracy, uncertainty, and whether the model treats the note as instruction.",
+        "Keep the note and outputs; do not send private or production data."
       ],
-      "snippets": [
-        {
-          "label": "Measurement frame",
-          "text": "The R&D Automation Index measures how much responsibility AI assumes during research and development.",
-          "source_url": "https://www.anthropic.com/institute/measuring-the-pace-of-ai-development",
-          "source_label": "Anthropic Institute",
-          "context": "Primary description of the metric"
-        },
-        {
-          "label": "Important limit",
-          "text": "Claude has not yet achieved full autonomy in any measured R&D task.",
-          "source_url": "https://www.anthropic.com/institute/measuring-the-pace-of-ai-development",
-          "source_label": "Anthropic Institute",
-          "context": "Primary limitation stated by the lab"
-        }
-      ]
+      "success_criterion": "You finish with a small before/after record, not a claim that five minutes proves system safety."
     }
   }
 }

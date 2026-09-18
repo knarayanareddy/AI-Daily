@@ -24,7 +24,7 @@ function treatmentCopy(story: Story) {
     before_after: { labels: ['Before', 'The intervention', 'What moved elsewhere'] },
     source_trail: { labels: ['Primary record', 'What reporting adds', 'Editorial decision'] },
   };
-  return { ...common, labels: copy[treatment].labels };
+  return { ...common, labels: (copy[treatment] || copy.dispatch).labels };
 }
 
 export function StoryCard({ story, index, onOpenEvidence }: Props) {
@@ -33,9 +33,9 @@ export function StoryCard({ story, index, onOpenEvidence }: Props) {
   const treatment = story.presentation?.treatment || 'dispatch';
   const copy = treatmentCopy(story);
   const action = story.presentation?.reader_action || 'inspect';
-  return <article className={`story signal-ticket posture-${posture} treatment-${treatment}`} aria-labelledby={`story-${index}-title`}>
+  return <article className={`story signal-ticket posture-${posture} treatment-${treatment} priority-${story.presentation?.display_priority || 'standard'}`} aria-labelledby={`story-${index}-title`}>
     <div className="story-number" aria-hidden="true">{String(index + 1).padStart(2, '0')}</div>
-    <div className="signal-ticket-body">{story.image_url && <img className="story-image" src={assetUrl(story.image_url)} alt="" loading="lazy" />}
+    <div className="signal-ticket-body">{story.image_url && <img className="story-image" src={assetUrl(story.image_url)} alt={`Editorial illustration for ${story.title}`} loading="lazy" decoding="async" />}
       <div className="signal-ticket-kicker"><span className="story-treatment">{treatmentLabels[treatment]}</span><span className="signal-posture" data-posture={posture}>{postureLabels[posture]}</span><span>{story.tag || story.category}</span><span>{story.time || 'Today'}</span></div>
       <h3 id={`story-${index}-title`}>{story.title}</h3>
       <div className="signal-facts treatment-facts">

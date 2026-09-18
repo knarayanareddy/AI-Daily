@@ -54,7 +54,13 @@ export type FiveMinuteExperiment = { title: string; premise: string; steps: stri
 export type AdditiveMeta = { format: string; why_here: string; source_urls: string[]; evidence_posture: EvidencePosture; editorial_owner: string; moderation_owner: string; safety_note: string; correction_path: string; expires_at: string };
 export type ChangeLedger = { meta: AdditiveMeta; before: string; now: string; significance: string };
 export type OneConsequentialNumber = { meta: AdditiveMeta; value: string; unit: string; label: string; context: string; limitation: string };
-export type EditorialAdditives = { change_ledger?: ChangeLedger; one_consequential_number?: OneConsequentialNumber };
+export type DeepDiveSection = { id: string; label: string; body: string; claim_ids?: string[]; confidence?: EvidencePosture };
+export type DeepDiveVisual = { kind: 'stat' | 'bar' | 'timeline' | 'image'; title: string; value?: string; unit?: string; label: string; description: string; source_url: string; source_label: string; bar_value?: number; bar_max?: number; image_url?: string; alt?: string };
+export type DeepDiveSnippet = { label: string; text: string; source_url: string; source_label: string; context: string };
+export type DeepDiveExpert = { name: string; role: string; platform: string; profile_url: string; post_url?: string; retrieved_at: string; perspective_type: string; relevance: string; conflicts: string; verification: string; quote?: string | null; paraphrase?: string; evidence_urls: string[] };
+export type DeepDiveSource = { url: string; tier: number; role: string; retrieved_at: string };
+export type DeepDive = { meta: AdditiveMeta & { selection_score?: number; selection_reason?: string }; story_event_id: string; question: string; short_answer: string; sections: DeepDiveSection[]; visuals?: DeepDiveVisual[]; snippets?: DeepDiveSnippet[]; expert_perspectives: DeepDiveExpert[]; what_would_change_our_mind: string[]; source_trail: DeepDiveSource[]; audio?: { status: string; transcript_required: boolean } };
+export type EditorialAdditives = { change_ledger?: ChangeLedger; one_consequential_number?: OneConsequentialNumber; deep_dive?: DeepDive };
 
 export type Edition = {
   edition: number;
@@ -92,16 +98,30 @@ function normalizeToolFocus(value: unknown): ToolFocus | undefined { if (!isReco
 function normalizeProject(value: unknown): CoolProjectAlert | undefined { if (!isRecord(value) || !isSafeHttpsUrl(value.repository_url) || !['name','maintainer','license','why_cool','why_useful','try_first','project_health','caveat'].every(key => typeof value[key] === 'string' && String(value[key]).trim()) || !['worth_trying_now','worth_watching','narrow_audience','immature'].includes(String(value.verdict))) return undefined; return value as unknown as CoolProjectAlert; }
 function normalizeExperiment(value: unknown): FiveMinuteExperiment | undefined { if (!isRecord(value) || !['title','premise','observe','safety_note'].every(key => typeof value[key] === 'string' && String(value[key]).trim()) || !strings(value.steps, 1)) return undefined; return value as unknown as FiveMinuteExperiment; }
 function normalizeAdditiveMeta(value: unknown): AdditiveMeta | undefined { if (!isRecord(value) || !strings(value.source_urls, 1) || !(value.source_urls as unknown[]).every(isSafeHttpsUrl) || !evidencePostures.has(value.evidence_posture as EvidencePosture) || !/^\d{4}-\d{2}-\d{2}$/.test(String(value.expires_at)) || !['format','why_here','editorial_owner','moderation_owner','safety_note','correction_path'].every(key => typeof value[key] === 'string' && String(value[key]).trim())) return undefined; return value as unknown as AdditiveMeta; }
+function normalizeDeepDive(value: unknown): DeepDive | undefined {
+  if (!isRecord(value) || typeof value.story_event_id !== 'string' || typeof value.question !== 'string' || typeof value.short_answer !== 'string' || !isRecord(value.meta)) return undefined;
+  const meta = normalizeAdditiveMeta(value.meta);
+  const sections = Array.isArray(value.sections) ? value.sections.filter(item => isRecord(item) && typeof item.id === 'string' && typeof item.label === 'string' && typeof item.body === 'string').map(item => ({ id: String(item.id), label: String(item.label), body: String(item.body), claim_ids: Array.isArray(item.claim_ids) ? item.claim_ids.filter((id: unknown) => typeof id === 'string') : [], confidence: evidencePostures.has(item.confidence as EvidencePosture) ? item.confidence as EvidencePosture : undefined })) : [];
+  const visuals = Array.isArray(value.visuals) ? value.visuals.filter(item => isRecord(item) && ['stat','bar','timeline','image'].includes(String(item.kind)) && typeof item.title === 'string' && typeof item.label === 'string' && typeof item.description === 'string' && isSafeHttpsUrl(item.source_url) && typeof item.source_label === 'string').map(item => item as unknown as DeepDiveVisual) : [];
+  const snippets = Array.isArray(value.snippets) ? value.snippets.filter(item => isRecord(item) && typeof item.label === 'string' && typeof item.text === 'string' && item.text.length <= 500 && isSafeHttpsUrl(item.source_url) && typeof item.source_label === 'string' && typeof item.context === 'string').map(item => item as unknown as DeepDiveSnippet) : [];
+  const experts = Array.isArray(value.expert_perspectives) ? value.expert_perspectives.filter(item => isRecord(item) && typeof item.name === 'string' && typeof item.role === 'string' && typeof item.platform === 'string' && isSafeHttpsUrl(item.profile_url) && typeof item.retrieved_at === 'string' && typeof item.perspective_type === 'string' && typeof item.relevance === 'string' && typeof item.conflicts === 'string' && typeof item.verification === 'string' && Array.isArray(item.evidence_urls) && item.evidence_urls.every(isSafeHttpsUrl)).map(item => item as unknown as DeepDiveExpert) : [];
+  const sources = Array.isArray(value.source_trail) ? value.source_trail.filter(item => isRecord(item) && isSafeHttpsUrl(item.url) && Number.isInteger(item.tier) && typeof item.role === 'string' && typeof item.retrieved_at === 'string').map(item => item as unknown as DeepDiveSource) : [];
+  const changed = Array.isArray(value.what_would_change_our_mind) ? value.what_would_change_our_mind.filter(item => typeof item === 'string' && item.trim()) : [];
+  if (!meta || sections.length < 3 || experts.length > 4 || sources.length < 1 || changed.length < 1) return undefined;
+  return { ...(value as unknown as DeepDive), meta: meta as DeepDive['meta'], sections, visuals, snippets, expert_perspectives: experts, source_trail: sources, what_would_change_our_mind: changed };
+}
 function normalizeAdditives(value: unknown): EditorialAdditives | undefined {
   if (!isRecord(value)) return undefined;
   const result: EditorialAdditives = {};
+  const deepDive = normalizeDeepDive(value.deep_dive);
   const ledgerInput = isRecord(value.change_ledger) ? value.change_ledger : undefined;
   const numberInput = isRecord(value.one_consequential_number) ? value.one_consequential_number : undefined;
   const ledger = ledgerInput && normalizeAdditiveMeta(ledgerInput.meta) && ['before', 'now', 'significance'].every(key => typeof ledgerInput[key] === 'string' && String(ledgerInput[key]).trim()) ? ledgerInput as unknown as ChangeLedger : undefined;
   const number = numberInput && normalizeAdditiveMeta(numberInput.meta) && ['value', 'unit', 'label', 'context', 'limitation'].every(key => typeof numberInput[key] === 'string' && String(numberInput[key]).trim()) ? numberInput as unknown as OneConsequentialNumber : undefined;
   if (ledger && new Date(`${ledger.meta.expires_at}T23:59:59Z`).getTime() >= Date.now()) result.change_ledger = ledger;
   if (number && new Date(`${number.meta.expires_at}T23:59:59Z`).getTime() >= Date.now()) result.one_consequential_number = number;
-  return result.change_ledger || result.one_consequential_number ? result : undefined;
+  if (deepDive && new Date(`${deepDive.meta.expires_at}T23:59:59Z`).getTime() >= Date.now()) result.deep_dive = deepDive;
+  return result.change_ledger || result.one_consequential_number || result.deep_dive ? result : undefined;
 }
 
 export function normalizeStory(value: unknown): Story | null {
