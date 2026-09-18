@@ -5,7 +5,7 @@ const assetUrl = (url: string) => url.startsWith('/') ? `${import.meta.env.BASE_
 const verdicts: Record<CoolProjectAlert['verdict'], string> = { worth_trying_now: 'Worth trying now', worth_watching: 'Worth watching', narrow_audience: 'Useful for a narrow audience', immature: 'Interesting but immature' };
 
 export function CoolProjectAlert({ project }: Props) {
-  return <section className="showcase-module cool-project" aria-labelledby="projectAlertTitle">
+  return <section className="showcase-module cool-project" id="cool-project" aria-labelledby="projectAlertTitle">
     <div className="showcase-module-kicker">BUILDER SIGNAL · COOL PROJECT ALERT {project.related_signal_number && <span className="signal-reference">· RELATED SIGNAL {String(project.related_signal_number).padStart(2, '0')}</span>}</div>
     <div className="showcase-module-grid">
       {project.image_url && <img className="showcase-image" src={assetUrl(project.image_url)} alt="" loading="lazy" />}

@@ -4,7 +4,7 @@ type Props = { tool: ToolFocus };
 const assetUrl = (url: string) => url.startsWith('/') ? `${import.meta.env.BASE_URL}${url.slice(1)}` : url;
 
 export function ToolFocus({ tool }: Props) {
-  return <section className="showcase-module tool-focus" aria-labelledby="toolFocusTitle">
+  return <section className="showcase-module tool-focus" id="tool-focus" aria-labelledby="toolFocusTitle">
     <div className="showcase-module-kicker">FIELD TEST · TOOL FOCUS {tool.related_signal_number && <span className="signal-reference">· RELATED SIGNAL {String(tool.related_signal_number).padStart(2, '0')}</span>}</div>
     <div className="showcase-module-grid">
       {tool.image_url && <img className="showcase-image" src={assetUrl(tool.image_url)} alt="" loading="lazy" />}

@@ -115,6 +115,20 @@ Deploy the Phase 6 showcase artifact and review the rhythm of the 25-story issue
 - Add a text-first Source Trail interaction and one restrained prediction/compare interaction.
 - Test whether treatment variation improves comprehension without increasing cognitive load.
 
+## Phase 6 follow-up — additive discoverability and rotation
+
+### Completed
+
+- Recorded the second council review and research-backed failure analysis in `docs/COUNCIL_REVIEW_DISCOVERABILITY.md`.
+- Added a visible, plain-language `ON THIS EDITION` guide above the optional modules.
+- Added direct links for 25 Signals, Tool Focus, Cool Project, Five-Minute Experiment, and Evidence Desk.
+- Added stable section anchors and responsive visible link affordances.
+- Recorded a rotation policy and source, moderation, privacy, safety, expiry, and correction requirements for future additives.
+
+### Validation status
+
+Build and automated tests are pending for this follow-up. Public deployment verification is intentionally not claimed until those checks pass.
+
 ## Rebuild rule
 
 Only one phase advances at a time. After each phase, update this file with:

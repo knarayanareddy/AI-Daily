@@ -28,6 +28,9 @@ describe('App shell', () => {
     render(<App />);
     await waitFor(() => expect(screen.getByRole('main')).toBeInTheDocument());
     expect(screen.getByRole('link', { name: /skip to briefing/i })).toHaveAttribute('href', '#briefing');
+    expect(screen.getByRole('navigation', { name: /on this edition/i })).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: '25 Signals' })).toHaveAttribute('href', '#briefing');
+    expect(screen.getByRole('link', { name: 'Evidence Desk' })).toHaveAttribute('href', '#method');
     expect(screen.getByRole('navigation', { name: /footer navigation/i })).toBeInTheDocument();
     expect(screen.getByRole('link', { name: 'RSS' })).toHaveAttribute('href', '/rss.xml');
     expect(screen.getByRole('link', { name: 'Sitemap' })).toHaveAttribute('href', '/sitemap.xml');
