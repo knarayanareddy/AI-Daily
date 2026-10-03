@@ -1,7 +1,116 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-02T14:16:43.000Z",
+  "generated_at": "2026-10-03T13:02:01.000Z",
   "editions": [
+    {
+      "date": "2026-10-03",
+      "edition": 193,
+      "run_id": "daily-curation-20261003",
+      "published_at": "2026-10-03T12:00:00.000Z",
+      "story_count": 10,
+      "stories": [
+        {
+          "event_id": "openai-misalignment-disclosure-update",
+          "title": "OpenAI expands its misalignment disclosure into an incident record",
+          "source": "OPENAI",
+          "category": "policy",
+          "keywords": [
+            "Safety",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-rd-automation-metrics",
+          "title": "Anthropic puts numbers on AI helping build AI",
+          "source": "ANTHROPIC INSTITUTE",
+          "category": "research",
+          "keywords": [
+            "Research loops",
+            "research"
+          ]
+        },
+        {
+          "event_id": "openai-government-access",
+          "title": "OpenAI widens subsidized AI access to state and local defenders",
+          "source": "OPENAI",
+          "category": "policy",
+          "keywords": [
+            "AI Daily",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-life-sciences-verification",
+          "title": "Anthropic creates a verification lane for life-science users",
+          "source": "ANTHROPIC",
+          "category": "policy",
+          "keywords": [
+            "AI Daily",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-misuse-report-september",
+          "title": "Anthropic says misuse monitoring is becoming an operating discipline",
+          "source": "ANTHROPIC",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-daybreak-frontline",
+          "title": "OpenAI commits subsidized cyber-AI support for frontline defenders",
+          "source": "OPENAI",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-ukraine-journalism",
+          "title": "A newsroom AI program tests whether access can strengthen independent reporting",
+          "source": "OPENAI · WAN-IFRA · AIRPPU",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-devday-2026",
+          "title": "DevDay 2026 is now a date on the developer calendar",
+          "source": "OPENAI",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "safeagent-runtime-protection",
+          "title": "A runtime controller treats agent safety as a state problem",
+          "source": "ARXIV",
+          "category": "research",
+          "keywords": [
+            "AI Daily",
+            "research"
+          ]
+        },
+        {
+          "event_id": "rag-safety-bench",
+          "title": "RAG safety tests ask whether helpful context can weaken a refusal",
+          "source": "ARXIV · EMNLP 2026",
+          "category": "research",
+          "keywords": [
+            "Safety",
+            "research"
+          ]
+        }
+      ]
+    },
     {
       "date": "2026-10-02",
       "edition": 192,
