@@ -1,7 +1,266 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-07T14:37:38.000Z",
+  "generated_at": "2026-10-08T14:39:10.000Z",
   "editions": [
+    {
+      "date": "2026-10-08",
+      "edition": 198,
+      "run_id": "daily-curation-20261008",
+      "published_at": "2026-10-08T12:00:00.000Z",
+      "story_count": 25,
+      "stories": [
+        {
+          "event_id": "openai-misalignment-disclosure-update",
+          "title": "OpenAI expands its misalignment disclosure into an incident record",
+          "source": "OPENAI",
+          "category": "policy",
+          "keywords": [
+            "Safety",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-rd-automation-metrics",
+          "title": "Anthropic puts numbers on AI helping build AI",
+          "source": "ANTHROPIC INSTITUTE",
+          "category": "research",
+          "keywords": [
+            "Research loops",
+            "research"
+          ]
+        },
+        {
+          "event_id": "openai-government-access",
+          "title": "OpenAI widens subsidized AI access to state and local defenders",
+          "source": "OPENAI",
+          "category": "policy",
+          "keywords": [
+            "AI Daily",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-life-sciences-verification",
+          "title": "Anthropic creates a verification lane for life-science users",
+          "source": "ANTHROPIC",
+          "category": "policy",
+          "keywords": [
+            "AI Daily",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-misuse-report-september",
+          "title": "Anthropic says misuse monitoring is becoming an operating discipline",
+          "source": "ANTHROPIC",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-daybreak-frontline",
+          "title": "OpenAI commits subsidized cyber-AI support for frontline defenders",
+          "source": "OPENAI",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-ukraine-journalism",
+          "title": "A newsroom AI program tests whether access can strengthen independent reporting",
+          "source": "OPENAI · WAN-IFRA · AIRPPU",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-devday-2026",
+          "title": "DevDay 2026 is now a date on the developer calendar",
+          "source": "OPENAI",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "safeagent-runtime-protection",
+          "title": "A runtime controller treats agent safety as a state problem",
+          "source": "ARXIV",
+          "category": "research",
+          "keywords": [
+            "AI Daily",
+            "research"
+          ]
+        },
+        {
+          "event_id": "rag-safety-bench",
+          "title": "RAG safety tests ask whether helpful context can weaken a refusal",
+          "source": "ARXIV · EMNLP 2026",
+          "category": "research",
+          "keywords": [
+            "Safety",
+            "research"
+          ]
+        },
+        {
+          "event_id": "google-developer-blog-google-releases-gemma-2-2b",
+          "title": "Google Releases Gemma 2 2B",
+          "source": "GOOGLE DEVELOPER BLOG",
+          "category": "open-weights",
+          "keywords": [
+            "Gemma 2",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "openai-developer-blog-openai-launches-structured-outputs-in-the-api",
+          "title": "OpenAI Launches Structured Outputs in the API",
+          "source": "OPENAI DEVELOPER BLOG",
+          "category": "product",
+          "keywords": [
+            "OpenAI API",
+            "product"
+          ]
+        },
+        {
+          "event_id": "groq-press-release-groq-secures-640m-series-d-funding",
+          "title": "Groq Secures $640M Series D Funding",
+          "source": "GROQ PRESS RELEASE",
+          "category": "infra",
+          "keywords": [
+            "AI Chips",
+            "infra"
+          ]
+        },
+        {
+          "event_id": "llamaindex-blog-llamaindex-introduces-llamaparse-premium-tier",
+          "title": "LlamaIndex Introduces LlamaParse Premium Tier",
+          "source": "LLAMAINDEX BLOG",
+          "category": "agents",
+          "keywords": [
+            "RAG",
+            "agents"
+          ]
+        },
+        {
+          "event_id": "mistral-ai-blog-mistral-ai-releases-mistral-large-2",
+          "title": "Mistral AI Releases Mistral Large 2",
+          "source": "MISTRAL AI BLOG",
+          "category": "open-weights",
+          "keywords": [
+            "Mistral",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "google-deepmind-deepmind-s-alphaproof-and-alphageometry-2-solve-olympiad",
+          "title": "DeepMind's AlphaProof and AlphaGeometry 2 Solve Olympiad Problems",
+          "source": "GOOGLE DEEPMIND",
+          "category": "research",
+          "keywords": [
+            "Reasoning",
+            "research"
+          ]
+        },
+        {
+          "event_id": "black-forest-labs-blog-black-forest-labs-launches-flux-1-text-to-image-m",
+          "title": "Black Forest Labs Launches Flux.1 Text-to-Image Models",
+          "source": "BLACK FOREST LABS BLOG",
+          "category": "open-weights",
+          "keywords": [
+            "Image Generation",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "meta-ai-blog-meta-releases-llama-3-1-405b",
+          "title": "Meta Releases Llama 3.1 405B",
+          "source": "META AI BLOG",
+          "category": "open-weights",
+          "keywords": [
+            "Llama 3.1",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "cohere-blog-cohere-releases-command-r-fine-tuning",
+          "title": "Cohere Releases Command R+ Fine-Tuning",
+          "source": "COHERE BLOG",
+          "category": "product",
+          "keywords": [
+            "Fine-Tuning",
+            "product"
+          ]
+        },
+        {
+          "event_id": "uk-gov-cma-portal-uk-cma-launches-inquiry-into-amazon-s-anthropic-partne",
+          "title": "UK CMA Launches Inquiry into Amazon's Anthropic Partnership",
+          "source": "UK GOV CMA PORTAL",
+          "category": "policy",
+          "keywords": [
+            "Regulation",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "apple-machine-learning-research-apple-releases-dclm-7b-open-model",
+          "title": "Apple Releases DCLM-7B Open Model",
+          "source": "APPLE MACHINE LEARNING RESEARCH",
+          "category": "open-weights",
+          "keywords": [
+            "Apple",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "livekit-blog-livekit-unveils-livekit-agents-for-real-time-voice",
+          "title": "LiveKit Unveils LiveKit Agents for Real-Time Voice",
+          "source": "LIVEKIT BLOG",
+          "category": "agents",
+          "keywords": [
+            "Voice",
+            "agents"
+          ]
+        },
+        {
+          "event_id": "us-senate-judiciary-committee-us-senate-passes-the-defiance-act",
+          "title": "US Senate Passes the DEFIANCE Act",
+          "source": "US SENATE JUDICIARY COMMITTEE",
+          "category": "policy",
+          "keywords": [
+            "Legislation",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "amd-press-release-amd-to-acquire-zt-systems-for-4-9b",
+          "title": "AMD to Acquire ZT Systems for $4.9B",
+          "source": "AMD PRESS RELEASE",
+          "category": "infra",
+          "keywords": [
+            "Hardware",
+            "infra"
+          ]
+        },
+        {
+          "event_id": "dspy-github-release-dspy-updates-assertion-and-suggestion-framework",
+          "title": "DSPy Updates Assertion and Suggestion Framework",
+          "source": "DSPY GITHUB RELEASE",
+          "category": "agents",
+          "keywords": [
+            "DSPy",
+            "agents"
+          ]
+        }
+      ]
+    },
     {
       "date": "2026-10-07",
       "edition": 197,
