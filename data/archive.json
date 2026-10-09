@@ -1,7 +1,266 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-08T14:39:10.000Z",
+  "generated_at": "2026-10-09T14:25:18.000Z",
   "editions": [
+    {
+      "date": "2026-10-09",
+      "edition": 199,
+      "run_id": "daily-curation-20261009",
+      "published_at": "2026-10-09T12:00:00.000Z",
+      "story_count": 25,
+      "stories": [
+        {
+          "event_id": "openai-misalignment-disclosure-update",
+          "title": "OpenAI expands its misalignment disclosure into an incident record",
+          "source": "OPENAI",
+          "category": "policy",
+          "keywords": [
+            "Safety",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-rd-automation-metrics",
+          "title": "Anthropic puts numbers on AI helping build AI",
+          "source": "ANTHROPIC INSTITUTE",
+          "category": "research",
+          "keywords": [
+            "Research loops",
+            "research"
+          ]
+        },
+        {
+          "event_id": "openai-government-access",
+          "title": "OpenAI widens subsidized AI access to state and local defenders",
+          "source": "OPENAI",
+          "category": "policy",
+          "keywords": [
+            "AI Daily",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-life-sciences-verification",
+          "title": "Anthropic creates a verification lane for life-science users",
+          "source": "ANTHROPIC",
+          "category": "policy",
+          "keywords": [
+            "AI Daily",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-misuse-report-september",
+          "title": "Anthropic says misuse monitoring is becoming an operating discipline",
+          "source": "ANTHROPIC",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-daybreak-frontline",
+          "title": "OpenAI commits subsidized cyber-AI support for frontline defenders",
+          "source": "OPENAI",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-ukraine-journalism",
+          "title": "A newsroom AI program tests whether access can strengthen independent reporting",
+          "source": "OPENAI · WAN-IFRA · AIRPPU",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-devday-2026",
+          "title": "DevDay 2026 is now a date on the developer calendar",
+          "source": "OPENAI",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "safeagent-runtime-protection",
+          "title": "A runtime controller treats agent safety as a state problem",
+          "source": "ARXIV",
+          "category": "research",
+          "keywords": [
+            "AI Daily",
+            "research"
+          ]
+        },
+        {
+          "event_id": "rag-safety-bench",
+          "title": "RAG safety tests ask whether helpful context can weaken a refusal",
+          "source": "ARXIV · EMNLP 2026",
+          "category": "research",
+          "keywords": [
+            "Safety",
+            "research"
+          ]
+        },
+        {
+          "event_id": "openai-openai-launches-searchgpt-as-a-chatgpt-feature",
+          "title": "OpenAI Launches SearchGPT as a ChatGPT Feature",
+          "source": "OPENAI",
+          "category": "product",
+          "keywords": [
+            "SearchGPT",
+            "product"
+          ]
+        },
+        {
+          "event_id": "google-cloud-google-releases-grounding-with-google-search-in-gemini-api",
+          "title": "Google Releases Grounding with Google Search in Gemini API",
+          "source": "GOOGLE CLOUD",
+          "category": "infra",
+          "keywords": [
+            "Gemini API",
+            "infra"
+          ]
+        },
+        {
+          "event_id": "meta-meta-releases-notebookllama-an-open-source-podcast-generator",
+          "title": "Meta Releases NotebookLlama, an Open-Source Podcast Generator",
+          "source": "META",
+          "category": "open-weights",
+          "keywords": [
+            "NotebookLlama",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "anthropic-anthropic-introduces-pdf-support-to-claude-3-5-sonnet",
+          "title": "Anthropic Introduces PDF Support to Claude 3.5 Sonnet",
+          "source": "ANTHROPIC",
+          "category": "product",
+          "keywords": [
+            "Claude 3.5 Sonnet",
+            "product"
+          ]
+        },
+        {
+          "event_id": "github-github-copilot-integrates-gemini-1-5-pro-and-claude-3-5-sonnet",
+          "title": "GitHub Copilot Integrates Gemini 1.5 Pro and Claude 3.5 Sonnet",
+          "source": "GITHUB",
+          "category": "product",
+          "keywords": [
+            "GitHub Copilot",
+            "product"
+          ]
+        },
+        {
+          "event_id": "xai-xai-launches-grok-1-5-vision",
+          "title": "xAI Launches Grok-1.5 Vision",
+          "source": "XAI",
+          "category": "product",
+          "keywords": [
+            "Grok-1.5V",
+            "product"
+          ]
+        },
+        {
+          "event_id": "google-deepmind-google-deepmind-open-sources-alphafold-3-code",
+          "title": "Google DeepMind Open-Sources AlphaFold 3 Code",
+          "source": "GOOGLE DEEPMIND",
+          "category": "open-weights",
+          "keywords": [
+            "AlphaFold 3",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "microsoft-research-microsoft-releases-omniparser-for-vision-based-gui-ag",
+          "title": "Microsoft Releases OmniParser for Vision-Based GUI Agents",
+          "source": "MICROSOFT RESEARCH",
+          "category": "research",
+          "keywords": [
+            "OmniParser",
+            "research"
+          ]
+        },
+        {
+          "event_id": "apple-apple-releases-openelm-open-efficient-language-models",
+          "title": "Apple Releases OpenELM: Open Efficient Language Models",
+          "source": "APPLE",
+          "category": "open-weights",
+          "keywords": [
+            "OpenELM",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "cohere-for-ai-cohere-launches-ayah-a-multilingual-evaluation-dataset",
+          "title": "Cohere Launches Ayah, a Multilingual Evaluation Dataset",
+          "source": "COHERE FOR AI",
+          "category": "research",
+          "keywords": [
+            "Ayah Dataset",
+            "research"
+          ]
+        },
+        {
+          "event_id": "mistral-ai-mistral-ai-releases-ministral-3b-and-8b",
+          "title": "Mistral AI Releases Ministral 3B and 8B",
+          "source": "MISTRAL AI",
+          "category": "open-weights",
+          "keywords": [
+            "Ministral",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "openai-openai-introduces-realtime-api-for-audio-applications",
+          "title": "OpenAI Introduces Realtime API for Audio Applications",
+          "source": "OPENAI",
+          "category": "infra",
+          "keywords": [
+            "Realtime API",
+            "infra"
+          ]
+        },
+        {
+          "event_id": "anthropic-anthropic-launches-computer-use-capability-in-public-beta",
+          "title": "Anthropic Launches 'Computer Use' Capability in Public Beta",
+          "source": "ANTHROPIC",
+          "category": "agents",
+          "keywords": [
+            "Computer Use",
+            "agents"
+          ]
+        },
+        {
+          "event_id": "nvidia-nvidia-releases-llama-3-1-nemotron-70b-instruct",
+          "title": "NVIDIA Releases Llama-3.1-Nemotron-70B-Instruct",
+          "source": "NVIDIA",
+          "category": "open-weights",
+          "keywords": [
+            "Nemotron-70B",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "sec-cerebras-systems-files-for-ipo-amid-ai-hardware-surge",
+          "title": "Cerebras Systems Files for IPO Amid AI Hardware Surge",
+          "source": "SEC",
+          "category": "infra",
+          "keywords": [
+            "Cerebras IPO",
+            "infra"
+          ]
+        }
+      ]
+    },
     {
       "date": "2026-10-08",
       "edition": 198,
