@@ -1,7 +1,266 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-09T14:25:18.000Z",
+  "generated_at": "2026-10-10T13:46:57.000Z",
   "editions": [
+    {
+      "date": "2026-10-10",
+      "edition": 200,
+      "run_id": "daily-curation-20261010",
+      "published_at": "2026-10-10T12:00:00.000Z",
+      "story_count": 25,
+      "stories": [
+        {
+          "event_id": "openai-misalignment-disclosure-update",
+          "title": "OpenAI expands its misalignment disclosure into an incident record",
+          "source": "OPENAI",
+          "category": "policy",
+          "keywords": [
+            "Safety",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-rd-automation-metrics",
+          "title": "Anthropic puts numbers on AI helping build AI",
+          "source": "ANTHROPIC INSTITUTE",
+          "category": "research",
+          "keywords": [
+            "Research loops",
+            "research"
+          ]
+        },
+        {
+          "event_id": "openai-government-access",
+          "title": "OpenAI widens subsidized AI access to state and local defenders",
+          "source": "OPENAI",
+          "category": "policy",
+          "keywords": [
+            "AI Daily",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-life-sciences-verification",
+          "title": "Anthropic creates a verification lane for life-science users",
+          "source": "ANTHROPIC",
+          "category": "policy",
+          "keywords": [
+            "AI Daily",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-misuse-report-september",
+          "title": "Anthropic says misuse monitoring is becoming an operating discipline",
+          "source": "ANTHROPIC",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-daybreak-frontline",
+          "title": "OpenAI commits subsidized cyber-AI support for frontline defenders",
+          "source": "OPENAI",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-ukraine-journalism",
+          "title": "A newsroom AI program tests whether access can strengthen independent reporting",
+          "source": "OPENAI · WAN-IFRA · AIRPPU",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-devday-2026",
+          "title": "DevDay 2026 is now a date on the developer calendar",
+          "source": "OPENAI",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "safeagent-runtime-protection",
+          "title": "A runtime controller treats agent safety as a state problem",
+          "source": "ARXIV",
+          "category": "research",
+          "keywords": [
+            "AI Daily",
+            "research"
+          ]
+        },
+        {
+          "event_id": "rag-safety-bench",
+          "title": "RAG safety tests ask whether helpful context can weaken a refusal",
+          "source": "ARXIV · EMNLP 2026",
+          "category": "research",
+          "keywords": [
+            "Safety",
+            "research"
+          ]
+        },
+        {
+          "event_id": "anthropic-anthropic-launches-claude-3-5-sonnet-and-introduced-computer-u",
+          "title": "Anthropic Launches Claude 3.5 Sonnet and Introduced 'Computer Use'",
+          "source": "ANTHROPIC",
+          "category": "agents",
+          "keywords": [
+            "Model Release",
+            "agents"
+          ]
+        },
+        {
+          "event_id": "meta-ai-meta-releases-segment-anything-model-2-1",
+          "title": "Meta Releases Segment Anything Model 2.1",
+          "source": "META AI",
+          "category": "open-weights",
+          "keywords": [
+            "Computer Vision",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "openai-openai-begins-rolling-out-web-search-in-chatgpt",
+          "title": "OpenAI Begins Rolling Out Web Search in ChatGPT",
+          "source": "OPENAI",
+          "category": "product",
+          "keywords": [
+            "Search",
+            "product"
+          ]
+        },
+        {
+          "event_id": "nvidia-technical-blog-nvidia-releases-llama-3-1-nemotron-70b-instruct",
+          "title": "NVIDIA Releases Llama-3.1-Nemotron-70B-Instruct",
+          "source": "NVIDIA TECHNICAL BLOG",
+          "category": "open-weights",
+          "keywords": [
+            "LLMs",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "microsoft-microsoft-unveils-autonomous-copilot-agents-for-businesses",
+          "title": "Microsoft Unveils Autonomous Copilot Agents for Businesses",
+          "source": "MICROSOFT",
+          "category": "agents",
+          "keywords": [
+            "Enterprise",
+            "agents"
+          ]
+        },
+        {
+          "event_id": "google-cloud-blog-google-cloud-launches-hypercomputer-infrastructure-upg",
+          "title": "Google Cloud Launches Hypercomputer Infrastructure Upgrades",
+          "source": "GOOGLE CLOUD BLOG",
+          "category": "infra",
+          "keywords": [
+            "Compute Infrastructure",
+            "infra"
+          ]
+        },
+        {
+          "event_id": "the-white-house-us-issues-first-national-security-memorandum-on-artifici",
+          "title": "US Issues First National Security Memorandum on Artificial Intelligence",
+          "source": "THE WHITE HOUSE",
+          "category": "policy",
+          "keywords": [
+            "Governance",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "cohere-for-ai-cohere-open-sources-aya-expanse-multilingual-models",
+          "title": "Cohere Open-Sources Aya Expanse Multilingual Models",
+          "source": "COHERE FOR AI",
+          "category": "open-weights",
+          "keywords": [
+            "Multilingual",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "mistral-ai-mistral-releases-pixtral-12b-vision-language-model",
+          "title": "Mistral Releases Pixtral 12B Vision-Language Model",
+          "source": "MISTRAL AI",
+          "category": "open-weights",
+          "keywords": [
+            "Multimodal",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "arxiv-researchers-detail-tool-use-alignment-challenges-in-long-context-l",
+          "title": "Researchers Detail Tool Use Alignment Challenges in Long-Context LLMs",
+          "source": "ARXIV",
+          "category": "research",
+          "keywords": [
+            "Model Failure Modes",
+            "research"
+          ]
+        },
+        {
+          "event_id": "scale-ai-scale-ai-announces-seal-leaderboards-for-ai-evaluations",
+          "title": "Scale AI Announces SEAL Leaderboards for AI Evaluations",
+          "source": "SCALE AI",
+          "category": "research",
+          "keywords": [
+            "Benchmarks",
+            "research"
+          ]
+        },
+        {
+          "event_id": "langchain-blog-langchain-releases-langgraph-v0-2-with-enhanced-persisten",
+          "title": "LangChain Releases LangGraph v0.2 with Enhanced Persistence",
+          "source": "LANGCHAIN BLOG",
+          "category": "agents",
+          "keywords": [
+            "Frameworks",
+            "agents"
+          ]
+        },
+        {
+          "event_id": "uk-aisi-uk-ai-safety-institute-open-sources-evaluation-platform-inspect",
+          "title": "UK AI Safety Institute Open-Sources Evaluation Platform 'Inspect'",
+          "source": "UK AISI",
+          "category": "policy",
+          "keywords": [
+            "Safety Standards",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "aws-news-blog-aws-introduces-managed-fine-tuning-for-llama-3-1-405b-on-b",
+          "title": "AWS Introduces Managed Fine-Tuning for Llama 3.1 405B on Bedrock",
+          "source": "AWS NEWS BLOG",
+          "category": "infra",
+          "keywords": [
+            "Cloud Compute",
+            "infra"
+          ]
+        },
+        {
+          "event_id": "coreweave-coreweave-secures-expanded-credit-facility-for-data-center-exp",
+          "title": "CoreWeave Secures Expanded Credit Facility for Data Center Expansion",
+          "source": "COREWEAVE",
+          "category": "infra",
+          "keywords": [
+            "Finance Infrastructure",
+            "infra"
+          ]
+        }
+      ]
+    },
     {
       "date": "2026-10-09",
       "edition": 199,
