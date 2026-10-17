@@ -1,7 +1,266 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-16T12:31:59.000Z",
+  "generated_at": "2026-10-17T11:43:02.000Z",
   "editions": [
+    {
+      "date": "2026-10-17",
+      "edition": 207,
+      "run_id": "daily-curation-20261017",
+      "published_at": "2026-10-17T12:00:00.000Z",
+      "story_count": 25,
+      "stories": [
+        {
+          "event_id": "openai-misalignment-disclosure-update",
+          "title": "OpenAI expands its misalignment disclosure into an incident record",
+          "source": "OPENAI",
+          "category": "policy",
+          "keywords": [
+            "Safety",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-rd-automation-metrics",
+          "title": "Anthropic puts numbers on AI helping build AI",
+          "source": "ANTHROPIC INSTITUTE",
+          "category": "research",
+          "keywords": [
+            "Research loops",
+            "research"
+          ]
+        },
+        {
+          "event_id": "openai-government-access",
+          "title": "OpenAI widens subsidized AI access to state and local defenders",
+          "source": "OPENAI",
+          "category": "policy",
+          "keywords": [
+            "AI Daily",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-life-sciences-verification",
+          "title": "Anthropic creates a verification lane for life-science users",
+          "source": "ANTHROPIC",
+          "category": "policy",
+          "keywords": [
+            "AI Daily",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-misuse-report-september",
+          "title": "Anthropic says misuse monitoring is becoming an operating discipline",
+          "source": "ANTHROPIC",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-daybreak-frontline",
+          "title": "OpenAI commits subsidized cyber-AI support for frontline defenders",
+          "source": "OPENAI",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-ukraine-journalism",
+          "title": "A newsroom AI program tests whether access can strengthen independent reporting",
+          "source": "OPENAI · WAN-IFRA · AIRPPU",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-devday-2026",
+          "title": "DevDay 2026 is now a date on the developer calendar",
+          "source": "OPENAI",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "safeagent-runtime-protection",
+          "title": "A runtime controller treats agent safety as a state problem",
+          "source": "ARXIV",
+          "category": "research",
+          "keywords": [
+            "AI Daily",
+            "research"
+          ]
+        },
+        {
+          "event_id": "rag-safety-bench",
+          "title": "RAG safety tests ask whether helpful context can weaken a refusal",
+          "source": "ARXIV · EMNLP 2026",
+          "category": "research",
+          "keywords": [
+            "Safety",
+            "research"
+          ]
+        },
+        {
+          "event_id": "anthropic-anthropic-launches-claude-3-5-sonnet",
+          "title": "Anthropic Launches Claude 3.5 Sonnet",
+          "source": "ANTHROPIC",
+          "category": "product",
+          "keywords": [
+            "LLMs",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-research-openai-releases-criticgpt-for-code-review",
+          "title": "OpenAI Releases CriticGPT for Code Review",
+          "source": "OPENAI RESEARCH",
+          "category": "research",
+          "keywords": [
+            "RLHF",
+            "research"
+          ]
+        },
+        {
+          "event_id": "meta-ai-meta-releases-seed-tts-speech-generation-family",
+          "title": "Meta Releases Seed-TTS Speech Generation Family",
+          "source": "META AI",
+          "category": "research",
+          "keywords": [
+            "Audio",
+            "research"
+          ]
+        },
+        {
+          "event_id": "nvidia-developer-blog-nvidia-releases-nemotron-4-340b-base-instruct-and",
+          "title": "NVIDIA Releases Nemotron-4 340B Base, Instruct, and Reward Models",
+          "source": "NVIDIA DEVELOPER BLOG",
+          "category": "open-weights",
+          "keywords": [
+            "Synthetic Data",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "graphcore-softbank-acquires-ai-chipmaker-graphcore",
+          "title": "SoftBank Acquires AI Chipmaker Graphcore",
+          "source": "GRAPHCORE",
+          "category": "infra",
+          "keywords": [
+            "Hardware",
+            "infra"
+          ]
+        },
+        {
+          "event_id": "microsoft-research-microsoft-enterprise-study-reveals-ai-productivity-ba",
+          "title": "Microsoft Enterprise Study Reveals AI Productivity Baselines",
+          "source": "MICROSOFT RESEARCH",
+          "category": "policy",
+          "keywords": [
+            "Enterprise",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "arxiv-google-deepmind-google-deepmind-presents-human-level-mobile-device",
+          "title": "Google DeepMind Presents Human-Level Mobile Device Control Agent",
+          "source": "ARXIV / GOOGLE DEEPMIND",
+          "category": "agents",
+          "keywords": [
+            "UI Automation",
+            "agents"
+          ]
+        },
+        {
+          "event_id": "mistral-ai-mistral-ai-releases-codestral-mamba-7b",
+          "title": "Mistral AI Releases Codestral Mamba 7B",
+          "source": "MISTRAL AI",
+          "category": "open-weights",
+          "keywords": [
+            "Architecture",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "european-parliament-eu-ai-act-published-in-official-journal",
+          "title": "EU AI Act Published in Official Journal",
+          "source": "EUROPEAN PARLIAMENT",
+          "category": "policy",
+          "keywords": [
+            "Regulation",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "runway-runway-releases-gen-3-alpha-video-generation-model",
+          "title": "Runway Releases Gen-3 Alpha Video Generation Model",
+          "source": "RUNWAY",
+          "category": "product",
+          "keywords": [
+            "Generative Media",
+            "product"
+          ]
+        },
+        {
+          "event_id": "llamaindex-llamaindex-introduces-workflows-for-event-driven-agents",
+          "title": "LlamaIndex Introduces Workflows for Event-Driven Agents",
+          "source": "LLAMAINDEX",
+          "category": "agents",
+          "keywords": [
+            "Frameworks",
+            "agents"
+          ]
+        },
+        {
+          "event_id": "apple-machine-learning-research-apple-details-on-device-and-cloud-ai-arc",
+          "title": "Apple Details On-Device and Cloud AI Architecture",
+          "source": "APPLE MACHINE LEARNING RESEARCH",
+          "category": "infra",
+          "keywords": [
+            "On-Device",
+            "infra"
+          ]
+        },
+        {
+          "event_id": "amazon-amazon-invests-additional-2-75-billion-in-anthropic",
+          "title": "Amazon Invests Additional $2.75 Billion in Anthropic",
+          "source": "AMAZON",
+          "category": "infra",
+          "keywords": [
+            "Enterprise Cloud",
+            "infra"
+          ]
+        },
+        {
+          "event_id": "arxiv-stanford-university-stanford-benchmark-highlights-context-loss-in",
+          "title": "Stanford Benchmark Highlights Context Loss in Large LLMs",
+          "source": "ARXIV / STANFORD UNIVERSITY",
+          "category": "research",
+          "keywords": [
+            "Evaluations",
+            "research"
+          ]
+        },
+        {
+          "event_id": "abridge-abridge-raises-150m-for-generative-medical-documentation",
+          "title": "Abridge Raises $150M for Generative Medical Documentation",
+          "source": "ABRIDGE",
+          "category": "product",
+          "keywords": [
+            "Healthcare",
+            "product"
+          ]
+        }
+      ]
+    },
     {
       "date": "2026-10-16",
       "edition": 206,
