@@ -1,7 +1,266 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-20T12:55:10.000Z",
+  "generated_at": "2026-10-21T13:01:19.000Z",
   "editions": [
+    {
+      "date": "2026-10-21",
+      "edition": 211,
+      "run_id": "daily-curation-20261021",
+      "published_at": "2026-10-21T12:00:00.000Z",
+      "story_count": 25,
+      "stories": [
+        {
+          "event_id": "openai-misalignment-disclosure-update",
+          "title": "OpenAI expands its misalignment disclosure into an incident record",
+          "source": "OPENAI",
+          "category": "policy",
+          "keywords": [
+            "Safety",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-rd-automation-metrics",
+          "title": "Anthropic puts numbers on AI helping build AI",
+          "source": "ANTHROPIC INSTITUTE",
+          "category": "research",
+          "keywords": [
+            "Research loops",
+            "research"
+          ]
+        },
+        {
+          "event_id": "openai-government-access",
+          "title": "OpenAI widens subsidized AI access to state and local defenders",
+          "source": "OPENAI",
+          "category": "policy",
+          "keywords": [
+            "AI Daily",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-life-sciences-verification",
+          "title": "Anthropic creates a verification lane for life-science users",
+          "source": "ANTHROPIC",
+          "category": "policy",
+          "keywords": [
+            "AI Daily",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-misuse-report-september",
+          "title": "Anthropic says misuse monitoring is becoming an operating discipline",
+          "source": "ANTHROPIC",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-daybreak-frontline",
+          "title": "OpenAI commits subsidized cyber-AI support for frontline defenders",
+          "source": "OPENAI",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-ukraine-journalism",
+          "title": "A newsroom AI program tests whether access can strengthen independent reporting",
+          "source": "OPENAI · WAN-IFRA · AIRPPU",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-devday-2026",
+          "title": "DevDay 2026 is now a date on the developer calendar",
+          "source": "OPENAI",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "safeagent-runtime-protection",
+          "title": "A runtime controller treats agent safety as a state problem",
+          "source": "ARXIV",
+          "category": "research",
+          "keywords": [
+            "AI Daily",
+            "research"
+          ]
+        },
+        {
+          "event_id": "rag-safety-bench",
+          "title": "RAG safety tests ask whether helpful context can weaken a refusal",
+          "source": "ARXIV · EMNLP 2026",
+          "category": "research",
+          "keywords": [
+            "Safety",
+            "research"
+          ]
+        },
+        {
+          "event_id": "anthropic-announcement-anthropic-launches-claude-3-5-sonnet",
+          "title": "Anthropic Launches Claude 3.5 Sonnet",
+          "source": "ANTHROPIC ANNOUNCEMENT",
+          "category": "product",
+          "keywords": [
+            "LLMs",
+            "product"
+          ]
+        },
+        {
+          "event_id": "anthropic-engineering-blog-anthropic-introduces-computer-use-api-capabil",
+          "title": "Anthropic Introduces 'Computer Use' API Capability",
+          "source": "ANTHROPIC ENGINEERING BLOG",
+          "category": "agents",
+          "keywords": [
+            "Agent Frameworks",
+            "agents"
+          ]
+        },
+        {
+          "event_id": "meta-ai-meta-releases-llama-3-1-405b-to-open-weights-community",
+          "title": "Meta Releases Llama 3.1 405B to Open Weights Community",
+          "source": "META AI",
+          "category": "open-weights",
+          "keywords": [
+            "Open Weights",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "openai-research-openai-releases-o1-reasoning-model-series",
+          "title": "OpenAI Releases 'o1' Reasoning Model Series",
+          "source": "OPENAI RESEARCH",
+          "category": "research",
+          "keywords": [
+            "Reasoning",
+            "research"
+          ]
+        },
+        {
+          "event_id": "nature-google-deepmind-google-deepmind-unveils-alphafold-3",
+          "title": "Google DeepMind Unveils AlphaFold 3",
+          "source": "NATURE / GOOGLE DEEPMIND",
+          "category": "research",
+          "keywords": [
+            "Bio-AI",
+            "research"
+          ]
+        },
+        {
+          "event_id": "mistral-ai-blog-mistral-ai-releases-pixtral-12b-vision-model",
+          "title": "Mistral AI Releases Pixtral 12B Vision Model",
+          "source": "MISTRAL AI BLOG",
+          "category": "open-weights",
+          "keywords": [
+            "Multimodal",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "microsoft-research-microsoft-open-sources-autogen-studio-for-multi-agent",
+          "title": "Microsoft open-sources AutoGen Studio for Multi-Agent Systems",
+          "source": "MICROSOFT RESEARCH",
+          "category": "agents",
+          "keywords": [
+            "Agent Frameworks",
+            "agents"
+          ]
+        },
+        {
+          "event_id": "nvidia-technical-news-nvidia-announces-blackwell-b200-architecture-detai",
+          "title": "Nvidia Announces Blackwell B200 Architecture Details",
+          "source": "NVIDIA TECHNICAL NEWS",
+          "category": "infra",
+          "keywords": [
+            "Hardware",
+            "infra"
+          ]
+        },
+        {
+          "event_id": "office-of-the-governor-of-california-california-governor-vetoes-sb-1047",
+          "title": "California Governor Vetoes SB 1047 Safety Legislation",
+          "source": "OFFICE OF THE GOVERNOR OF CALIFORNIA",
+          "category": "policy",
+          "keywords": [
+            "Regulation",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "pytorch-foundation-pytorch-2-4-adds-native-support-for-flashattention-3",
+          "title": "PyTorch 2.4 Adds Native Support for FlashAttention-3",
+          "source": "PYTORCH FOUNDATION",
+          "category": "infra",
+          "keywords": [
+            "Frameworks",
+            "infra"
+          ]
+        },
+        {
+          "event_id": "qwen-team-alibaba-cloud-alibaba-releases-qwen2-5-model-family",
+          "title": "Alibaba Releases Qwen2.5 Model Family",
+          "source": "QWEN TEAM / ALIBABA CLOUD",
+          "category": "open-weights",
+          "keywords": [
+            "Open Weights",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "cohere-blog-cohere-releases-command-r-for-enterprise-workflows",
+          "title": "Cohere Releases Command R+ for Enterprise Workflows",
+          "source": "COHERE BLOG",
+          "category": "product",
+          "keywords": [
+            "RAG",
+            "product"
+          ]
+        },
+        {
+          "event_id": "langchain-blog-langchain-launches-langgraph-v0-1-for-statefully-controll",
+          "title": "LangChain Launches LangGraph v0.1 for Statefully Controlled Agents",
+          "source": "LANGCHAIN BLOG",
+          "category": "agents",
+          "keywords": [
+            "Agent Frameworks",
+            "agents"
+          ]
+        },
+        {
+          "event_id": "nist-department-of-commerce-us-federal-government-standardizes-ai-risk-m",
+          "title": "US Federal Government Standardizes AI Risk Management Guidelines",
+          "source": "NIST / DEPARTMENT OF COMMERCE",
+          "category": "policy",
+          "keywords": [
+            "Governance",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "vllm-blog-vllm-project-adds-native-chunked-prefill-and-multi-step-execut",
+          "title": "vLLM Project Adds Native Chunked Prefill and Multi-Step Execution",
+          "source": "VLLM BLOG",
+          "category": "infra",
+          "keywords": [
+            "Serving",
+            "infra"
+          ]
+        }
+      ]
+    },
     {
       "date": "2026-10-20",
       "edition": 210,
