@@ -1,7 +1,266 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-23T12:44:40.000Z",
+  "generated_at": "2026-10-24T12:05:13.000Z",
   "editions": [
+    {
+      "date": "2026-10-24",
+      "edition": 214,
+      "run_id": "daily-curation-20261024",
+      "published_at": "2026-10-24T12:00:00.000Z",
+      "story_count": 25,
+      "stories": [
+        {
+          "event_id": "openai-misalignment-disclosure-update",
+          "title": "OpenAI expands its misalignment disclosure into an incident record",
+          "source": "OPENAI",
+          "category": "policy",
+          "keywords": [
+            "Safety",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-rd-automation-metrics",
+          "title": "Anthropic puts numbers on AI helping build AI",
+          "source": "ANTHROPIC INSTITUTE",
+          "category": "research",
+          "keywords": [
+            "Research loops",
+            "research"
+          ]
+        },
+        {
+          "event_id": "openai-government-access",
+          "title": "OpenAI widens subsidized AI access to state and local defenders",
+          "source": "OPENAI",
+          "category": "policy",
+          "keywords": [
+            "AI Daily",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-life-sciences-verification",
+          "title": "Anthropic creates a verification lane for life-science users",
+          "source": "ANTHROPIC",
+          "category": "policy",
+          "keywords": [
+            "AI Daily",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-misuse-report-september",
+          "title": "Anthropic says misuse monitoring is becoming an operating discipline",
+          "source": "ANTHROPIC",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-daybreak-frontline",
+          "title": "OpenAI commits subsidized cyber-AI support for frontline defenders",
+          "source": "OPENAI",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-ukraine-journalism",
+          "title": "A newsroom AI program tests whether access can strengthen independent reporting",
+          "source": "OPENAI · WAN-IFRA · AIRPPU",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-devday-2026",
+          "title": "DevDay 2026 is now a date on the developer calendar",
+          "source": "OPENAI",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "safeagent-runtime-protection",
+          "title": "A runtime controller treats agent safety as a state problem",
+          "source": "ARXIV",
+          "category": "research",
+          "keywords": [
+            "AI Daily",
+            "research"
+          ]
+        },
+        {
+          "event_id": "rag-safety-bench",
+          "title": "RAG safety tests ask whether helpful context can weaken a refusal",
+          "source": "ARXIV · EMNLP 2026",
+          "category": "research",
+          "keywords": [
+            "Safety",
+            "research"
+          ]
+        },
+        {
+          "event_id": "anthropic-anthropic-launches-claude-3-5-sonnet-and-new-computer-use-capa",
+          "title": "Anthropic Launches Claude 3.5 Sonnet and New Computer Use Capability",
+          "source": "ANTHROPIC",
+          "category": "product",
+          "keywords": [
+            "LLMs",
+            "product"
+          ]
+        },
+        {
+          "event_id": "meta-ai-meta-releases-segment-anything-model-2-1",
+          "title": "Meta Releases Segment Anything Model 2.1",
+          "source": "META AI",
+          "category": "open-weights",
+          "keywords": [
+            "Computer Vision",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "microsoft-microsoft-introduces-autonomous-agents-in-copilot-studio",
+          "title": "Microsoft Introduces Autonomous Agents in Copilot Studio",
+          "source": "MICROSOFT",
+          "category": "agents",
+          "keywords": [
+            "Enterprise",
+            "agents"
+          ]
+        },
+        {
+          "event_id": "openai-github-openai-releases-swarm-as-an-experimental-agent-framework",
+          "title": "OpenAI Releases Swarm as an Experimental Agent Framework",
+          "source": "OPENAI GITHUB",
+          "category": "agents",
+          "keywords": [
+            "Developer Tools",
+            "agents"
+          ]
+        },
+        {
+          "event_id": "nvidia-nvidia-releases-llama-3-1-nemotron-70b-instruct",
+          "title": "NVIDIA Releases Llama-3.1-Nemotron-70B-Instruct",
+          "source": "NVIDIA",
+          "category": "open-weights",
+          "keywords": [
+            "LLMs",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "google-cloud-google-cloud-launches-vertex-ai-memory-bank",
+          "title": "Google Cloud Launches Vertex AI Memory Bank",
+          "source": "GOOGLE CLOUD",
+          "category": "infra",
+          "keywords": [
+            "Developer Tools",
+            "infra"
+          ]
+        },
+        {
+          "event_id": "mistral-ai-mistral-ai-releases-ministral-3b-and-8b-for-on-device-use",
+          "title": "Mistral AI Releases Ministral 3B and 8B for On-Device Use",
+          "source": "MISTRAL AI",
+          "category": "open-weights",
+          "keywords": [
+            "Edge Computing",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "the-white-house-us-issues-first-national-security-memorandum-on-artifici",
+          "title": "US Issues First National Security Memorandum on Artificial Intelligence",
+          "source": "THE WHITE HOUSE",
+          "category": "policy",
+          "keywords": [
+            "Governance",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "openai-openai-introduces-realtime-api-for-low-latency-voice-interactions",
+          "title": "OpenAI Introduces Realtime API for Low-Latency Voice Interactions",
+          "source": "OPENAI",
+          "category": "product",
+          "keywords": [
+            "APIs",
+            "product"
+          ]
+        },
+        {
+          "event_id": "arxiv-researchers-detail-bitnet-b1-58-1-bit-llm-architectures",
+          "title": "Researchers Detail BitNet b1.58 1-Bit LLM Architectures",
+          "source": "ARXIV",
+          "category": "research",
+          "keywords": [
+            "Model Efficiency",
+            "research"
+          ]
+        },
+        {
+          "event_id": "langchain-langchain-unveils-langgraph-platform-for-statefull-agent-deplo",
+          "title": "LangChain Unveils LangGraph Platform for Statefull Agent Deployments",
+          "source": "LANGCHAIN",
+          "category": "agents",
+          "keywords": [
+            "Developer Tools",
+            "agents"
+          ]
+        },
+        {
+          "event_id": "databricks-databricks-expands-open-source-data-pipelines-for-rag",
+          "title": "Databricks Expands Open-Source Data Pipelines for RAG",
+          "source": "DATABRICKS",
+          "category": "infra",
+          "keywords": [
+            "Data Pipelines",
+            "infra"
+          ]
+        },
+        {
+          "event_id": "uk-government-uk-ai-safety-institute-releases-testing-framework-for-fron",
+          "title": "UK AI Safety Institute Releases Testing Framework for Frontier Models",
+          "source": "UK GOVERNMENT",
+          "category": "policy",
+          "keywords": [
+            "Safety",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "pytorch-pytorch-2-5-released-with-enhanced-flexattention",
+          "title": "PyTorch 2.5 Released with Enhanced FlexAttention",
+          "source": "PYTORCH",
+          "category": "infra",
+          "keywords": [
+            "Frameworks",
+            "infra"
+          ]
+        },
+        {
+          "event_id": "arxiv-stanford-study-highlights-data-contamination-in-popular-llm-benchm",
+          "title": "Stanford Study Highlights Data Contamination in Popular LLM Benchmarks",
+          "source": "ARXIV",
+          "category": "research",
+          "keywords": [
+            "Benchmarking",
+            "research"
+          ]
+        }
+      ]
+    },
     {
       "date": "2026-10-23",
       "edition": 213,
