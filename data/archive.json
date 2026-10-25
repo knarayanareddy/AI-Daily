@@ -1,7 +1,266 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-24T12:05:13.000Z",
+  "generated_at": "2026-10-25T12:37:42.000Z",
   "editions": [
+    {
+      "date": "2026-10-25",
+      "edition": 215,
+      "run_id": "daily-curation-20261025",
+      "published_at": "2026-10-25T12:00:00.000Z",
+      "story_count": 25,
+      "stories": [
+        {
+          "event_id": "openai-misalignment-disclosure-update",
+          "title": "OpenAI expands its misalignment disclosure into an incident record",
+          "source": "OPENAI",
+          "category": "policy",
+          "keywords": [
+            "Safety",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-rd-automation-metrics",
+          "title": "Anthropic puts numbers on AI helping build AI",
+          "source": "ANTHROPIC INSTITUTE",
+          "category": "research",
+          "keywords": [
+            "Research loops",
+            "research"
+          ]
+        },
+        {
+          "event_id": "openai-government-access",
+          "title": "OpenAI widens subsidized AI access to state and local defenders",
+          "source": "OPENAI",
+          "category": "policy",
+          "keywords": [
+            "AI Daily",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-life-sciences-verification",
+          "title": "Anthropic creates a verification lane for life-science users",
+          "source": "ANTHROPIC",
+          "category": "policy",
+          "keywords": [
+            "AI Daily",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-misuse-report-september",
+          "title": "Anthropic says misuse monitoring is becoming an operating discipline",
+          "source": "ANTHROPIC",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-daybreak-frontline",
+          "title": "OpenAI commits subsidized cyber-AI support for frontline defenders",
+          "source": "OPENAI",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-ukraine-journalism",
+          "title": "A newsroom AI program tests whether access can strengthen independent reporting",
+          "source": "OPENAI · WAN-IFRA · AIRPPU",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-devday-2026",
+          "title": "DevDay 2026 is now a date on the developer calendar",
+          "source": "OPENAI",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "safeagent-runtime-protection",
+          "title": "A runtime controller treats agent safety as a state problem",
+          "source": "ARXIV",
+          "category": "research",
+          "keywords": [
+            "AI Daily",
+            "research"
+          ]
+        },
+        {
+          "event_id": "rag-safety-bench",
+          "title": "RAG safety tests ask whether helpful context can weaken a refusal",
+          "source": "ARXIV · EMNLP 2026",
+          "category": "research",
+          "keywords": [
+            "Safety",
+            "research"
+          ]
+        },
+        {
+          "event_id": "anthropic-announcement-anthropic-launches-claude-3-5-sonnet-and-new-comp",
+          "title": "Anthropic Launches Claude 3.5 Sonnet and New Computer Use Capability",
+          "source": "ANTHROPIC ANNOUNCEMENT",
+          "category": "product",
+          "keywords": [
+            "LLMs",
+            "product"
+          ]
+        },
+        {
+          "event_id": "meta-ai-research-meta-releases-segment-anything-model-2-1",
+          "title": "Meta Releases Segment Anything Model 2.1",
+          "source": "META AI RESEARCH",
+          "category": "open-weights",
+          "keywords": [
+            "Computer Vision",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "microsoft-official-blog-microsoft-introduces-autonomous-copilot-studio-a",
+          "title": "Microsoft Introduces Autonomous Copilot Studio Agents",
+          "source": "MICROSOFT OFFICIAL BLOG",
+          "category": "agents",
+          "keywords": [
+            "Enterprise AI",
+            "agents"
+          ]
+        },
+        {
+          "event_id": "nvidia-developer-news-nvidia-releases-synthetic-data-generation-pipeline",
+          "title": "Nvidia Releases Synthetic Data Generation Pipeline Nemotron-4 340B",
+          "source": "NVIDIA DEVELOPER NEWS",
+          "category": "infra",
+          "keywords": [
+            "Synthetic Data",
+            "infra"
+          ]
+        },
+        {
+          "event_id": "openai-preparedness-framework-update-openai-publishes-framework-for-clas",
+          "title": "OpenAI Publishes Framework for Classifying AI Risk and Autonomy",
+          "source": "OPENAI PREPAREDNESS FRAMEWORK UPDATE",
+          "category": "policy",
+          "keywords": [
+            "AI Safety",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "google-deepmind-blog-google-deepmind-open-sources-alphafold-3-weights-fo",
+          "title": "Google DeepMind open-sources AlphaFold 3 Weights for Academic Use",
+          "source": "GOOGLE DEEPMIND BLOG",
+          "category": "research",
+          "keywords": [
+            "Biology",
+            "research"
+          ]
+        },
+        {
+          "event_id": "mistral-ai-news-mistral-ai-releases-pixtral-12b-open-vision-language-mod",
+          "title": "Mistral AI Releases Pixtral 12B Open Vision-Language Model",
+          "source": "MISTRAL AI NEWS",
+          "category": "open-weights",
+          "keywords": [
+            "Multimodal",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "uk-aisi-report-uk-ai-safety-institute-releases-testing-framework-for-fro",
+          "title": "UK AI Safety Institute Releases Testing Framework for Frontier Models",
+          "source": "UK AISI REPORT",
+          "category": "policy",
+          "keywords": [
+            "Governance",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "langchain-release-blog-langchain-unveils-langgraph-platform-for-stateful",
+          "title": "LangChain Unveils LangGraph Platform for Statefull Multi-Agent Networks",
+          "source": "LANGCHAIN RELEASE BLOG",
+          "category": "agents",
+          "keywords": [
+            "Developer Tools",
+            "agents"
+          ]
+        },
+        {
+          "event_id": "sec-filing-cerebras-files-for-public-offering-highlighting-specialized-w",
+          "title": "Cerebras Files for Public Offering Highlighting Specialized Wafer-Scale AI Chips",
+          "source": "SEC FILING",
+          "category": "infra",
+          "keywords": [
+            "Hardware",
+            "infra"
+          ]
+        },
+        {
+          "event_id": "stanford-crfm-announcement-stanford-researchers-release-helm-multimodal",
+          "title": "Stanford Researchers Release HELM Multimodal Evaluation Standards",
+          "source": "STANFORD CRFM ANNOUNCEMENT",
+          "category": "research",
+          "keywords": [
+            "Benchmarks",
+            "research"
+          ]
+        },
+        {
+          "event_id": "amazon-press-release-amazon-invests-additional-4-billion-in-anthropic-to",
+          "title": "Amazon Invests Additional $4 Billion in Anthropic to Solidify Cloud Compute Deal",
+          "source": "AMAZON PRESS RELEASE",
+          "category": "policy",
+          "keywords": [
+            "Cloud Compute",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "deepseek-official-release-deepseek-releases-deepseek-v2-5-open-model-com",
+          "title": "DeepSeek Releases DeepSeek-V2.5 Open Model Combining Chat and Coder Weights",
+          "source": "DEEPSEEK OFFICIAL RELEASE",
+          "category": "open-weights",
+          "keywords": [
+            "MoE",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "cohere-blog-cohere-releases-command-r7b-and-r-fine-tuning-capabilities",
+          "title": "Cohere Releases Command R7B and R+ Fine-Tuning Capabilities",
+          "source": "COHERE BLOG",
+          "category": "product",
+          "keywords": [
+            "Enterprise RAG",
+            "product"
+          ]
+        },
+        {
+          "event_id": "vllm-open-source-blog-vllm-project-integrates-disaggregated-pagedattenti",
+          "title": "vLLM Project Integrates Disaggregated PagedAttention for Scalable Inference",
+          "source": "VLLM OPEN SOURCE BLOG",
+          "category": "infra",
+          "keywords": [
+            "Inference Infrastructure",
+            "infra"
+          ]
+        }
+      ]
+    },
     {
       "date": "2026-10-24",
       "edition": 214,
