@@ -1,7 +1,266 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-30T14:15:29.000Z",
+  "generated_at": "2026-10-31T13:46:39.000Z",
   "editions": [
+    {
+      "date": "2026-10-31",
+      "edition": 221,
+      "run_id": "daily-curation-20261031",
+      "published_at": "2026-10-31T12:00:00.000Z",
+      "story_count": 25,
+      "stories": [
+        {
+          "event_id": "openai-misalignment-disclosure-update",
+          "title": "OpenAI expands its misalignment disclosure into an incident record",
+          "source": "OPENAI",
+          "category": "policy",
+          "keywords": [
+            "Safety",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-rd-automation-metrics",
+          "title": "Anthropic puts numbers on AI helping build AI",
+          "source": "ANTHROPIC INSTITUTE",
+          "category": "research",
+          "keywords": [
+            "Research loops",
+            "research"
+          ]
+        },
+        {
+          "event_id": "openai-government-access",
+          "title": "OpenAI widens subsidized AI access to state and local defenders",
+          "source": "OPENAI",
+          "category": "policy",
+          "keywords": [
+            "AI Daily",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-life-sciences-verification",
+          "title": "Anthropic creates a verification lane for life-science users",
+          "source": "ANTHROPIC",
+          "category": "policy",
+          "keywords": [
+            "AI Daily",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-misuse-report-september",
+          "title": "Anthropic says misuse monitoring is becoming an operating discipline",
+          "source": "ANTHROPIC",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-daybreak-frontline",
+          "title": "OpenAI commits subsidized cyber-AI support for frontline defenders",
+          "source": "OPENAI",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-ukraine-journalism",
+          "title": "A newsroom AI program tests whether access can strengthen independent reporting",
+          "source": "OPENAI · WAN-IFRA · AIRPPU",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-devday-2026",
+          "title": "DevDay 2026 is now a date on the developer calendar",
+          "source": "OPENAI",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "safeagent-runtime-protection",
+          "title": "A runtime controller treats agent safety as a state problem",
+          "source": "ARXIV",
+          "category": "research",
+          "keywords": [
+            "AI Daily",
+            "research"
+          ]
+        },
+        {
+          "event_id": "rag-safety-bench",
+          "title": "RAG safety tests ask whether helpful context can weaken a refusal",
+          "source": "ARXIV · EMNLP 2026",
+          "category": "research",
+          "keywords": [
+            "Safety",
+            "research"
+          ]
+        },
+        {
+          "event_id": "anthropic-announcement-anthropic-releases-claude-3-5-sonnet",
+          "title": "Anthropic releases Claude 3.5 Sonnet",
+          "source": "ANTHROPIC ANNOUNCEMENT",
+          "category": "product",
+          "keywords": [
+            "LLMs",
+            "product"
+          ]
+        },
+        {
+          "event_id": "meta-ai-blog-meta-releases-llama-3-70b-and-8b-models",
+          "title": "Meta releases Llama 3 70B and 8B models",
+          "source": "META AI BLOG",
+          "category": "open-weights",
+          "keywords": [
+            "Open Source",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "openai-spring-update-openai-introduces-gpt-4o-with-native-multimodal-int",
+          "title": "OpenAI introduces GPT-4o with native multimodal integration",
+          "source": "OPENAI SPRING UPDATE",
+          "category": "product",
+          "keywords": [
+            "Multimodal",
+            "product"
+          ]
+        },
+        {
+          "event_id": "mistral-ai-blog-mistral-ai-launches-codestral-for-dedicated-code-generat",
+          "title": "Mistral AI launches Codestral for dedicated code generation",
+          "source": "MISTRAL AI BLOG",
+          "category": "open-weights",
+          "keywords": [
+            "Code Models",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "microsoft-research-microsoft-open-sources-autogen-studio-for-multi-agent",
+          "title": "Microsoft open-sources AutoGen Studio for multi-agent workflows",
+          "source": "MICROSOFT RESEARCH",
+          "category": "agents",
+          "keywords": [
+            "Frameworks",
+            "agents"
+          ]
+        },
+        {
+          "event_id": "nature-deepmind-google-deepmind-publishes-alphafold-3-specifications",
+          "title": "Google DeepMind publishes AlphaFold 3 specifications",
+          "source": "NATURE / DEEPMIND",
+          "category": "research",
+          "keywords": [
+            "Biotech",
+            "research"
+          ]
+        },
+        {
+          "event_id": "cohere-blog-cohere-introduces-command-r-optimized-for-enterprise-rag",
+          "title": "Cohere introduces Command R+ optimized for enterprise RAG",
+          "source": "COHERE BLOG",
+          "category": "product",
+          "keywords": [
+            "Enterprise API",
+            "product"
+          ]
+        },
+        {
+          "event_id": "nvidia-gtc-keynote-nvidia-announces-blackwell-b200-gpu-architecture",
+          "title": "NVIDIA announces Blackwell B200 GPU architecture",
+          "source": "NVIDIA GTC KEYNOTE",
+          "category": "infra",
+          "keywords": [
+            "Hardware",
+            "infra"
+          ]
+        },
+        {
+          "event_id": "langchain-blog-langchain-releases-langgraph-for-stateful-agent-applicati",
+          "title": "LangChain releases LangGraph for stateful agent applications",
+          "source": "LANGCHAIN BLOG",
+          "category": "agents",
+          "keywords": [
+            "Orchestration",
+            "agents"
+          ]
+        },
+        {
+          "event_id": "european-parliament-press-release-eu-ai-act-finalized-by-european-parlia",
+          "title": "EU AI Act finalized by European Parliament",
+          "source": "EUROPEAN PARLIAMENT PRESS RELEASE",
+          "category": "policy",
+          "keywords": [
+            "Regulation",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "qwen-research-blog-qwen-team-releases-qwen2-open-model-series",
+          "title": "Qwen Team releases Qwen2 open model series",
+          "source": "QWEN RESEARCH BLOG",
+          "category": "open-weights",
+          "keywords": [
+            "LLMs",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "white-house-statement-us-executive-order-mandates-safety-testing-for-maj",
+          "title": "US Executive Order mandates safety testing for major AI models",
+          "source": "WHITE HOUSE STATEMENT",
+          "category": "policy",
+          "keywords": [
+            "Governance",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "vllm-project-repository-vllm-project-optimizes-continuous-batching-for-o",
+          "title": "vLLM project optimizes continuous batching for open models",
+          "source": "VLLM PROJECT REPOSITORY",
+          "category": "infra",
+          "keywords": [
+            "Inference Optimization",
+            "infra"
+          ]
+        },
+        {
+          "event_id": "stanford-nlp-group-stanford-researchers-publish-dspy-for-declarative-pro",
+          "title": "Stanford researchers publish DSPy for declarative prompt optimization",
+          "source": "STANFORD NLP GROUP",
+          "category": "research",
+          "keywords": [
+            "Prompt Optimization",
+            "research"
+          ]
+        },
+        {
+          "event_id": "crewai-release-notes-crewai-framework-expands-tool-calling-multi-agent-s",
+          "title": "CrewAI framework expands tool-calling multi-agent support",
+          "source": "CREWAI RELEASE NOTES",
+          "category": "agents",
+          "keywords": [
+            "Developer Tools",
+            "agents"
+          ]
+        }
+      ]
+    },
     {
       "date": "2026-10-30",
       "edition": 220,
