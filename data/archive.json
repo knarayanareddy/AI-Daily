@@ -1,7 +1,266 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-31T13:46:39.000Z",
+  "generated_at": "2026-11-01T14:19:58.000Z",
   "editions": [
+    {
+      "date": "2026-11-01",
+      "edition": 222,
+      "run_id": "daily-curation-20261101",
+      "published_at": "2026-11-01T12:00:00.000Z",
+      "story_count": 25,
+      "stories": [
+        {
+          "event_id": "openai-misalignment-disclosure-update",
+          "title": "OpenAI expands its misalignment disclosure into an incident record",
+          "source": "OPENAI",
+          "category": "policy",
+          "keywords": [
+            "Safety",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-rd-automation-metrics",
+          "title": "Anthropic puts numbers on AI helping build AI",
+          "source": "ANTHROPIC INSTITUTE",
+          "category": "research",
+          "keywords": [
+            "Research loops",
+            "research"
+          ]
+        },
+        {
+          "event_id": "openai-government-access",
+          "title": "OpenAI widens subsidized AI access to state and local defenders",
+          "source": "OPENAI",
+          "category": "policy",
+          "keywords": [
+            "AI Daily",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-life-sciences-verification",
+          "title": "Anthropic creates a verification lane for life-science users",
+          "source": "ANTHROPIC",
+          "category": "policy",
+          "keywords": [
+            "AI Daily",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-misuse-report-september",
+          "title": "Anthropic says misuse monitoring is becoming an operating discipline",
+          "source": "ANTHROPIC",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-daybreak-frontline",
+          "title": "OpenAI commits subsidized cyber-AI support for frontline defenders",
+          "source": "OPENAI",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-ukraine-journalism",
+          "title": "A newsroom AI program tests whether access can strengthen independent reporting",
+          "source": "OPENAI · WAN-IFRA · AIRPPU",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-devday-2026",
+          "title": "DevDay 2026 is now a date on the developer calendar",
+          "source": "OPENAI",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "safeagent-runtime-protection",
+          "title": "A runtime controller treats agent safety as a state problem",
+          "source": "ARXIV",
+          "category": "research",
+          "keywords": [
+            "AI Daily",
+            "research"
+          ]
+        },
+        {
+          "event_id": "rag-safety-bench",
+          "title": "RAG safety tests ask whether helpful context can weaken a refusal",
+          "source": "ARXIV · EMNLP 2026",
+          "category": "research",
+          "keywords": [
+            "Safety",
+            "research"
+          ]
+        },
+        {
+          "event_id": "anthropic-announcement-anthropic-launches-claude-3-5-haiku-with-upgraded",
+          "title": "Anthropic Launches Claude 3.5 Haiku with Upgraded Speed and Coding Capabilities",
+          "source": "ANTHROPIC ANNOUNCEMENT",
+          "category": "product",
+          "keywords": [
+            "LLMs",
+            "product"
+          ]
+        },
+        {
+          "event_id": "meta-ai-blog-meta-releases-quantized-llama-3-2-models-optimized-for-on-d",
+          "title": "Meta Releases Quantized Llama 3.2 Models Optimized for On-Device Execution",
+          "source": "META AI BLOG",
+          "category": "open-weights",
+          "keywords": [
+            "Edge AI",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "openai-release-notes-openai-begins-rolling-out-desktop-application-integ",
+          "title": "OpenAI Begins Rolling Out Desktop Application Integration for macOS",
+          "source": "OPENAI RELEASE NOTES",
+          "category": "product",
+          "keywords": [
+            "Developer Tools",
+            "product"
+          ]
+        },
+        {
+          "event_id": "microsoft-official-blog-microsoft-introduces-agent-capabilities-in-copil",
+          "title": "Microsoft Introduces Agent Capabilities in Copilot Studio",
+          "source": "MICROSOFT OFFICIAL BLOG",
+          "category": "agents",
+          "keywords": [
+            "Enterprise Agents",
+            "agents"
+          ]
+        },
+        {
+          "event_id": "arxiv-google-deepmind-google-deepmind-publishes-research-on-recurrent-co",
+          "title": "Google DeepMind Publishes Research on Recurrent Context Compression",
+          "source": "ARXIV / GOOGLE DEEPMIND",
+          "category": "research",
+          "keywords": [
+            "Context Windows",
+            "research"
+          ]
+        },
+        {
+          "event_id": "hugging-face-hub-hugging-face-releases-smollm2-open-weight-series",
+          "title": "Hugging Face Releases SmolLM2 Open-Weight Series",
+          "source": "HUGGING FACE HUB",
+          "category": "open-weights",
+          "keywords": [
+            "Small Language Models",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "nvidia-developer-blog-nvidia-introduces-tensorrt-llm-optimizations-for-r",
+          "title": "NVIDIA Introduces TensorRT-LLM Optimizations for Reasoning Models",
+          "source": "NVIDIA DEVELOPER BLOG",
+          "category": "infra",
+          "keywords": [
+            "Inference Acceleration",
+            "infra"
+          ]
+        },
+        {
+          "event_id": "nsf-news-us-national-science-foundation-launches-nairr-pilot-extensions",
+          "title": "US National Science Foundation Launches NAIRR Pilot Extensions",
+          "source": "NSF NEWS",
+          "category": "policy",
+          "keywords": [
+            "Academic AI Infrastructure",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "langchain-blog-langchain-framework-updates-multi-agent-orchestration-lib",
+          "title": "LangChain Framework Updates Multi-Agent Orchestration Libraries",
+          "source": "LANGCHAIN BLOG",
+          "category": "agents",
+          "keywords": [
+            "Developer Frameworks",
+            "agents"
+          ]
+        },
+        {
+          "event_id": "mistral-news-mistral-ai-publishes-fine-tuning-sdk-for-custom-enterprise",
+          "title": "Mistral AI Publishes Fine-Tuning SDK for Custom Enterprise Workloads",
+          "source": "MISTRAL NEWS",
+          "category": "product",
+          "keywords": [
+            "Model Adaptation",
+            "product"
+          ]
+        },
+        {
+          "event_id": "uk-aisi-github-uk-ai-safety-institute-open-sources-evaluation-framework",
+          "title": "UK AI Safety Institute Open-Sources Evaluation Framework for Agent Safeguards",
+          "source": "UK AISI GITHUB",
+          "category": "policy",
+          "keywords": [
+            "AI Safety",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "vllm-blog-vllm-project-adds-multi-gpu-speculative-decoding",
+          "title": "vLLM Project Adds Multi-GPU Speculative Decoding",
+          "source": "VLLM BLOG",
+          "category": "infra",
+          "keywords": [
+            "Open-Source Infra",
+            "infra"
+          ]
+        },
+        {
+          "event_id": "arxiv-stanford-ai-lab-stanford-researchers-propose-alignment-method-via",
+          "title": "Stanford Researchers Propose Alignment Method via Synthetic Direct Preference Optimization",
+          "source": "ARXIV / STANFORD AI LAB",
+          "category": "research",
+          "keywords": [
+            "Model Alignment",
+            "research"
+          ]
+        },
+        {
+          "event_id": "aws-news-blog-aws-integrates-anthropic-computer-use-capabilities-into-be",
+          "title": "AWS Integrates Anthropic Computer Use Capabilities into Bedrock",
+          "source": "AWS NEWS BLOG",
+          "category": "agents",
+          "keywords": [
+            "Cloud Infrastructure",
+            "agents"
+          ]
+        },
+        {
+          "event_id": "european-commission-announcement-european-ai-office-launches-first-consu",
+          "title": "European AI Office Launches First Consultation on General-Purpose AI Code of Practice",
+          "source": "EUROPEAN COMMISSION ANNOUNCEMENT",
+          "category": "policy",
+          "keywords": [
+            "Regulation",
+            "policy"
+          ]
+        }
+      ]
+    },
     {
       "date": "2026-10-31",
       "edition": 221,
