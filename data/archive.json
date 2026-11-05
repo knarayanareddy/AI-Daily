@@ -1,7 +1,266 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-04T15:30:28.000Z",
+  "generated_at": "2026-11-05T15:33:52.000Z",
   "editions": [
+    {
+      "date": "2026-11-05",
+      "edition": 226,
+      "run_id": "daily-curation-20261105",
+      "published_at": "2026-11-05T12:00:00.000Z",
+      "story_count": 25,
+      "stories": [
+        {
+          "event_id": "openai-misalignment-disclosure-update",
+          "title": "OpenAI expands its misalignment disclosure into an incident record",
+          "source": "OPENAI",
+          "category": "policy",
+          "keywords": [
+            "Safety",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-rd-automation-metrics",
+          "title": "Anthropic puts numbers on AI helping build AI",
+          "source": "ANTHROPIC INSTITUTE",
+          "category": "research",
+          "keywords": [
+            "Research loops",
+            "research"
+          ]
+        },
+        {
+          "event_id": "openai-government-access",
+          "title": "OpenAI widens subsidized AI access to state and local defenders",
+          "source": "OPENAI",
+          "category": "policy",
+          "keywords": [
+            "AI Daily",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-life-sciences-verification",
+          "title": "Anthropic creates a verification lane for life-science users",
+          "source": "ANTHROPIC",
+          "category": "policy",
+          "keywords": [
+            "AI Daily",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-misuse-report-september",
+          "title": "Anthropic says misuse monitoring is becoming an operating discipline",
+          "source": "ANTHROPIC",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-daybreak-frontline",
+          "title": "OpenAI commits subsidized cyber-AI support for frontline defenders",
+          "source": "OPENAI",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-ukraine-journalism",
+          "title": "A newsroom AI program tests whether access can strengthen independent reporting",
+          "source": "OPENAI · WAN-IFRA · AIRPPU",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-devday-2026",
+          "title": "DevDay 2026 is now a date on the developer calendar",
+          "source": "OPENAI",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "safeagent-runtime-protection",
+          "title": "A runtime controller treats agent safety as a state problem",
+          "source": "ARXIV",
+          "category": "research",
+          "keywords": [
+            "AI Daily",
+            "research"
+          ]
+        },
+        {
+          "event_id": "rag-safety-bench",
+          "title": "RAG safety tests ask whether helpful context can weaken a refusal",
+          "source": "ARXIV · EMNLP 2026",
+          "category": "research",
+          "keywords": [
+            "Safety",
+            "research"
+          ]
+        },
+        {
+          "event_id": "anthropic-blog-anthropic-launches-claude-3-5-sonnet",
+          "title": "Anthropic Launches Claude 3.5 Sonnet",
+          "source": "ANTHROPIC BLOG",
+          "category": "product",
+          "keywords": [
+            "LLMs",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-announcement-openai-acquires-rockset-to-boost-real-time-enterpris",
+          "title": "OpenAI Acquires Rockset to Boost Real-Time Enterprise Search",
+          "source": "OPENAI ANNOUNCEMENT",
+          "category": "infra",
+          "keywords": [
+            "Acquisitions",
+            "infra"
+          ]
+        },
+        {
+          "event_id": "meta-ai-research-meta-releases-3d-gen-for-ultra-fast-text-to-3d-asset-ge",
+          "title": "Meta Releases 3D Gen for Ultra-Fast Text-to-3D Asset Generation",
+          "source": "META AI RESEARCH",
+          "category": "research",
+          "keywords": [
+            "Generative AI",
+            "research"
+          ]
+        },
+        {
+          "event_id": "google-developer-blog-google-deepmind-releases-gemma-2-open-weights-fami",
+          "title": "Google DeepMind Releases Gemma 2 Open Weights Family",
+          "source": "GOOGLE DEVELOPER BLOG",
+          "category": "open-weights",
+          "keywords": [
+            "Open Source",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "microsoft-research-github-microsoft-framework-autogen-introduces-multi-a",
+          "title": "Microsoft Framework AutoGen Introduces Multi-Agent Customization Updates",
+          "source": "MICROSOFT RESEARCH GITHUB",
+          "category": "agents",
+          "keywords": [
+            "Frameworks",
+            "agents"
+          ]
+        },
+        {
+          "event_id": "official-journal-of-the-european-union-eu-ai-act-published-in-official-j",
+          "title": "EU AI Act Published in Official Journal, Setting Implementation Timelines",
+          "source": "OFFICIAL JOURNAL OF THE EUROPEAN UNION",
+          "category": "policy",
+          "keywords": [
+            "Governance",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "runway-research-runway-launches-gen-3-alpha-video-generation-model",
+          "title": "Runway Launches Gen-3 Alpha Video Generation Model",
+          "source": "RUNWAY RESEARCH",
+          "category": "product",
+          "keywords": [
+            "Video AI",
+            "product"
+          ]
+        },
+        {
+          "event_id": "nvidia-developer-news-nvidia-releases-nemotron-4-340b-synthetic-data-gen",
+          "title": "NVIDIA Releases Nemotron-4 340B Synthetic Data Generation Models",
+          "source": "NVIDIA DEVELOPER NEWS",
+          "category": "open-weights",
+          "keywords": [
+            "Synthetic Data",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "mistral-ai-blog-mistral-ai-releases-codestral-mamba-for-code-generation",
+          "title": "Mistral AI Releases Codestral Mamba for Code Generation",
+          "source": "MISTRAL AI BLOG",
+          "category": "open-weights",
+          "keywords": [
+            "Code Models",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "langchain-blog-langchain-unveils-langgraph-v0-1-for-stateful-agent-contr",
+          "title": "LangChain Unveils LangGraph v0.1 for Stateful Agent Control",
+          "source": "LANGCHAIN BLOG",
+          "category": "agents",
+          "keywords": [
+            "Frameworks",
+            "agents"
+          ]
+        },
+        {
+          "event_id": "apple-machine-learning-research-apple-details-apple-intelligence-archite",
+          "title": "Apple Details Apple Intelligence Architectural Foundations",
+          "source": "APPLE MACHINE LEARNING RESEARCH",
+          "category": "research",
+          "keywords": [
+            "On-Device AI",
+            "research"
+          ]
+        },
+        {
+          "event_id": "cohere-blog-cohere-releases-command-r-open-weights-for-enterprise-rag",
+          "title": "Cohere Releases Command R+ Open Weights for Enterprise RAG",
+          "source": "COHERE BLOG",
+          "category": "open-weights",
+          "keywords": [
+            "Enterprise AI",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "us-department-of-commerce-us-uk-ai-safety-institutes-sign-mutual-alignme",
+          "title": "US & UK AI Safety Institutes Sign Mutual Alignment Partnership",
+          "source": "US DEPARTMENT OF COMMERCE",
+          "category": "policy",
+          "keywords": [
+            "Safety Standards",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "llamaindex-blog-llama-index-releases-workflows-for-dynamic-agentic-orche",
+          "title": "Llama-Index Releases Workflows for Dynamic Agentic Orchestration",
+          "source": "LLAMAINDEX BLOG",
+          "category": "agents",
+          "keywords": [
+            "Developer Tools",
+            "agents"
+          ]
+        },
+        {
+          "event_id": "vllm-project-github-vllm-collective-releases-v0-5-0-with-improved-servin",
+          "title": "vLLM Collective Releases v0.5.0 with Improved Serving Performance",
+          "source": "VLLM PROJECT GITHUB",
+          "category": "infra",
+          "keywords": [
+            "Inference Infrastructure",
+            "infra"
+          ]
+        }
+      ]
+    },
     {
       "date": "2026-11-04",
       "edition": 225,
