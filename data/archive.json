@@ -1,7 +1,266 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-05T15:33:52.000Z",
+  "generated_at": "2026-11-06T15:07:10.000Z",
   "editions": [
+    {
+      "date": "2026-11-06",
+      "edition": 227,
+      "run_id": "daily-curation-20261106",
+      "published_at": "2026-11-06T12:00:00.000Z",
+      "story_count": 25,
+      "stories": [
+        {
+          "event_id": "openai-misalignment-disclosure-update",
+          "title": "OpenAI expands its misalignment disclosure into an incident record",
+          "source": "OPENAI",
+          "category": "policy",
+          "keywords": [
+            "Safety",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-rd-automation-metrics",
+          "title": "Anthropic puts numbers on AI helping build AI",
+          "source": "ANTHROPIC INSTITUTE",
+          "category": "research",
+          "keywords": [
+            "Research loops",
+            "research"
+          ]
+        },
+        {
+          "event_id": "openai-government-access",
+          "title": "OpenAI widens subsidized AI access to state and local defenders",
+          "source": "OPENAI",
+          "category": "policy",
+          "keywords": [
+            "AI Daily",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-life-sciences-verification",
+          "title": "Anthropic creates a verification lane for life-science users",
+          "source": "ANTHROPIC",
+          "category": "policy",
+          "keywords": [
+            "AI Daily",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-misuse-report-september",
+          "title": "Anthropic says misuse monitoring is becoming an operating discipline",
+          "source": "ANTHROPIC",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-daybreak-frontline",
+          "title": "OpenAI commits subsidized cyber-AI support for frontline defenders",
+          "source": "OPENAI",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-ukraine-journalism",
+          "title": "A newsroom AI program tests whether access can strengthen independent reporting",
+          "source": "OPENAI · WAN-IFRA · AIRPPU",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-devday-2026",
+          "title": "DevDay 2026 is now a date on the developer calendar",
+          "source": "OPENAI",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "safeagent-runtime-protection",
+          "title": "A runtime controller treats agent safety as a state problem",
+          "source": "ARXIV",
+          "category": "research",
+          "keywords": [
+            "AI Daily",
+            "research"
+          ]
+        },
+        {
+          "event_id": "rag-safety-bench",
+          "title": "RAG safety tests ask whether helpful context can weaken a refusal",
+          "source": "ARXIV · EMNLP 2026",
+          "category": "research",
+          "keywords": [
+            "Safety",
+            "research"
+          ]
+        },
+        {
+          "event_id": "anthropic-anthropic-releases-claude-3-5-haiku",
+          "title": "Anthropic releases Claude 3.5 Haiku",
+          "source": "ANTHROPIC",
+          "category": "product",
+          "keywords": [
+            "LLMs",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-openai-launches-chatgpt-search-feature-natively",
+          "title": "OpenAI launches ChatGPT Search feature natively",
+          "source": "OPENAI",
+          "category": "product",
+          "keywords": [
+            "Search",
+            "product"
+          ]
+        },
+        {
+          "event_id": "meta-ai-meta-releases-qwen-based-fine-tuning-results-alongside-quantizat",
+          "title": "Meta releases Qwen-based fine-tuning results alongside Quantization Toolkit",
+          "source": "META AI",
+          "category": "open-weights",
+          "keywords": [
+            "Quantization",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "google-deepmind-google-deepmind-open-sources-alphafold-3-code-for-resear",
+          "title": "Google DeepMind open-sources AlphaFold 3 code for research use",
+          "source": "GOOGLE DEEPMIND",
+          "category": "research",
+          "keywords": [
+            "Biology AI",
+            "research"
+          ]
+        },
+        {
+          "event_id": "microsoft-research-microsoft-introduces-magnetic-one-multi-agent-framewo",
+          "title": "Microsoft introduces Magnetic-One multi-agent framework",
+          "source": "MICROSOFT RESEARCH",
+          "category": "agents",
+          "keywords": [
+            "Frameworks",
+            "agents"
+          ]
+        },
+        {
+          "event_id": "the-white-house-us-issues-national-security-memorandum-on-artificial-int",
+          "title": "US issues National Security Memorandum on Artificial Intelligence",
+          "source": "THE WHITE HOUSE",
+          "category": "policy",
+          "keywords": [
+            "Governance",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "nvidia-nvidia-releases-nemotron-4-340b-instruct-for-custom-llm-training",
+          "title": "NVIDIA releases Nemotron-4 340B Instruct for custom LLM training",
+          "source": "NVIDIA",
+          "category": "open-weights",
+          "keywords": [
+            "Synthetic Data",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "hugging-face-hugging-face-introduces-smollm2-light-weight-model-series",
+          "title": "Hugging Face introduces SmolLM2 light-weight model series",
+          "source": "HUGGING FACE",
+          "category": "open-weights",
+          "keywords": [
+            "Edge Computing",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "amazon-web-services-aws-announces-trainium2-instance-availability-for-en",
+          "title": "AWS announces Trainium2 instance availability for enterprise workloads",
+          "source": "AMAZON WEB SERVICES",
+          "category": "infra",
+          "keywords": [
+            "Hardware",
+            "infra"
+          ]
+        },
+        {
+          "event_id": "langchain-langchain-releases-langgraph-v0-2-for-controllable-agent-workf",
+          "title": "LangChain releases LangGraph v0.2 for controllable agent workflows",
+          "source": "LANGCHAIN",
+          "category": "agents",
+          "keywords": [
+            "Developer Tools",
+            "agents"
+          ]
+        },
+        {
+          "event_id": "mistral-ai-mistral-ai-releases-pixtral-12b-multimodal-model",
+          "title": "Mistral AI releases Pixtral 12B multimodal model",
+          "source": "MISTRAL AI",
+          "category": "open-weights",
+          "keywords": [
+            "Multimodal",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "github-github-copilot-integrates-multi-model-switching-options",
+          "title": "GitHub Copilot integrates multi-model switching options",
+          "source": "GITHUB",
+          "category": "product",
+          "keywords": [
+            "Developer Tools",
+            "product"
+          ]
+        },
+        {
+          "event_id": "microsoft-research-arxiv-researchers-introduce-differential-transformer",
+          "title": "Researchers introduce Differential Transformer architecture",
+          "source": "MICROSOFT RESEARCH / ARXIV",
+          "category": "research",
+          "keywords": [
+            "Architecture",
+            "research"
+          ]
+        },
+        {
+          "event_id": "nist-us-aisi-us-ai-safety-institute-signs-testing-agreement-with-major-l",
+          "title": "US AI Safety Institute signs testing agreement with major labs",
+          "source": "NIST / US AISI",
+          "category": "policy",
+          "keywords": [
+            "Safety",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "cerebras-systems-cerebras-expands-cs-3-inference-cloud-service-offerings",
+          "title": "Cerebras expands CS-3 inference cloud service offerings",
+          "source": "CEREBRAS SYSTEMS",
+          "category": "infra",
+          "keywords": [
+            "Hardware",
+            "infra"
+          ]
+        }
+      ]
+    },
     {
       "date": "2026-11-05",
       "edition": 226,
