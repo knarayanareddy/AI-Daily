@@ -1,7 +1,266 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-06T15:07:10.000Z",
+  "generated_at": "2026-11-07T14:07:48.000Z",
   "editions": [
+    {
+      "date": "2026-11-07",
+      "edition": 228,
+      "run_id": "daily-curation-20261107",
+      "published_at": "2026-11-07T12:00:00.000Z",
+      "story_count": 25,
+      "stories": [
+        {
+          "event_id": "openai-misalignment-disclosure-update",
+          "title": "OpenAI expands its misalignment disclosure into an incident record",
+          "source": "OPENAI",
+          "category": "policy",
+          "keywords": [
+            "Safety",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-rd-automation-metrics",
+          "title": "Anthropic puts numbers on AI helping build AI",
+          "source": "ANTHROPIC INSTITUTE",
+          "category": "research",
+          "keywords": [
+            "Research loops",
+            "research"
+          ]
+        },
+        {
+          "event_id": "openai-government-access",
+          "title": "OpenAI widens subsidized AI access to state and local defenders",
+          "source": "OPENAI",
+          "category": "policy",
+          "keywords": [
+            "AI Daily",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-life-sciences-verification",
+          "title": "Anthropic creates a verification lane for life-science users",
+          "source": "ANTHROPIC",
+          "category": "policy",
+          "keywords": [
+            "AI Daily",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-misuse-report-september",
+          "title": "Anthropic says misuse monitoring is becoming an operating discipline",
+          "source": "ANTHROPIC",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-daybreak-frontline",
+          "title": "OpenAI commits subsidized cyber-AI support for frontline defenders",
+          "source": "OPENAI",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-ukraine-journalism",
+          "title": "A newsroom AI program tests whether access can strengthen independent reporting",
+          "source": "OPENAI · WAN-IFRA · AIRPPU",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-devday-2026",
+          "title": "DevDay 2026 is now a date on the developer calendar",
+          "source": "OPENAI",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "safeagent-runtime-protection",
+          "title": "A runtime controller treats agent safety as a state problem",
+          "source": "ARXIV",
+          "category": "research",
+          "keywords": [
+            "AI Daily",
+            "research"
+          ]
+        },
+        {
+          "event_id": "rag-safety-bench",
+          "title": "RAG safety tests ask whether helpful context can weaken a refusal",
+          "source": "ARXIV · EMNLP 2026",
+          "category": "research",
+          "keywords": [
+            "Safety",
+            "research"
+          ]
+        },
+        {
+          "event_id": "anthropic-announcement-anthropic-launches-claude-3-5-sonnet",
+          "title": "Anthropic Launches Claude 3.5 Sonnet",
+          "source": "ANTHROPIC ANNOUNCEMENT",
+          "category": "product",
+          "keywords": [
+            "LLMs",
+            "product"
+          ]
+        },
+        {
+          "event_id": "anthropic-announcement-anthropic-introduces-artifacts-ui-feature",
+          "title": "Anthropic Introduces 'Artifacts' UI Feature",
+          "source": "ANTHROPIC ANNOUNCEMENT",
+          "category": "product",
+          "keywords": [
+            "UI",
+            "product"
+          ]
+        },
+        {
+          "event_id": "meta-ai-blog-meta-releases-llama-3-405b-parameter-open-model",
+          "title": "Meta Releases Llama 3 405B Parameter Open Model",
+          "source": "META AI BLOG",
+          "category": "open-weights",
+          "keywords": [
+            "Open Weights",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "openai-announcement-openai-begins-rolling-out-advanced-voice-mode",
+          "title": "OpenAI Begins Rolling Out Advanced Voice Mode",
+          "source": "OPENAI ANNOUNCEMENT",
+          "category": "product",
+          "keywords": [
+            "Multimodal",
+            "product"
+          ]
+        },
+        {
+          "event_id": "mistral-ai-blog-mistral-ai-releases-codestral-for-code-generation",
+          "title": "Mistral AI Releases Codestral for Code Generation",
+          "source": "MISTRAL AI BLOG",
+          "category": "open-weights",
+          "keywords": [
+            "Coding",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "google-deepmind-blog-google-deepmind-announces-alphafold-3-source-code-r",
+          "title": "Google DeepMind Announces AlphaFold 3 Source Code Release",
+          "source": "GOOGLE DEEPMIND BLOG",
+          "category": "research",
+          "keywords": [
+            "Biology",
+            "research"
+          ]
+        },
+        {
+          "event_id": "reuters-microsoft-and-apple-relinquish-openai-board-observer-seats",
+          "title": "Microsoft and Apple Relinquish OpenAI Board Observer Seats",
+          "source": "REUTERS",
+          "category": "policy",
+          "keywords": [
+            "Governance",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "european-commission-eu-artificial-intelligence-act-takes-formal-effect",
+          "title": "EU Artificial Intelligence Act Takes Formal Effect",
+          "source": "EUROPEAN COMMISSION",
+          "category": "policy",
+          "keywords": [
+            "Regulation",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "nvidia-developer-blog-nvidia-releases-tensorrt-llm-optimizations-for-lla",
+          "title": "NVIDIA Releases TensorRT-LLM Optimizations for Llama Models",
+          "source": "NVIDIA DEVELOPER BLOG",
+          "category": "infra",
+          "keywords": [
+            "Inference",
+            "infra"
+          ]
+        },
+        {
+          "event_id": "techcrunch-crewai-raises-funding-to-expand-multi-agent-orchestration",
+          "title": "CrewAI Raises Funding to Expand Multi-Agent Orchestration",
+          "source": "TECHCRUNCH",
+          "category": "agents",
+          "keywords": [
+            "Frameworks",
+            "agents"
+          ]
+        },
+        {
+          "event_id": "microsoft-research-microsoft-launches-graphrag-open-source-engine",
+          "title": "Microsoft Launches GraphRAG Open Source Engine",
+          "source": "MICROSOFT RESEARCH",
+          "category": "research",
+          "keywords": [
+            "RAG",
+            "research"
+          ]
+        },
+        {
+          "event_id": "langchain-blog-langchain-releases-langgraph-v0-1-for-stateful-agent-cont",
+          "title": "LangChain Releases LangGraph v0.1 for Stateful Agent Control",
+          "source": "LANGCHAIN BLOG",
+          "category": "agents",
+          "keywords": [
+            "Orchestration",
+            "agents"
+          ]
+        },
+        {
+          "event_id": "scale-ai-blog-scale-ai-announces-seal-leaderboards-for-private-model-eva",
+          "title": "Scale AI Announces SEAL Leaderboards for Private Model Evaluation",
+          "source": "SCALE AI BLOG",
+          "category": "research",
+          "keywords": [
+            "Benchmarks",
+            "research"
+          ]
+        },
+        {
+          "event_id": "aws-news-blog-aws-integrates-anthropic-claude-3-5-sonnet-on-amazon-bedro",
+          "title": "AWS Integrates Anthropic Claude 3.5 Sonnet on Amazon Bedrock",
+          "source": "AWS NEWS BLOG",
+          "category": "infra",
+          "keywords": [
+            "Cloud",
+            "infra"
+          ]
+        },
+        {
+          "event_id": "deepseek-announcement-deepseek-releases-deepseek-coder-v2",
+          "title": "DeepSeek Releases DeepSeek-Coder-V2",
+          "source": "DEEPSEEK ANNOUNCEMENT",
+          "category": "open-weights",
+          "keywords": [
+            "Coding",
+            "open-weights"
+          ]
+        }
+      ]
+    },
     {
       "date": "2026-11-06",
       "edition": 227,
