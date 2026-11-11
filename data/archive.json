@@ -1,7 +1,266 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-10T15:40:22.000Z",
+  "generated_at": "2026-11-11T15:18:05.000Z",
   "editions": [
+    {
+      "date": "2026-11-11",
+      "edition": 232,
+      "run_id": "daily-curation-20261111",
+      "published_at": "2026-11-11T12:00:00.000Z",
+      "story_count": 25,
+      "stories": [
+        {
+          "event_id": "openai-misalignment-disclosure-update",
+          "title": "OpenAI expands its misalignment disclosure into an incident record",
+          "source": "OPENAI",
+          "category": "policy",
+          "keywords": [
+            "Safety",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-rd-automation-metrics",
+          "title": "Anthropic puts numbers on AI helping build AI",
+          "source": "ANTHROPIC INSTITUTE",
+          "category": "research",
+          "keywords": [
+            "Research loops",
+            "research"
+          ]
+        },
+        {
+          "event_id": "openai-government-access",
+          "title": "OpenAI widens subsidized AI access to state and local defenders",
+          "source": "OPENAI",
+          "category": "policy",
+          "keywords": [
+            "AI Daily",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-life-sciences-verification",
+          "title": "Anthropic creates a verification lane for life-science users",
+          "source": "ANTHROPIC",
+          "category": "policy",
+          "keywords": [
+            "AI Daily",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-misuse-report-september",
+          "title": "Anthropic says misuse monitoring is becoming an operating discipline",
+          "source": "ANTHROPIC",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-daybreak-frontline",
+          "title": "OpenAI commits subsidized cyber-AI support for frontline defenders",
+          "source": "OPENAI",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-ukraine-journalism",
+          "title": "A newsroom AI program tests whether access can strengthen independent reporting",
+          "source": "OPENAI · WAN-IFRA · AIRPPU",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-devday-2026",
+          "title": "DevDay 2026 is now a date on the developer calendar",
+          "source": "OPENAI",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "safeagent-runtime-protection",
+          "title": "A runtime controller treats agent safety as a state problem",
+          "source": "ARXIV",
+          "category": "research",
+          "keywords": [
+            "AI Daily",
+            "research"
+          ]
+        },
+        {
+          "event_id": "rag-safety-bench",
+          "title": "RAG safety tests ask whether helpful context can weaken a refusal",
+          "source": "ARXIV · EMNLP 2026",
+          "category": "research",
+          "keywords": [
+            "Safety",
+            "research"
+          ]
+        },
+        {
+          "event_id": "anthropic-announcement-anthropic-launches-claude-3-5-sonnet",
+          "title": "Anthropic Launches Claude 3.5 Sonnet",
+          "source": "ANTHROPIC ANNOUNCEMENT",
+          "category": "product",
+          "keywords": [
+            "LLMs",
+            "product"
+          ]
+        },
+        {
+          "event_id": "meta-ai-blog-meta-releases-llama-3-405b",
+          "title": "Meta Releases Llama 3 405B",
+          "source": "META AI BLOG",
+          "category": "open-weights",
+          "keywords": [
+            "Open Weights",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "openai-blog-openai-introduces-searchgpt-prototype",
+          "title": "OpenAI Introduces SearchGPT Prototype",
+          "source": "OPENAI BLOG",
+          "category": "product",
+          "keywords": [
+            "Search",
+            "product"
+          ]
+        },
+        {
+          "event_id": "mistral-ai-news-mistral-ai-releases-large-2",
+          "title": "Mistral AI Releases Large 2",
+          "source": "MISTRAL AI NEWS",
+          "category": "open-weights",
+          "keywords": [
+            "LLMs",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "google-developer-blog-google-deepmind-details-gemma-2-architecture",
+          "title": "Google DeepMind Details Gemma 2 Architecture",
+          "source": "GOOGLE DEVELOPER BLOG",
+          "category": "open-weights",
+          "keywords": [
+            "Research",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "microsoft-research-microsoft-unveils-autogen-studio-0-2",
+          "title": "Microsoft Unveils AutoGen Studio 0.2",
+          "source": "MICROSOFT RESEARCH",
+          "category": "agents",
+          "keywords": [
+            "Agent Frameworks",
+            "agents"
+          ]
+        },
+        {
+          "event_id": "european-commission-eu-artificial-intelligence-act-takes-effect",
+          "title": "EU Artificial Intelligence Act Takes Effect",
+          "source": "EUROPEAN COMMISSION",
+          "category": "policy",
+          "keywords": [
+            "Governance",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "nvidia-newsroom-nvidia-announces-blackwell-architecture-shipping-timelin",
+          "title": "NVIDIA Announces Blackwell Architecture Shipping Timeline",
+          "source": "NVIDIA NEWSROOM",
+          "category": "infra",
+          "keywords": [
+            "Hardware",
+            "infra"
+          ]
+        },
+        {
+          "event_id": "crewai-official-blog-crewai-raises-funding-to-expand-multi-agent-orchest",
+          "title": "CrewAI Raises Funding to Expand Multi-Agent Orchestration",
+          "source": "CREWAI OFFICIAL BLOG",
+          "category": "agents",
+          "keywords": [
+            "Agent Frameworks",
+            "agents"
+          ]
+        },
+        {
+          "event_id": "apple-machine-learning-research-apple-details-apple-intelligence-archite",
+          "title": "Apple Details Apple Intelligence Architecture",
+          "source": "APPLE MACHINE LEARNING RESEARCH",
+          "category": "research",
+          "keywords": [
+            "On-Device",
+            "research"
+          ]
+        },
+        {
+          "event_id": "cohere-blog-cohere-releases-command-r",
+          "title": "Cohere Releases Command R+",
+          "source": "COHERE BLOG",
+          "category": "product",
+          "keywords": [
+            "Enterprise LLMs",
+            "product"
+          ]
+        },
+        {
+          "event_id": "langchain-blog-langchain-releases-langgraph-0-1",
+          "title": "LangChain Releases LangGraph 0.1",
+          "source": "LANGCHAIN BLOG",
+          "category": "agents",
+          "keywords": [
+            "Developer Tools",
+            "agents"
+          ]
+        },
+        {
+          "event_id": "nist-press-release-us-ai-safety-institute-signs-testing-agreements-with",
+          "title": "US AI Safety Institute Signs Testing Agreements with OpenAI and Anthropic",
+          "source": "NIST PRESS RELEASE",
+          "category": "policy",
+          "keywords": [
+            "Safety",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "vllm-blog-vllm-project-expands-support-for-multi-lora-serving",
+          "title": "vLLM Project Expands Support for Multi-LoRA Serving",
+          "source": "VLLM BLOG",
+          "category": "infra",
+          "keywords": [
+            "Inference Infrastructure",
+            "infra"
+          ]
+        },
+        {
+          "event_id": "deepseek-github-repository-deepseek-releases-deepseek-v2",
+          "title": "DeepSeek Releases DeepSeek-V2",
+          "source": "DEEPSEEK GITHUB REPOSITORY",
+          "category": "open-weights",
+          "keywords": [
+            "Architecture",
+            "open-weights"
+          ]
+        }
+      ]
+    },
     {
       "date": "2026-11-10",
       "edition": 231,
