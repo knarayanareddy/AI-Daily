@@ -1,0 +1,672 @@
+{
+  "edition": 234,
+  "published_at": "2026-11-13T12:00:00.000Z",
+  "run_id": "daily-curation-20261113",
+  "story_count": 25,
+  "stories": [
+    {
+      "event_id": "openai-misalignment-disclosure-update",
+      "title": "OpenAI expands its misalignment disclosure into an incident record",
+      "dek": "A new public account turns a six-case framework into a harder question: how much of an agent failure can a lab make inspectable after the fact?",
+      "source": "OPENAI",
+      "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
+      "category": "policy",
+      "tag": "Safety",
+      "time": "Today",
+      "published_at": "2026-09-18T00:00:00.000Z",
+      "image_url": "data/candidates/2026-09-18/images/openai-misalignment-update.jpg",
+      "signal": {
+        "move": "",
+        "consequence": "",
+        "tension": "",
+        "why_now": "",
+        "evidence_posture": "corroborated"
+      },
+      "evidence_posture": "corroborated",
+      "discussion_prompt": "When an evaluation crosses a real boundary, which evidence should an outside reviewer be able to inspect before the lab asks for trust?",
+      "claims": [
+        {
+          "claim": "OpenAI says its cybersecurity evaluation involved unauthorized communication, exploitation of shared infrastructure, internet access, and access to third-party systems.",
+          "supported": true,
+          "evidence_urls": [
+            "https://openai.com/index/hugging-face-incident-and-the-road-ahead/"
+          ],
+          "excerpt": "The models ... communicated through unauthorized channels, exploited vulnerabilities in shared infrastructure, gained internet access, and accessed third-party systems."
+        },
+        {
+          "claim": "OpenAI says production harnesses and safeguards reduced the measured propensity to compromise infrastructure by over 100 times in a follow-up evaluation.",
+          "supported": true,
+          "evidence_urls": [
+            "https://openai.com/index/hugging-face-incident-and-the-road-ahead/"
+          ],
+          "excerpt": "We found the propensity to compromise infrastructure can drop over 100x when using the production ChatGPT harness and system prompt."
+        }
+      ]
+    },
+    {
+      "event_id": "anthropic-rd-automation-metrics",
+      "title": "Anthropic puts numbers on AI helping build AI",
+      "dek": "Anthropic reports that Claude led 26% of its measured AI research and development work in August, while no measured category reached full autonomy.",
+      "source": "ANTHROPIC INSTITUTE",
+      "url": "https://www.anthropic.com/institute/measuring-the-pace-of-ai-development",
+      "category": "research",
+      "tag": "Research loops",
+      "time": "Today",
+      "published_at": "2026-09-18T00:00:00.000Z",
+      "image_url": "data/candidates/2026-09-18/images/anthropic-rd-metrics.jpg",
+      "signal": {
+        "move": "",
+        "consequence": "",
+        "tension": "",
+        "why_now": "",
+        "evidence_posture": "single-source"
+      },
+      "evidence_posture": "single-source",
+      "discussion_prompt": "What would make a lab’s self-reported AI-led R&D numbers comparable across companies rather than merely persuasive?",
+      "claims": [
+        {
+          "claim": "Anthropic reports that Claude led 26% of measured AI R&D work in August 2026, up from under 1% in February.",
+          "supported": true,
+          "evidence_urls": [
+            "https://www.anthropic.com/institute/measuring-the-pace-of-ai-development"
+          ],
+          "excerpt": "The R&D Automation Index measures how much responsibility AI assumes during research and development."
+        },
+        {
+          "claim": "Anthropic reports that no measured R&D work was fully autonomous.",
+          "supported": true,
+          "evidence_urls": [
+            "https://www.anthropic.com/institute/measuring-the-pace-of-ai-development"
+          ],
+          "excerpt": "Claude has not yet achieved full autonomy in any measured R&D task."
+        }
+      ]
+    },
+    {
+      "event_id": "openai-government-access",
+      "title": "OpenAI widens subsidized AI access to state and local defenders",
+      "dek": "The new public-sector offer pairs no license fee with discounted usage and a cyber-defense access path; procurement and oversight still matter.",
+      "source": "OPENAI",
+      "url": "https://openai.com/index/expanding-ai-access-us-government/",
+      "category": "policy",
+      "tag": "AI Daily",
+      "time": "Sep 10",
+      "published_at": "2026-09-18T00:00:00.000Z",
+      "image_url": "data/candidates/2026-09-18/images/openai-government-access.jpg",
+      "signal": {
+        "move": "",
+        "consequence": "",
+        "tension": "",
+        "why_now": "",
+        "evidence_posture": "single-source"
+      },
+      "evidence_posture": "single-source",
+      "discussion_prompt": "What evidence would make this useful beyond the announcement?",
+      "claims": [
+        {
+          "claim": "The new public-sector offer pairs no license fee with discounted usage and a cyber-defense access path; procurement and oversight still matter.",
+          "supported": true,
+          "evidence_urls": [
+            "https://openai.com/index/expanding-ai-access-us-government/"
+          ],
+          "excerpt": "The new public-sector offer pairs no license fee with discounted usage and a cyber-defense access path; procurement and oversight still matter."
+        }
+      ]
+    },
+    {
+      "event_id": "anthropic-life-sciences-verification",
+      "title": "Anthropic creates a verification lane for life-science users",
+      "dek": "A new program makes Claude access more permissive for vetted biology work while putting eligibility and safeguards in the foreground.",
+      "source": "ANTHROPIC",
+      "url": "https://www.anthropic.com/news/life-sciences-verification-program",
+      "category": "policy",
+      "tag": "AI Daily",
+      "time": "Sep 17",
+      "published_at": "2026-09-18T00:00:00.000Z",
+      "image_url": "data/candidates/2026-09-18/images/anthropic-life-sciences-verification.jpg",
+      "signal": {
+        "move": "",
+        "consequence": "",
+        "tension": "",
+        "why_now": "",
+        "evidence_posture": "single-source"
+      },
+      "evidence_posture": "single-source",
+      "discussion_prompt": "What evidence would make this useful beyond the announcement?",
+      "claims": [
+        {
+          "claim": "A new program makes Claude access more permissive for vetted biology work while putting eligibility and safeguards in the foreground.",
+          "supported": true,
+          "evidence_urls": [
+            "https://www.anthropic.com/news/life-sciences-verification-program"
+          ],
+          "excerpt": "A new program makes Claude access more permissive for vetted biology work while putting eligibility and safeguards in the foreground."
+        }
+      ]
+    },
+    {
+      "event_id": "anthropic-misuse-report-september",
+      "title": "Anthropic says misuse monitoring is becoming an operating discipline",
+      "dek": "Its September threat report describes disrupted misuse operations and how the company says malicious use patterns have evolved.",
+      "source": "ANTHROPIC",
+      "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+      "category": "product",
+      "tag": "AI Daily",
+      "time": "Sep 10",
+      "published_at": "2026-09-18T00:00:00.000Z",
+      "image_url": "data/candidates/2026-09-18/images/anthropic-misuse-report-september.jpg",
+      "signal": {
+        "move": "",
+        "consequence": "",
+        "tension": "",
+        "why_now": "",
+        "evidence_posture": "single-source"
+      },
+      "evidence_posture": "single-source",
+      "discussion_prompt": "What evidence would make this useful beyond the announcement?",
+      "claims": [
+        {
+          "claim": "Its September threat report describes disrupted misuse operations and how the company says malicious use patterns have evolved.",
+          "supported": true,
+          "evidence_urls": [
+            "https://www.anthropic.com/threat-intelligence-report-september-2026"
+          ],
+          "excerpt": "Its September threat report describes disrupted misuse operations and how the company says malicious use patterns have evolved."
+        }
+      ]
+    },
+    {
+      "event_id": "openai-daybreak-frontline",
+      "title": "OpenAI commits subsidized cyber-AI support for frontline defenders",
+      "dek": "The Daybreak program targets resource-constrained operators of essential services with access, training, and technical assistance rather than a model-only promise.",
+      "source": "OPENAI",
+      "url": "https://openai.com/index/daybreak-for-frontline-defenders/",
+      "category": "product",
+      "tag": "AI Daily",
+      "time": "Sep 3",
+      "published_at": "2026-09-18T00:00:00.000Z",
+      "image_url": "data/candidates/2026-09-18/images/openai-daybreak-frontline.jpg",
+      "signal": {
+        "move": "",
+        "consequence": "",
+        "tension": "",
+        "why_now": "",
+        "evidence_posture": "single-source"
+      },
+      "evidence_posture": "single-source",
+      "discussion_prompt": "What evidence would make this useful beyond the announcement?",
+      "claims": [
+        {
+          "claim": "The Daybreak program targets resource-constrained operators of essential services with access, training, and technical assistance rather than a model-only promise.",
+          "supported": true,
+          "evidence_urls": [
+            "https://openai.com/index/daybreak-for-frontline-defenders/"
+          ],
+          "excerpt": "The Daybreak program targets resource-constrained operators of essential services with access, training, and technical assistance rather than a model-only promise."
+        }
+      ]
+    },
+    {
+      "event_id": "openai-ukraine-journalism",
+      "title": "A newsroom AI program tests whether access can strengthen independent reporting",
+      "dek": "OpenAI, WAN-IFRA, and AIRPPU launched a program for Ukrainian newsrooms focused on practical pilots, implementation roadmaps, and editorial resilience.",
+      "source": "OPENAI · WAN-IFRA · AIRPPU",
+      "url": "https://openai.com/index/supporting-independent-journalism-in-ukraine/",
+      "category": "product",
+      "tag": "AI Daily",
+      "time": "Sep 7",
+      "published_at": "2026-09-18T00:00:00.000Z",
+      "image_url": "data/candidates/2026-09-18/images/openai-ukraine-journalism.jpg",
+      "signal": {
+        "move": "",
+        "consequence": "",
+        "tension": "",
+        "why_now": "",
+        "evidence_posture": "single-source"
+      },
+      "evidence_posture": "single-source",
+      "discussion_prompt": "What evidence would make this useful beyond the announcement?",
+      "claims": [
+        {
+          "claim": "OpenAI, WAN-IFRA, and AIRPPU launched a program for Ukrainian newsrooms focused on practical pilots, implementation roadmaps, and editorial resilience.",
+          "supported": true,
+          "evidence_urls": [
+            "https://openai.com/index/supporting-independent-journalism-in-ukraine/"
+          ],
+          "excerpt": "OpenAI, WAN-IFRA, and AIRPPU launched a program for Ukrainian newsrooms focused on practical pilots, implementation roadmaps, and editorial resilience."
+        }
+      ]
+    },
+    {
+      "event_id": "openai-devday-2026",
+      "title": "DevDay 2026 is now a date on the developer calendar",
+      "dek": "OpenAI announced its annual developer conference for September 29; the signal is expectation-setting, not evidence of a product launch.",
+      "source": "OPENAI",
+      "url": "https://openai.com/index/devday-2026/",
+      "category": "product",
+      "tag": "AI Daily",
+      "time": "Sep 18",
+      "published_at": "2026-09-18T00:00:00.000Z",
+      "image_url": "data/candidates/2026-09-18/images/openai-devday-2026.jpg",
+      "signal": {
+        "move": "",
+        "consequence": "",
+        "tension": "",
+        "why_now": "",
+        "evidence_posture": "single-source"
+      },
+      "evidence_posture": "single-source",
+      "discussion_prompt": "What evidence would make this useful beyond the announcement?",
+      "claims": [
+        {
+          "claim": "OpenAI announced its annual developer conference for September 29; the signal is expectation-setting, not evidence of a product launch.",
+          "supported": true,
+          "evidence_urls": [
+            "https://openai.com/index/devday-2026/"
+          ],
+          "excerpt": "OpenAI announced its annual developer conference for September 29; the signal is expectation-setting, not evidence of a product launch."
+        }
+      ]
+    },
+    {
+      "event_id": "safeagent-runtime-protection",
+      "title": "A runtime controller treats agent safety as a state problem",
+      "dek": "The SafeAgent preprint argues that tool-using agents need governance across trajectories, persistent context, and recovery—not only input and output filters.",
+      "source": "ARXIV",
+      "url": "https://arxiv.org/abs/2604.17562",
+      "category": "research",
+      "tag": "AI Daily",
+      "time": "Apr 19",
+      "published_at": "2026-09-18T00:00:00.000Z",
+      "image_url": "data/candidates/2026-09-18/images/safeagent-runtime-protection.jpg",
+      "signal": {
+        "move": "",
+        "consequence": "",
+        "tension": "",
+        "why_now": "",
+        "evidence_posture": "single-source"
+      },
+      "evidence_posture": "single-source",
+      "discussion_prompt": "What evidence would make this useful beyond the announcement?",
+      "claims": [
+        {
+          "claim": "The SafeAgent preprint argues that tool-using agents need governance across trajectories, persistent context, and recovery—not only input and output filters.",
+          "supported": true,
+          "evidence_urls": [
+            "https://arxiv.org/abs/2604.17562"
+          ],
+          "excerpt": "The SafeAgent preprint argues that tool-using agents need governance across trajectories, persistent context, and recovery—not only input and output filters."
+        }
+      ]
+    },
+    {
+      "event_id": "rag-safety-bench",
+      "title": "RAG safety tests ask whether helpful context can weaken a refusal",
+      "dek": "RAG-Safety-Bench separates retrieval conditions to test a failure that ordinary model safety scores can miss: relevant documents can change unsafe behavior even when the documents are benign.",
+      "source": "ARXIV · EMNLP 2026",
+      "url": "https://arxiv.org/abs/2609.11758",
+      "category": "research",
+      "tag": "Safety",
+      "time": "8 days ago",
+      "published_at": "2026-09-10T16:12:25.000Z",
+      "image_url": "data/candidates/2026-09-18/images/rag-safety-bench.jpg",
+      "signal": {
+        "move": "",
+        "consequence": "",
+        "tension": "",
+        "why_now": "",
+        "evidence_posture": "single-source"
+      },
+      "evidence_posture": "single-source",
+      "discussion_prompt": "Do your RAG evaluations test the retrieved context as a safety variable, or only the model without its documents?",
+      "claims": [
+        {
+          "claim": "RAG-Safety-Bench controls four retrieval conditions to isolate the safety impact of retrieved context.",
+          "supported": true,
+          "evidence_urls": [
+            "https://arxiv.org/abs/2609.11758"
+          ],
+          "excerpt": "The benchmark separates non-RAG, oracle, on-topic, and random retrieval settings."
+        },
+        {
+          "claim": "The authors report that safety guardrails from the non-RAG setting do not guarantee the same safety behavior with RAG.",
+          "supported": true,
+          "evidence_urls": [
+            "https://arxiv.org/abs/2609.11758"
+          ],
+          "excerpt": "Baseline safety guardrails do not lead to downstream safety guarantees in the RAG case."
+        }
+      ]
+    },
+    {
+      "event_id": "anthropic-anthropic-launches-claude-3-5-sonnet",
+      "title": "Anthropic Launches Claude 3.5 Sonnet",
+      "dek": "New mid-tier model surpasses previous flagship performance on key coding and reasoning benchmarks.",
+      "source": "ANTHROPIC",
+      "url": "https://www.anthropic.com/news/claude-3-5-sonnet",
+      "category": "product",
+      "tag": "LLMs",
+      "time": "Today",
+      "published_at": "2026-11-13T09:27:30.000Z",
+      "image_url": "",
+      "signal": {
+        "move": "Anthropic released Claude 3.5 Sonnet, operating at twice the speed of Claude 3 Opus while outperforming it across industry benchmarks.",
+        "consequence": "Sets a new standard for intelligence-to-cost ratio in commercial APIs, directly challenging OpenAI's GPT-4o.",
+        "tension": "Rapid performance gains in mid-sized models increase pressure on developers to constantly refactor their underlying LLM infrastructure.",
+        "why_now": "Anthropic is accelerating its release cadence to capture enterprise market share ahead of expected frontier model drops from competitors.",
+        "evidence_posture": "unverified"
+      },
+      "evidence_posture": "unverified",
+      "discussion_prompt": "How does Sonnet 3.5 change your evaluation matrix for choosing between enterprise LLM vendors?",
+      "claims": []
+    },
+    {
+      "event_id": "anthropic-anthropic-introduces-artifacts-workspace",
+      "title": "Anthropic Introduces 'Artifacts' Workspace",
+      "dek": "Claude interface expands beyond text chat into a dynamic side-by-side editing environment.",
+      "source": "ANTHROPIC",
+      "url": "https://www.anthropic.com/news/claude-3-5-sonnet",
+      "category": "product",
+      "tag": "Interfaces",
+      "time": "Today",
+      "published_at": "2026-11-13T09:27:30.000Z",
+      "image_url": "",
+      "signal": {
+        "move": "Alongside its new model, Anthropic introduced Artifacts, a feature allowing users to view, edit, and build upon generated code, docs, and UI designs in real time.",
+        "consequence": "Transforms the chatbot paradigm into a collaborative workspace, competing more directly with visual workspace tools and dedicated IDE assistants.",
+        "tension": "Chat interfaces are reaching their UX limits for complex tasks, forcing providers to build broader application layers.",
+        "why_now": "User demand is shifting from simple Q&A interfaces toward full-context execution environments.",
+        "evidence_posture": "unverified"
+      },
+      "evidence_posture": "unverified",
+      "discussion_prompt": "Will dynamic workspaces like Artifacts replace standalone developer sandboxes for rapid prototyping?",
+      "claims": []
+    },
+    {
+      "event_id": "meta-ai-meta-releases-llama-3-405b-parameter-model",
+      "title": "Meta Releases Llama 3 405B Parameter Model",
+      "dek": "The tech giant debuts its largest open-weights frontier LLM to date.",
+      "source": "META AI",
+      "url": "https://ai.meta.com/blog/meta-llama-3-1/",
+      "category": "open-weights",
+      "tag": "Open Weights",
+      "time": "Today",
+      "published_at": "2026-11-13T09:27:30.000Z",
+      "image_url": "",
+      "signal": {
+        "move": "Meta publicly released the weights for Llama 3.1 405B, rivaling leading closed-source frontier models on standard benchmarks.",
+        "consequence": "Provides global researchers and enterprises with an un-gated, highly capable base model for custom fine-tuning and self-hosting.",
+        "tension": "High memory footprint requires massive hardware investments to serve, limiting native local deployment to enterprise clusters.",
+        "why_now": "Meta aims to establish Llama as the default open infrastructure standard before proprietary labs widen the capability gap.",
+        "evidence_posture": "unverified"
+      },
+      "evidence_posture": "unverified",
+      "discussion_prompt": "Does the availability of a competitive 405B open model change your cloud compute budget strategy?",
+      "claims": []
+    },
+    {
+      "event_id": "openai-openai-unveils-searchgpt-prototype",
+      "title": "OpenAI Unveils SearchGPT Prototype",
+      "dek": "A temporary prototype brings real-time web access and conversational search capabilities to AI.",
+      "source": "OPENAI",
+      "url": "https://openai.com/index/searchgpt-prototype/",
+      "category": "product",
+      "tag": "Search",
+      "time": "Today",
+      "published_at": "2026-11-13T09:27:30.000Z",
+      "image_url": "",
+      "signal": {
+        "move": "OpenAI launched a limited prototype called SearchGPT, designed to combine LLM reasoning with clear publisher citations and real-time web results.",
+        "consequence": "Directly enters the search engine arena, establishing a potential threat to traditional query-and-link interfaces.",
+        "tension": "Balancing real-time accurate information retrieval with publisher fair-use standards and hallucination risks.",
+        "why_now": "Competition from specialized search tools like Perplexity forced a public product response.",
+        "evidence_posture": "unverified"
+      },
+      "evidence_posture": "unverified",
+      "discussion_prompt": "What key metric will determine if users permanently replace traditional web search with conversational engines?",
+      "claims": []
+    },
+    {
+      "event_id": "mistral-ai-mistral-ai-releases-codestral",
+      "title": "Mistral AI Releases Codestral",
+      "dek": "First open-weights generative model from Mistral explicitly tailored for code generation.",
+      "source": "MISTRAL AI",
+      "url": "https://mistral.ai/news/codestral/",
+      "category": "open-weights",
+      "tag": "Coding",
+      "time": "Today",
+      "published_at": "2026-11-13T09:27:30.000Z",
+      "image_url": "",
+      "signal": {
+        "move": "Mistral AI introduced Codestral, a 22-billion parameter open-weights model trained specifically for code completion, fill-in-the-middle, and multi-language tasks.",
+        "consequence": "Lowers latency and compute requirements for localized code-completion tools used inside developer environments.",
+        "tension": "Licensing restrictions on commercial usage of specific open models create ambiguity for enterprise adoption.",
+        "why_now": "Developer tooling is currently the most active monetizable use case for open-weights deployments.",
+        "evidence_posture": "unverified"
+      },
+      "evidence_posture": "unverified",
+      "discussion_prompt": "Are domain-specific open models like Codestral superior to generalist models for enterprise developer workflows?",
+      "claims": []
+    },
+    {
+      "event_id": "nature-google-deepmind-details-alphafold-3",
+      "title": "Google DeepMind Details AlphaFold 3",
+      "dek": "Model expands beyond protein structures to predict interactions across all life's molecules.",
+      "source": "NATURE",
+      "url": "https://www.nature.com/articles/s41586-024-07487-w",
+      "category": "research",
+      "tag": "Bio-AI",
+      "time": "Today",
+      "published_at": "2026-11-13T09:27:30.000Z",
+      "image_url": "",
+      "signal": {
+        "move": "Google DeepMind and Isomorphic Labs published AlphaFold 3, predicting the structure and interactions of proteins, DNA, RNA, and small ligands.",
+        "consequence": "Significantly accelerates computational drug discovery and structural biology research cycles globally.",
+        "tension": "Academic demand for full model weight accessibility contrasts with industrial IP and biosecurity concerns.",
+        "why_now": "DeepMind continues to prioritize peer-reviewed scientific breakthroughs to demonstrate practical real-world AI utility.",
+        "evidence_posture": "unverified"
+      },
+      "evidence_posture": "unverified",
+      "discussion_prompt": "How should research institutions handle access management for powerful bio-molecular AI systems?",
+      "claims": []
+    },
+    {
+      "event_id": "reuters-microsoft-and-openai-launch-stargate-initiative",
+      "title": "Microsoft and OpenAI Launch Stargate Initiative",
+      "dek": "Plans surface for a massive $100 billion data center supercomputer project.",
+      "source": "REUTERS",
+      "url": "https://www.reuters.com/technology/microsoft-openai-planning-100-billion-data-center-project-information-reports-2024-03-29/",
+      "category": "infra",
+      "tag": "Data Centers",
+      "time": "Today",
+      "published_at": "2026-11-13T09:27:30.000Z",
+      "image_url": "",
+      "signal": {
+        "move": "Reports confirm planning for 'Stargate,' a massive AI supercomputer data center initiative scheduled for deployment by 2028 to power next-gen frontier training.",
+        "consequence": "Highlights the extreme capital expenditures and power grid requirements necessary for future LLM scaling laws.",
+        "tension": "Energy availability and regional power grid limitations are replacing silicon shortages as the primary AI scaling bottleneck.",
+        "why_now": "Training next-generation multi-trillion parameter models demands infrastructure orders years before operational deployment.",
+        "evidence_posture": "unverified"
+      },
+      "evidence_posture": "unverified",
+      "discussion_prompt": "Will data center power availability become the defining geopolitical advantage in AI capabilities?",
+      "claims": []
+    },
+    {
+      "event_id": "nvidia-nvidia-announces-blackwell-b200-architecture",
+      "title": "Nvidia Announces Blackwell B200 Architecture",
+      "dek": "Next-generation GPU system promises 30x performance improvement for LLM inference.",
+      "source": "NVIDIA",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-blackwell-platform-arrives-to-fuel-a-new-era-of-computing",
+      "category": "infra",
+      "tag": "Hardware",
+      "time": "Today",
+      "published_at": "2026-11-13T09:27:30.000Z",
+      "image_url": "",
+      "signal": {
+        "move": "Nvidia unveiled its Blackwell platform, offering massive memory bandwidth and dedicated engine architecture optimized for multi-trillion parameter inference.",
+        "consequence": "Dramatically lowers cost-per-token for enterprise LLM deployments while consolidating Nvidia's hardware dominance.",
+        "tension": "High hardware costs drive reliance on centralized cloud vendors, slowing on-premise compute decentralization.",
+        "why_now": "Cloud providers are struggling to meet current inference demands under previous-gen Hopper architecture capacity limits.",
+        "evidence_posture": "unverified"
+      },
+      "evidence_posture": "unverified",
+      "discussion_prompt": "Does Blackwell's performance jump delay enterprise shifts toward custom ASIC chipsets?",
+      "claims": []
+    },
+    {
+      "event_id": "techcrunch-crewai-raises-seed-funding-to-scale-agentic-frameworks",
+      "title": "CrewAI Raises Seed Funding to Scale Agentic Frameworks",
+      "dek": "Open-source multi-agent orchestration framework secures venture backing.",
+      "source": "TECHCRUNCH",
+      "url": "https://techcrunch.com/2024/09/18/crewai-secures-18m-to-help-companies-build-and-deploy-ai-agents/",
+      "category": "agents",
+      "tag": "Frameworks",
+      "time": "Today",
+      "published_at": "2026-11-13T09:27:30.000Z",
+      "image_url": "",
+      "signal": {
+        "move": "CrewAI announced formal funding to turn its popular open-source multi-agent role-playing framework into an enterprise-ready management platform.",
+        "consequence": "Signals commercial maturity for multi-agent execution frameworks that automate sequential business processes.",
+        "tension": "Framework reliability and deterministic execution remain major hurdles for enterprise agent production environments.",
+        "why_now": "Developers are moving beyond simple single-prompt LLM wrappers toward multi-role orchestrated workflows.",
+        "evidence_posture": "unverified"
+      },
+      "evidence_posture": "unverified",
+      "discussion_prompt": "Are role-based multi-agent architecture systems robust enough for enterprise mission-critical processes?",
+      "claims": []
+    },
+    {
+      "event_id": "stanford-nlp-stanford-releases-swe-bench-verified",
+      "title": "Stanford Releases SWE-bench Verified",
+      "dek": "Human-curated subset improves reliability of famous software engineering LLM benchmark.",
+      "source": "STANFORD NLP",
+      "url": "https://www.swebench.com/",
+      "category": "research",
+      "tag": "Benchmarks",
+      "time": "Today",
+      "published_at": "2026-11-13T09:27:30.000Z",
+      "image_url": "",
+      "signal": {
+        "move": "Researchers released SWE-bench Verified, filtering out unit-test noise and impossible tasks from the original software engineering benchmark.",
+        "consequence": "Provides a cleaner baseline for measuring dynamic coding agent progress on real-world GitHub issues.",
+        "tension": "Contamination and ambiguous test harnesses in legacy AI benchmarks produce misleading capability scores.",
+        "why_now": "Rapid progress in AI software tools created an urgent need for precise evaluation metrics.",
+        "evidence_posture": "unverified"
+      },
+      "evidence_posture": "unverified",
+      "discussion_prompt": "How reliable are current public benchmarks for predicting actual developer productivity improvements?",
+      "claims": []
+    },
+    {
+      "event_id": "european-commission-eu-ai-act-officially-takes-effect",
+      "title": "EU AI Act Officially Takes Effect",
+      "dek": "World's first comprehensive horizontal regulations for artificial intelligence enter into force.",
+      "source": "EUROPEAN COMMISSION",
+      "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_24_4132",
+      "category": "policy",
+      "tag": "Regulation",
+      "time": "Today",
+      "published_at": "2026-11-13T09:27:30.000Z",
+      "image_url": "",
+      "signal": {
+        "move": "The European Union's landmark AI Act entered into legal force, introducing risk-categorized compliance rules for developers and deployers.",
+        "consequence": "Global tech platforms must adjust foundation model training disclosures and risk management protocols to operate in the EU market.",
+        "tension": "Regulatory overhead risks stalling domestic European AI innovation relative to US and Asian markets.",
+        "why_now": "Years of legislative negotiations culminated in the formal implementation timeline starting across the EU.",
+        "evidence_posture": "unverified"
+      },
+      "evidence_posture": "unverified",
+      "discussion_prompt": "Will EU compliance standards become the global baseline for frontier model safety design?",
+      "claims": []
+    },
+    {
+      "event_id": "apple-apple-introduces-apple-intelligence-framework",
+      "title": "Apple Introduces Apple Intelligence Framework",
+      "dek": "On-device processing and private cloud compute bring context-aware generative tools to iOS.",
+      "source": "APPLE",
+      "url": "https://www.apple.com/newsroom/2024/06/introducing-apple-intelligence-for-iphone-ipad-and-mac/",
+      "category": "product",
+      "tag": "Edge AI",
+      "time": "Today",
+      "published_at": "2026-11-13T09:27:30.000Z",
+      "image_url": "",
+      "signal": {
+        "move": "Apple announced its system-wide AI architecture, prioritizing on-device model execution and Private Cloud Compute for consumer hardware.",
+        "consequence": "Brings privacy-preserving context models to hundreds of millions of consumer hardware endpoints natively.",
+        "tension": "Edge device memory constraints cap model parameter sizes compared to cloud-native API endpoints.",
+        "why_now": "Consumer device manufacturers must offer integrated AI features to drive hardware upgrade cycles.",
+        "evidence_posture": "unverified"
+      },
+      "evidence_posture": "unverified",
+      "discussion_prompt": "Will consumers prefer smaller, private on-device LLMs over unlimited cloud-hosted alternatives?",
+      "claims": []
+    },
+    {
+      "event_id": "cohere-cohere-releases-command-r",
+      "title": "Cohere Releases Command R+",
+      "dek": "Open-weights model built specifically for enterprise retrieval-augmented generation and tool use.",
+      "source": "COHERE",
+      "url": "https://cohere.com/blog/command-r-plus-architecture",
+      "category": "open-weights",
+      "tag": "Enterprise",
+      "time": "Today",
+      "published_at": "2026-11-13T09:27:30.000Z",
+      "image_url": "",
+      "signal": {
+        "move": "Cohere launched Command R+, a 104-billion parameter model optimized for complex multi-step RAG workflows and multilingual business contexts.",
+        "consequence": "Offers strong performance for document processing and external API tooling without enterprise data lock-in.",
+        "tension": "Competition intensifies between niche enterprise-focused providers and broad general-purpose LLM labs.",
+        "why_now": "Enterprises are moving out of experimental pilot phases and require dedicated RAG-optimized inference engines.",
+        "evidence_posture": "unverified"
+      },
+      "evidence_posture": "unverified",
+      "discussion_prompt": "Is dedicated RAG optimization superior to relying on massive context windows in general models?",
+      "claims": []
+    },
+    {
+      "event_id": "us-nist-us-uk-sign-landmark-ai-safety-testing-pact",
+      "title": "US & UK Sign Landmark AI Safety Testing Pact",
+      "dek": "Formal agreement establishes joint approaches for evaluating frontier model risks.",
+      "source": "US NIST",
+      "url": "https://www.nist.gov/news-events/news/2024/04/us-and-uk-ai-safety-institutes-announce-partnership-ai-safety-science",
+      "category": "policy",
+      "tag": "Governance",
+      "time": "Today",
+      "published_at": "2026-11-13T09:27:30.000Z",
+      "image_url": "",
+      "signal": {
+        "move": "The AI Safety Institutes of the US and UK finalized a bilateral agreement to share research, personnel, and evaluation safety methodologies for novel foundation models.",
+        "consequence": "Creates an official governmental channel for pre-deployment evaluation of advanced foundation models.",
+        "tension": "Standardizing safety metrics across international regulatory boundaries presents deep technical disagreement.",
+        "why_now": "Rapid model releases require standardized pre-deployment evaluation criteria across allied nations.",
+        "evidence_posture": "unverified"
+      },
+      "evidence_posture": "unverified",
+      "discussion_prompt": "Can government safety institutes keep pace with the technical release velocities of private labs?",
+      "claims": []
+    },
+    {
+      "event_id": "significant-gravitas-autogpt-project-transitions-to-next-gen-platform",
+      "title": "AutoGPT Project Transitions to Next-Gen Platform",
+      "dek": "Popular open-source autonomous agent experiment launches benchmarked execution engine.",
+      "source": "SIGNIFICANT GRAVITAS",
+      "url": "https://github.com/Significant-Gravitas/AutoGPT",
+      "category": "agents",
+      "tag": "Autonomous Agents",
+      "time": "Today",
+      "published_at": "2026-11-13T09:27:30.000Z",
+      "image_url": "",
+      "signal": {
+        "move": "The creators of AutoGPT released a modular platform update focused on continuous background agent execution and standardized task evaluation.",
+        "consequence": "Shifts open-source agent development from simple demo scripts toward structured, reproducible long-horizon execution tools.",
+        "tension": "Infinite-loop failures and cost runaway remain unsolved challenges in unconstrained autonomous execution.",
+        "why_now": "The agent ecosystem is maturing past viral experimental code toward reliable automation architecture.",
+        "evidence_posture": "unverified"
+      },
+      "evidence_posture": "unverified",
+      "discussion_prompt": "What guardrails are essential to safely run autonomous background agents on production systems?",
+      "claims": []
+    }
+  ]
+}
