@@ -1,7 +1,266 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-12T16:05:26.000Z",
+  "generated_at": "2026-11-13T15:27:30.000Z",
   "editions": [
+    {
+      "date": "2026-11-13",
+      "edition": 234,
+      "run_id": "daily-curation-20261113",
+      "published_at": "2026-11-13T12:00:00.000Z",
+      "story_count": 25,
+      "stories": [
+        {
+          "event_id": "openai-misalignment-disclosure-update",
+          "title": "OpenAI expands its misalignment disclosure into an incident record",
+          "source": "OPENAI",
+          "category": "policy",
+          "keywords": [
+            "Safety",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-rd-automation-metrics",
+          "title": "Anthropic puts numbers on AI helping build AI",
+          "source": "ANTHROPIC INSTITUTE",
+          "category": "research",
+          "keywords": [
+            "Research loops",
+            "research"
+          ]
+        },
+        {
+          "event_id": "openai-government-access",
+          "title": "OpenAI widens subsidized AI access to state and local defenders",
+          "source": "OPENAI",
+          "category": "policy",
+          "keywords": [
+            "AI Daily",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-life-sciences-verification",
+          "title": "Anthropic creates a verification lane for life-science users",
+          "source": "ANTHROPIC",
+          "category": "policy",
+          "keywords": [
+            "AI Daily",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-misuse-report-september",
+          "title": "Anthropic says misuse monitoring is becoming an operating discipline",
+          "source": "ANTHROPIC",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-daybreak-frontline",
+          "title": "OpenAI commits subsidized cyber-AI support for frontline defenders",
+          "source": "OPENAI",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-ukraine-journalism",
+          "title": "A newsroom AI program tests whether access can strengthen independent reporting",
+          "source": "OPENAI · WAN-IFRA · AIRPPU",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-devday-2026",
+          "title": "DevDay 2026 is now a date on the developer calendar",
+          "source": "OPENAI",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "safeagent-runtime-protection",
+          "title": "A runtime controller treats agent safety as a state problem",
+          "source": "ARXIV",
+          "category": "research",
+          "keywords": [
+            "AI Daily",
+            "research"
+          ]
+        },
+        {
+          "event_id": "rag-safety-bench",
+          "title": "RAG safety tests ask whether helpful context can weaken a refusal",
+          "source": "ARXIV · EMNLP 2026",
+          "category": "research",
+          "keywords": [
+            "Safety",
+            "research"
+          ]
+        },
+        {
+          "event_id": "anthropic-anthropic-launches-claude-3-5-sonnet",
+          "title": "Anthropic Launches Claude 3.5 Sonnet",
+          "source": "ANTHROPIC",
+          "category": "product",
+          "keywords": [
+            "LLMs",
+            "product"
+          ]
+        },
+        {
+          "event_id": "anthropic-anthropic-introduces-artifacts-workspace",
+          "title": "Anthropic Introduces 'Artifacts' Workspace",
+          "source": "ANTHROPIC",
+          "category": "product",
+          "keywords": [
+            "Interfaces",
+            "product"
+          ]
+        },
+        {
+          "event_id": "meta-ai-meta-releases-llama-3-405b-parameter-model",
+          "title": "Meta Releases Llama 3 405B Parameter Model",
+          "source": "META AI",
+          "category": "open-weights",
+          "keywords": [
+            "Open Weights",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "openai-openai-unveils-searchgpt-prototype",
+          "title": "OpenAI Unveils SearchGPT Prototype",
+          "source": "OPENAI",
+          "category": "product",
+          "keywords": [
+            "Search",
+            "product"
+          ]
+        },
+        {
+          "event_id": "mistral-ai-mistral-ai-releases-codestral",
+          "title": "Mistral AI Releases Codestral",
+          "source": "MISTRAL AI",
+          "category": "open-weights",
+          "keywords": [
+            "Coding",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "nature-google-deepmind-details-alphafold-3",
+          "title": "Google DeepMind Details AlphaFold 3",
+          "source": "NATURE",
+          "category": "research",
+          "keywords": [
+            "Bio-AI",
+            "research"
+          ]
+        },
+        {
+          "event_id": "reuters-microsoft-and-openai-launch-stargate-initiative",
+          "title": "Microsoft and OpenAI Launch Stargate Initiative",
+          "source": "REUTERS",
+          "category": "infra",
+          "keywords": [
+            "Data Centers",
+            "infra"
+          ]
+        },
+        {
+          "event_id": "nvidia-nvidia-announces-blackwell-b200-architecture",
+          "title": "Nvidia Announces Blackwell B200 Architecture",
+          "source": "NVIDIA",
+          "category": "infra",
+          "keywords": [
+            "Hardware",
+            "infra"
+          ]
+        },
+        {
+          "event_id": "techcrunch-crewai-raises-seed-funding-to-scale-agentic-frameworks",
+          "title": "CrewAI Raises Seed Funding to Scale Agentic Frameworks",
+          "source": "TECHCRUNCH",
+          "category": "agents",
+          "keywords": [
+            "Frameworks",
+            "agents"
+          ]
+        },
+        {
+          "event_id": "stanford-nlp-stanford-releases-swe-bench-verified",
+          "title": "Stanford Releases SWE-bench Verified",
+          "source": "STANFORD NLP",
+          "category": "research",
+          "keywords": [
+            "Benchmarks",
+            "research"
+          ]
+        },
+        {
+          "event_id": "european-commission-eu-ai-act-officially-takes-effect",
+          "title": "EU AI Act Officially Takes Effect",
+          "source": "EUROPEAN COMMISSION",
+          "category": "policy",
+          "keywords": [
+            "Regulation",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "apple-apple-introduces-apple-intelligence-framework",
+          "title": "Apple Introduces Apple Intelligence Framework",
+          "source": "APPLE",
+          "category": "product",
+          "keywords": [
+            "Edge AI",
+            "product"
+          ]
+        },
+        {
+          "event_id": "cohere-cohere-releases-command-r",
+          "title": "Cohere Releases Command R+",
+          "source": "COHERE",
+          "category": "open-weights",
+          "keywords": [
+            "Enterprise",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "us-nist-us-uk-sign-landmark-ai-safety-testing-pact",
+          "title": "US & UK Sign Landmark AI Safety Testing Pact",
+          "source": "US NIST",
+          "category": "policy",
+          "keywords": [
+            "Governance",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "significant-gravitas-autogpt-project-transitions-to-next-gen-platform",
+          "title": "AutoGPT Project Transitions to Next-Gen Platform",
+          "source": "SIGNIFICANT GRAVITAS",
+          "category": "agents",
+          "keywords": [
+            "Autonomous Agents",
+            "agents"
+          ]
+        }
+      ]
+    },
     {
       "date": "2026-11-12",
       "edition": 233,
