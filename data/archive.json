@@ -1,7 +1,266 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-13T15:27:30.000Z",
+  "generated_at": "2026-11-14T14:16:37.000Z",
   "editions": [
+    {
+      "date": "2026-11-14",
+      "edition": 235,
+      "run_id": "daily-curation-20261114",
+      "published_at": "2026-11-14T12:00:00.000Z",
+      "story_count": 25,
+      "stories": [
+        {
+          "event_id": "openai-misalignment-disclosure-update",
+          "title": "OpenAI expands its misalignment disclosure into an incident record",
+          "source": "OPENAI",
+          "category": "policy",
+          "keywords": [
+            "Safety",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-rd-automation-metrics",
+          "title": "Anthropic puts numbers on AI helping build AI",
+          "source": "ANTHROPIC INSTITUTE",
+          "category": "research",
+          "keywords": [
+            "Research loops",
+            "research"
+          ]
+        },
+        {
+          "event_id": "openai-government-access",
+          "title": "OpenAI widens subsidized AI access to state and local defenders",
+          "source": "OPENAI",
+          "category": "policy",
+          "keywords": [
+            "AI Daily",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-life-sciences-verification",
+          "title": "Anthropic creates a verification lane for life-science users",
+          "source": "ANTHROPIC",
+          "category": "policy",
+          "keywords": [
+            "AI Daily",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-misuse-report-september",
+          "title": "Anthropic says misuse monitoring is becoming an operating discipline",
+          "source": "ANTHROPIC",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-daybreak-frontline",
+          "title": "OpenAI commits subsidized cyber-AI support for frontline defenders",
+          "source": "OPENAI",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-ukraine-journalism",
+          "title": "A newsroom AI program tests whether access can strengthen independent reporting",
+          "source": "OPENAI · WAN-IFRA · AIRPPU",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-devday-2026",
+          "title": "DevDay 2026 is now a date on the developer calendar",
+          "source": "OPENAI",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "safeagent-runtime-protection",
+          "title": "A runtime controller treats agent safety as a state problem",
+          "source": "ARXIV",
+          "category": "research",
+          "keywords": [
+            "AI Daily",
+            "research"
+          ]
+        },
+        {
+          "event_id": "rag-safety-bench",
+          "title": "RAG safety tests ask whether helpful context can weaken a refusal",
+          "source": "ARXIV · EMNLP 2026",
+          "category": "research",
+          "keywords": [
+            "Safety",
+            "research"
+          ]
+        },
+        {
+          "event_id": "anthropic-anthropic-releases-claude-3-5-sonnet-with-computer-use-capabil",
+          "title": "Anthropic Releases Claude 3.5 Sonnet with Computer Use Capabilities",
+          "source": "ANTHROPIC",
+          "category": "product",
+          "keywords": [
+            "LLMs",
+            "product"
+          ]
+        },
+        {
+          "event_id": "meta-ai-meta-releases-llama-3-2-vision-models-to-the-open-community",
+          "title": "Meta Releases Llama 3.2 Vision Models to the Open Community",
+          "source": "META AI",
+          "category": "open-weights",
+          "keywords": [
+            "Multimodal",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "openai-openai-introduces-realtime-api-for-low-latency-speech-application",
+          "title": "OpenAI Introduces Realtime API for Low-Latency Speech Applications",
+          "source": "OPENAI",
+          "category": "product",
+          "keywords": [
+            "Audio",
+            "product"
+          ]
+        },
+        {
+          "event_id": "mistral-ai-mistral-ai-releases-ministral-3b-and-8b-for-on-device-deploym",
+          "title": "Mistral AI Releases Ministral 3B and 8B for On-Device Deployments",
+          "source": "MISTRAL AI",
+          "category": "open-weights",
+          "keywords": [
+            "Edge AI",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "openai-github-openai-releases-swarm-an-experimental-multi-agent-orchestr",
+          "title": "OpenAI Releases Swarm, an Experimental Multi-Agent Orchestration Framework",
+          "source": "OPENAI GITHUB",
+          "category": "agents",
+          "keywords": [
+            "Agentic Architecture",
+            "agents"
+          ]
+        },
+        {
+          "event_id": "microsoft-microsoft-announces-autonomous-agent-capabilities-in-copilot-s",
+          "title": "Microsoft Announces Autonomous Agent Capabilities in Copilot Studio",
+          "source": "MICROSOFT",
+          "category": "agents",
+          "keywords": [
+            "Enterprise",
+            "agents"
+          ]
+        },
+        {
+          "event_id": "nvidia-hugging-face-nvidia-releases-llama-3-1-nemotron-70b-instruct",
+          "title": "Nvidia Releases Llama-3.1-Nemotron-70B-Instruct",
+          "source": "NVIDIA HUGGING FACE",
+          "category": "open-weights",
+          "keywords": [
+            "Fine-Tuning",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "google-deepmind-google-deepmind-publishes-work-on-sima-for-generalist-3d",
+          "title": "Google DeepMind Publishes Work on SIMA for Generalist 3D Environment Control",
+          "source": "GOOGLE DEEPMIND",
+          "category": "research",
+          "keywords": [
+            "Embodied AI",
+            "research"
+          ]
+        },
+        {
+          "event_id": "u-s-sec-cerebras-files-publicly-for-initial-public-offering",
+          "title": "Cerebras Files Publicly for Initial Public Offering",
+          "source": "U.S. SEC",
+          "category": "infra",
+          "keywords": [
+            "Hardware",
+            "infra"
+          ]
+        },
+        {
+          "event_id": "the-white-house-us-federal-government-releases-framework-on-ai-risk-mana",
+          "title": "US Federal Government Releases Framework on AI Risk Management in Defense",
+          "source": "THE WHITE HOUSE",
+          "category": "policy",
+          "keywords": [
+            "Governance",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "pytorch-foundation-pytorch-2-5-released-with-enhanced-torchcompile-and-f",
+          "title": "PyTorch 2.5 Released with Enhanced TorchCompile and FlexAttention Features",
+          "source": "PYTORCH FOUNDATION",
+          "category": "infra",
+          "keywords": [
+            "Frameworks",
+            "infra"
+          ]
+        },
+        {
+          "event_id": "deepseek-deepseek-releases-deepseek-v2-5-combining-chat-and-coder-models",
+          "title": "DeepSeek Releases DeepSeek-V2.5 Combining Chat and Coder Models",
+          "source": "DEEPSEEK",
+          "category": "open-weights",
+          "keywords": [
+            "Model Merging",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "arxiv-stanford-researchers-release-benchmark-on-long-context-information",
+          "title": "Stanford Researchers Release Benchmark on Long-Context Information Retrieval",
+          "source": "ARXIV",
+          "category": "research",
+          "keywords": [
+            "Benchmarks",
+            "research"
+          ]
+        },
+        {
+          "event_id": "langchain-langchain-launches-langgraph-studio-for-visual-agent-debugging",
+          "title": "LangChain Launches LangGraph Studio for Visual Agent Debugging",
+          "source": "LANGCHAIN",
+          "category": "agents",
+          "keywords": [
+            "Developer Tools",
+            "agents"
+          ]
+        },
+        {
+          "event_id": "uk-aisi-uk-ai-safety-institute-open-sources-evaluation-platform-inspect",
+          "title": "UK AI Safety Institute Open-Sources Evaluation Platform Inspect",
+          "source": "UK AISI",
+          "category": "policy",
+          "keywords": [
+            "Safety",
+            "policy"
+          ]
+        }
+      ]
+    },
     {
       "date": "2026-11-13",
       "edition": 234,
