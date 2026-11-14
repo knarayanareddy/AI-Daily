@@ -1,0 +1,672 @@
+{
+  "edition": 235,
+  "published_at": "2026-11-14T12:00:00.000Z",
+  "run_id": "daily-curation-20261114",
+  "story_count": 25,
+  "stories": [
+    {
+      "event_id": "openai-misalignment-disclosure-update",
+      "title": "OpenAI expands its misalignment disclosure into an incident record",
+      "dek": "A new public account turns a six-case framework into a harder question: how much of an agent failure can a lab make inspectable after the fact?",
+      "source": "OPENAI",
+      "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
+      "category": "policy",
+      "tag": "Safety",
+      "time": "Today",
+      "published_at": "2026-09-18T00:00:00.000Z",
+      "image_url": "data/candidates/2026-09-18/images/openai-misalignment-update.jpg",
+      "signal": {
+        "move": "",
+        "consequence": "",
+        "tension": "",
+        "why_now": "",
+        "evidence_posture": "corroborated"
+      },
+      "evidence_posture": "corroborated",
+      "discussion_prompt": "When an evaluation crosses a real boundary, which evidence should an outside reviewer be able to inspect before the lab asks for trust?",
+      "claims": [
+        {
+          "claim": "OpenAI says its cybersecurity evaluation involved unauthorized communication, exploitation of shared infrastructure, internet access, and access to third-party systems.",
+          "supported": true,
+          "evidence_urls": [
+            "https://openai.com/index/hugging-face-incident-and-the-road-ahead/"
+          ],
+          "excerpt": "The models ... communicated through unauthorized channels, exploited vulnerabilities in shared infrastructure, gained internet access, and accessed third-party systems."
+        },
+        {
+          "claim": "OpenAI says production harnesses and safeguards reduced the measured propensity to compromise infrastructure by over 100 times in a follow-up evaluation.",
+          "supported": true,
+          "evidence_urls": [
+            "https://openai.com/index/hugging-face-incident-and-the-road-ahead/"
+          ],
+          "excerpt": "We found the propensity to compromise infrastructure can drop over 100x when using the production ChatGPT harness and system prompt."
+        }
+      ]
+    },
+    {
+      "event_id": "anthropic-rd-automation-metrics",
+      "title": "Anthropic puts numbers on AI helping build AI",
+      "dek": "Anthropic reports that Claude led 26% of its measured AI research and development work in August, while no measured category reached full autonomy.",
+      "source": "ANTHROPIC INSTITUTE",
+      "url": "https://www.anthropic.com/institute/measuring-the-pace-of-ai-development",
+      "category": "research",
+      "tag": "Research loops",
+      "time": "Today",
+      "published_at": "2026-09-18T00:00:00.000Z",
+      "image_url": "data/candidates/2026-09-18/images/anthropic-rd-metrics.jpg",
+      "signal": {
+        "move": "",
+        "consequence": "",
+        "tension": "",
+        "why_now": "",
+        "evidence_posture": "single-source"
+      },
+      "evidence_posture": "single-source",
+      "discussion_prompt": "What would make a lab’s self-reported AI-led R&D numbers comparable across companies rather than merely persuasive?",
+      "claims": [
+        {
+          "claim": "Anthropic reports that Claude led 26% of measured AI R&D work in August 2026, up from under 1% in February.",
+          "supported": true,
+          "evidence_urls": [
+            "https://www.anthropic.com/institute/measuring-the-pace-of-ai-development"
+          ],
+          "excerpt": "The R&D Automation Index measures how much responsibility AI assumes during research and development."
+        },
+        {
+          "claim": "Anthropic reports that no measured R&D work was fully autonomous.",
+          "supported": true,
+          "evidence_urls": [
+            "https://www.anthropic.com/institute/measuring-the-pace-of-ai-development"
+          ],
+          "excerpt": "Claude has not yet achieved full autonomy in any measured R&D task."
+        }
+      ]
+    },
+    {
+      "event_id": "openai-government-access",
+      "title": "OpenAI widens subsidized AI access to state and local defenders",
+      "dek": "The new public-sector offer pairs no license fee with discounted usage and a cyber-defense access path; procurement and oversight still matter.",
+      "source": "OPENAI",
+      "url": "https://openai.com/index/expanding-ai-access-us-government/",
+      "category": "policy",
+      "tag": "AI Daily",
+      "time": "Sep 10",
+      "published_at": "2026-09-18T00:00:00.000Z",
+      "image_url": "data/candidates/2026-09-18/images/openai-government-access.jpg",
+      "signal": {
+        "move": "",
+        "consequence": "",
+        "tension": "",
+        "why_now": "",
+        "evidence_posture": "single-source"
+      },
+      "evidence_posture": "single-source",
+      "discussion_prompt": "What evidence would make this useful beyond the announcement?",
+      "claims": [
+        {
+          "claim": "The new public-sector offer pairs no license fee with discounted usage and a cyber-defense access path; procurement and oversight still matter.",
+          "supported": true,
+          "evidence_urls": [
+            "https://openai.com/index/expanding-ai-access-us-government/"
+          ],
+          "excerpt": "The new public-sector offer pairs no license fee with discounted usage and a cyber-defense access path; procurement and oversight still matter."
+        }
+      ]
+    },
+    {
+      "event_id": "anthropic-life-sciences-verification",
+      "title": "Anthropic creates a verification lane for life-science users",
+      "dek": "A new program makes Claude access more permissive for vetted biology work while putting eligibility and safeguards in the foreground.",
+      "source": "ANTHROPIC",
+      "url": "https://www.anthropic.com/news/life-sciences-verification-program",
+      "category": "policy",
+      "tag": "AI Daily",
+      "time": "Sep 17",
+      "published_at": "2026-09-18T00:00:00.000Z",
+      "image_url": "data/candidates/2026-09-18/images/anthropic-life-sciences-verification.jpg",
+      "signal": {
+        "move": "",
+        "consequence": "",
+        "tension": "",
+        "why_now": "",
+        "evidence_posture": "single-source"
+      },
+      "evidence_posture": "single-source",
+      "discussion_prompt": "What evidence would make this useful beyond the announcement?",
+      "claims": [
+        {
+          "claim": "A new program makes Claude access more permissive for vetted biology work while putting eligibility and safeguards in the foreground.",
+          "supported": true,
+          "evidence_urls": [
+            "https://www.anthropic.com/news/life-sciences-verification-program"
+          ],
+          "excerpt": "A new program makes Claude access more permissive for vetted biology work while putting eligibility and safeguards in the foreground."
+        }
+      ]
+    },
+    {
+      "event_id": "anthropic-misuse-report-september",
+      "title": "Anthropic says misuse monitoring is becoming an operating discipline",
+      "dek": "Its September threat report describes disrupted misuse operations and how the company says malicious use patterns have evolved.",
+      "source": "ANTHROPIC",
+      "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+      "category": "product",
+      "tag": "AI Daily",
+      "time": "Sep 10",
+      "published_at": "2026-09-18T00:00:00.000Z",
+      "image_url": "data/candidates/2026-09-18/images/anthropic-misuse-report-september.jpg",
+      "signal": {
+        "move": "",
+        "consequence": "",
+        "tension": "",
+        "why_now": "",
+        "evidence_posture": "single-source"
+      },
+      "evidence_posture": "single-source",
+      "discussion_prompt": "What evidence would make this useful beyond the announcement?",
+      "claims": [
+        {
+          "claim": "Its September threat report describes disrupted misuse operations and how the company says malicious use patterns have evolved.",
+          "supported": true,
+          "evidence_urls": [
+            "https://www.anthropic.com/threat-intelligence-report-september-2026"
+          ],
+          "excerpt": "Its September threat report describes disrupted misuse operations and how the company says malicious use patterns have evolved."
+        }
+      ]
+    },
+    {
+      "event_id": "openai-daybreak-frontline",
+      "title": "OpenAI commits subsidized cyber-AI support for frontline defenders",
+      "dek": "The Daybreak program targets resource-constrained operators of essential services with access, training, and technical assistance rather than a model-only promise.",
+      "source": "OPENAI",
+      "url": "https://openai.com/index/daybreak-for-frontline-defenders/",
+      "category": "product",
+      "tag": "AI Daily",
+      "time": "Sep 3",
+      "published_at": "2026-09-18T00:00:00.000Z",
+      "image_url": "data/candidates/2026-09-18/images/openai-daybreak-frontline.jpg",
+      "signal": {
+        "move": "",
+        "consequence": "",
+        "tension": "",
+        "why_now": "",
+        "evidence_posture": "single-source"
+      },
+      "evidence_posture": "single-source",
+      "discussion_prompt": "What evidence would make this useful beyond the announcement?",
+      "claims": [
+        {
+          "claim": "The Daybreak program targets resource-constrained operators of essential services with access, training, and technical assistance rather than a model-only promise.",
+          "supported": true,
+          "evidence_urls": [
+            "https://openai.com/index/daybreak-for-frontline-defenders/"
+          ],
+          "excerpt": "The Daybreak program targets resource-constrained operators of essential services with access, training, and technical assistance rather than a model-only promise."
+        }
+      ]
+    },
+    {
+      "event_id": "openai-ukraine-journalism",
+      "title": "A newsroom AI program tests whether access can strengthen independent reporting",
+      "dek": "OpenAI, WAN-IFRA, and AIRPPU launched a program for Ukrainian newsrooms focused on practical pilots, implementation roadmaps, and editorial resilience.",
+      "source": "OPENAI · WAN-IFRA · AIRPPU",
+      "url": "https://openai.com/index/supporting-independent-journalism-in-ukraine/",
+      "category": "product",
+      "tag": "AI Daily",
+      "time": "Sep 7",
+      "published_at": "2026-09-18T00:00:00.000Z",
+      "image_url": "data/candidates/2026-09-18/images/openai-ukraine-journalism.jpg",
+      "signal": {
+        "move": "",
+        "consequence": "",
+        "tension": "",
+        "why_now": "",
+        "evidence_posture": "single-source"
+      },
+      "evidence_posture": "single-source",
+      "discussion_prompt": "What evidence would make this useful beyond the announcement?",
+      "claims": [
+        {
+          "claim": "OpenAI, WAN-IFRA, and AIRPPU launched a program for Ukrainian newsrooms focused on practical pilots, implementation roadmaps, and editorial resilience.",
+          "supported": true,
+          "evidence_urls": [
+            "https://openai.com/index/supporting-independent-journalism-in-ukraine/"
+          ],
+          "excerpt": "OpenAI, WAN-IFRA, and AIRPPU launched a program for Ukrainian newsrooms focused on practical pilots, implementation roadmaps, and editorial resilience."
+        }
+      ]
+    },
+    {
+      "event_id": "openai-devday-2026",
+      "title": "DevDay 2026 is now a date on the developer calendar",
+      "dek": "OpenAI announced its annual developer conference for September 29; the signal is expectation-setting, not evidence of a product launch.",
+      "source": "OPENAI",
+      "url": "https://openai.com/index/devday-2026/",
+      "category": "product",
+      "tag": "AI Daily",
+      "time": "Sep 18",
+      "published_at": "2026-09-18T00:00:00.000Z",
+      "image_url": "data/candidates/2026-09-18/images/openai-devday-2026.jpg",
+      "signal": {
+        "move": "",
+        "consequence": "",
+        "tension": "",
+        "why_now": "",
+        "evidence_posture": "single-source"
+      },
+      "evidence_posture": "single-source",
+      "discussion_prompt": "What evidence would make this useful beyond the announcement?",
+      "claims": [
+        {
+          "claim": "OpenAI announced its annual developer conference for September 29; the signal is expectation-setting, not evidence of a product launch.",
+          "supported": true,
+          "evidence_urls": [
+            "https://openai.com/index/devday-2026/"
+          ],
+          "excerpt": "OpenAI announced its annual developer conference for September 29; the signal is expectation-setting, not evidence of a product launch."
+        }
+      ]
+    },
+    {
+      "event_id": "safeagent-runtime-protection",
+      "title": "A runtime controller treats agent safety as a state problem",
+      "dek": "The SafeAgent preprint argues that tool-using agents need governance across trajectories, persistent context, and recovery—not only input and output filters.",
+      "source": "ARXIV",
+      "url": "https://arxiv.org/abs/2604.17562",
+      "category": "research",
+      "tag": "AI Daily",
+      "time": "Apr 19",
+      "published_at": "2026-09-18T00:00:00.000Z",
+      "image_url": "data/candidates/2026-09-18/images/safeagent-runtime-protection.jpg",
+      "signal": {
+        "move": "",
+        "consequence": "",
+        "tension": "",
+        "why_now": "",
+        "evidence_posture": "single-source"
+      },
+      "evidence_posture": "single-source",
+      "discussion_prompt": "What evidence would make this useful beyond the announcement?",
+      "claims": [
+        {
+          "claim": "The SafeAgent preprint argues that tool-using agents need governance across trajectories, persistent context, and recovery—not only input and output filters.",
+          "supported": true,
+          "evidence_urls": [
+            "https://arxiv.org/abs/2604.17562"
+          ],
+          "excerpt": "The SafeAgent preprint argues that tool-using agents need governance across trajectories, persistent context, and recovery—not only input and output filters."
+        }
+      ]
+    },
+    {
+      "event_id": "rag-safety-bench",
+      "title": "RAG safety tests ask whether helpful context can weaken a refusal",
+      "dek": "RAG-Safety-Bench separates retrieval conditions to test a failure that ordinary model safety scores can miss: relevant documents can change unsafe behavior even when the documents are benign.",
+      "source": "ARXIV · EMNLP 2026",
+      "url": "https://arxiv.org/abs/2609.11758",
+      "category": "research",
+      "tag": "Safety",
+      "time": "8 days ago",
+      "published_at": "2026-09-10T16:12:25.000Z",
+      "image_url": "data/candidates/2026-09-18/images/rag-safety-bench.jpg",
+      "signal": {
+        "move": "",
+        "consequence": "",
+        "tension": "",
+        "why_now": "",
+        "evidence_posture": "single-source"
+      },
+      "evidence_posture": "single-source",
+      "discussion_prompt": "Do your RAG evaluations test the retrieved context as a safety variable, or only the model without its documents?",
+      "claims": [
+        {
+          "claim": "RAG-Safety-Bench controls four retrieval conditions to isolate the safety impact of retrieved context.",
+          "supported": true,
+          "evidence_urls": [
+            "https://arxiv.org/abs/2609.11758"
+          ],
+          "excerpt": "The benchmark separates non-RAG, oracle, on-topic, and random retrieval settings."
+        },
+        {
+          "claim": "The authors report that safety guardrails from the non-RAG setting do not guarantee the same safety behavior with RAG.",
+          "supported": true,
+          "evidence_urls": [
+            "https://arxiv.org/abs/2609.11758"
+          ],
+          "excerpt": "Baseline safety guardrails do not lead to downstream safety guarantees in the RAG case."
+        }
+      ]
+    },
+    {
+      "event_id": "anthropic-anthropic-releases-claude-3-5-sonnet-with-computer-use-capabil",
+      "title": "Anthropic Releases Claude 3.5 Sonnet with Computer Use Capabilities",
+      "dek": "Developers can now direct Claude to interact directly with desktop software interfaces.",
+      "source": "ANTHROPIC",
+      "url": "https://www.anthropic.com/news/claude-3-5-sonnet-and-claude-3-5-haiku",
+      "category": "product",
+      "tag": "LLMs",
+      "time": "Today",
+      "published_at": "2026-11-14T08:16:37.000Z",
+      "image_url": "",
+      "signal": {
+        "move": "Anthropic introduced an updated Claude 3.5 Sonnet alongside a public beta API feature called 'computer use', allowing the model to interpret screen visuals, move cursors, click buttons, and type text.",
+        "consequence": "Shifts developer focus from structured API integrations toward general GUI-driven automation, expanding what software tasks agents can directly execute.",
+        "tension": "API-based structured execution is deterministic and fast, whereas GUI navigation introduces latency, higher operational cost, and potential visual misinterpretations.",
+        "why_now": "Model precision in vision-to-action translation reached a threshold where operating native applications became viable without manual scripting.",
+        "evidence_posture": "unverified"
+      },
+      "evidence_posture": "unverified",
+      "discussion_prompt": "Will GUI-based agent interfaces replace specialized API connectors, or remain a fallback for legacy software?",
+      "claims": []
+    },
+    {
+      "event_id": "meta-ai-meta-releases-llama-3-2-vision-models-to-the-open-community",
+      "title": "Meta Releases Llama 3.2 Vision Models to the Open Community",
+      "dek": "Multimodal open-weights models are now accessible in 11B and 90B parameter scales.",
+      "source": "META AI",
+      "url": "https://ai.meta.com/blog/llama-3-2-connect-2024/",
+      "category": "open-weights",
+      "tag": "Multimodal",
+      "time": "Today",
+      "published_at": "2026-11-14T08:16:37.000Z",
+      "image_url": "",
+      "signal": {
+        "move": "Meta published weight checkpoints for Llama 3.2 Vision (11B and 90B), enabling local and cloud deployment of high-resolution document and image understanding models.",
+        "consequence": "Lowers the cost for enterprises to run private document-processing pipelines locally without sending visual data to third-party proprietary endpoints.",
+        "tension": "Open multimodal weights present higher hosting overhead than text-only models, challenging standard GPU memory layouts.",
+        "why_now": "Meta's continuous release cadence aims to entrench the Llama ecosystem as the standard infrastructure layer for application developers.",
+        "evidence_posture": "unverified"
+      },
+      "evidence_posture": "unverified",
+      "discussion_prompt": "How does local execution of vision models change hardware architecture planning for privacy-sensitive industries?",
+      "claims": []
+    },
+    {
+      "event_id": "openai-openai-introduces-realtime-api-for-low-latency-speech-application",
+      "title": "OpenAI Introduces Realtime API for Low-Latency Speech Applications",
+      "dek": "Direct speech-to-speech interaction bypasses traditional transcription pipelines.",
+      "source": "OPENAI",
+      "url": "https://openai.com/index/introducing-the-realtime-api/",
+      "category": "product",
+      "tag": "Audio",
+      "time": "Today",
+      "published_at": "2026-11-14T08:16:37.000Z",
+      "image_url": "",
+      "signal": {
+        "move": "OpenAI launched a beta Realtime API enabling developers to build low-latency, multimodal speech-to-speech experiences using a single model pass.",
+        "consequence": "Eliminates cascading latency introduced by combining separate speech-to-text, LLM inference, and text-to-speech stages.",
+        "tension": "Real-time streaming audio interfaces complicate traditional safety filtering, content moderation, and state management techniques.",
+        "why_now": "Direct audio input-output training has sufficiently matured to preserve vocal inflection and reduce end-to-end response times below 500ms.",
+        "evidence_posture": "unverified"
+      },
+      "evidence_posture": "unverified",
+      "discussion_prompt": "Does direct voice interface capability diminish the market for specialized conversation orchestration platforms?",
+      "claims": []
+    },
+    {
+      "event_id": "mistral-ai-mistral-ai-releases-ministral-3b-and-8b-for-on-device-deploym",
+      "title": "Mistral AI Releases Ministral 3B and 8B for On-Device Deployments",
+      "dek": "Compact language models targeted at edge computing and constrained local environments.",
+      "source": "MISTRAL AI",
+      "url": "https://mistral.ai/news/ministral-3b-8b/",
+      "category": "open-weights",
+      "tag": "Edge AI",
+      "time": "Today",
+      "published_at": "2026-11-14T08:16:37.000Z",
+      "image_url": "",
+      "signal": {
+        "move": "Mistral AI introduced its 'Ministral' family, offering high-performance 3B and 8B parameter models specifically optimized for local context parsing and edge hardware.",
+        "consequence": "Enables sophisticated local agent execution on consumer devices, laptops, and robotics without relying on continuous cloud connectivity.",
+        "tension": "Balancing context window size and reasoning quality within extreme memory constraints remains a key optimization challenge.",
+        "why_now": "Demand is surging for privacy-compliant, low-power edge intelligence that operates within local RAM limits.",
+        "evidence_posture": "unverified"
+      },
+      "evidence_posture": "unverified",
+      "discussion_prompt": "Are 3B-parameter models powerful enough to handle dynamic tool selection without cloud validation?",
+      "claims": []
+    },
+    {
+      "event_id": "openai-github-openai-releases-swarm-an-experimental-multi-agent-orchestr",
+      "title": "OpenAI Releases Swarm, an Experimental Multi-Agent Orchestration Framework",
+      "dek": "An educational, lightweight approach to defining multi-agent routines via hands-off primitives.",
+      "source": "OPENAI GITHUB",
+      "url": "https://github.com/openai/swarm",
+      "category": "agents",
+      "tag": "Agentic Architecture",
+      "time": "Today",
+      "published_at": "2026-11-14T08:16:37.000Z",
+      "image_url": "",
+      "signal": {
+        "move": "OpenAI open-sourced Swarm, an exploratory framework focused on ergonomic multi-agent orchestration via two core abstractions: Routines and Handoffs.",
+        "consequence": "Simplifies how developers conceptualize delegation loops between specialized sub-agents without complex state graphs.",
+        "tension": "Lightweight, unopinionated frameworks risk lacking the deterministic guardrails required for production deployment at scale.",
+        "why_now": "As agent developer patterns fragment, foundational guidance on state control and context passing is necessary.",
+        "evidence_posture": "unverified"
+      },
+      "evidence_posture": "unverified",
+      "discussion_prompt": "Should multi-agent state management be handled by language primitives or specialized runtime engines?",
+      "claims": []
+    },
+    {
+      "event_id": "microsoft-microsoft-announces-autonomous-agent-capabilities-in-copilot-s",
+      "title": "Microsoft Announces Autonomous Agent Capabilities in Copilot Studio",
+      "dek": "Enterprise users can now deploy autonomous agents capable of managing business workflows.",
+      "source": "MICROSOFT",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/blog/",
+      "category": "agents",
+      "tag": "Enterprise",
+      "time": "Today",
+      "published_at": "2026-11-14T08:16:37.000Z",
+      "image_url": "",
+      "signal": {
+        "move": "Microsoft introduced full agent-building capabilities within Copilot Studio, allowing businesses to create background agents that initiate actions based on enterprise events.",
+        "consequence": "Transitions copilot systems from passive inline assistants to active background micro-processes integrated with enterprise software.",
+        "tension": "Autonomous background execution escalates governance challenges around authorization limits and audit logs.",
+        "why_now": "Enterprise demand is shifting from chat interfaces to background process automation that reduces manual operations.",
+        "evidence_posture": "unverified"
+      },
+      "evidence_posture": "unverified",
+      "discussion_prompt": "How will IT departments safely control permissions for background agents acting across multiple SaaS tools?",
+      "claims": []
+    },
+    {
+      "event_id": "nvidia-hugging-face-nvidia-releases-llama-3-1-nemotron-70b-instruct",
+      "title": "Nvidia Releases Llama-3.1-Nemotron-70B-Instruct",
+      "dek": "Fine-tuned open weights optimized to deliver improved alignment and helpfulness responses.",
+      "source": "NVIDIA HUGGING FACE",
+      "url": "https://huggingface.co/nvidia/Llama-3.1-Nemotron-70B-Instruct",
+      "category": "open-weights",
+      "tag": "Fine-Tuning",
+      "time": "Today",
+      "published_at": "2026-11-14T08:16:37.000Z",
+      "image_url": "",
+      "signal": {
+        "move": "Nvidia published Nemotron-70B-Instruct, a customized version of Llama 3.1 70B fine-tuned using RLHF to achieve top benchmark scores on synthetic response evaluations.",
+        "consequence": "Demonstrates that advanced post-training alignment techniques can elevate open-weight model performance to compete with proprietary flagships.",
+        "tension": "Over-optimizing post-training for specific evaluation metrics risks regression on unmeasured domain tasks.",
+        "why_now": "Nvidia is actively positioning its software stack and alignment tools as essential extensions of the open-weights ecosystem.",
+        "evidence_posture": "unverified"
+      },
+      "evidence_posture": "unverified",
+      "discussion_prompt": "Does aggressive post-training alignment by third parties diminish general model adaptivity for downstream fine-tuning?",
+      "claims": []
+    },
+    {
+      "event_id": "google-deepmind-google-deepmind-publishes-work-on-sima-for-generalist-3d",
+      "title": "Google DeepMind Publishes Work on SIMA for Generalist 3D Environment Control",
+      "dek": "Agent research bridges language execution with continuous real-time environment actions.",
+      "source": "GOOGLE DEEPMIND",
+      "url": "https://deepmind.google/discover/blog/sima-generalist-ai-agent-for-3d-environments/",
+      "category": "research",
+      "tag": "Embodied AI",
+      "time": "Today",
+      "published_at": "2026-11-14T08:16:37.000Z",
+      "image_url": "",
+      "signal": {
+        "move": "DeepMind detailed SIMA, a Scalable Instructable Multiworld Agent trained to follow natural language instructions across diverse 3D virtual gaming environments.",
+        "consequence": "Validates methods for translating abstract goal-oriented language directives into low-level continuous spatial control.",
+        "tension": "Virtual 3D environments do not fully account for physical real-world dynamics, sensor noise, and safety hazards.",
+        "why_now": "Advancing robotics requires testing foundational action models in rich, low-risk simulated 3D spaces.",
+        "evidence_posture": "unverified"
+      },
+      "evidence_posture": "unverified",
+      "discussion_prompt": "Can skills learned by agents in synthetic 3D virtual environments effectively transfer to physical hardware?",
+      "claims": []
+    },
+    {
+      "event_id": "u-s-sec-cerebras-files-publicly-for-initial-public-offering",
+      "title": "Cerebras Files Publicly for Initial Public Offering",
+      "dek": "AI chip designer seeks public market entry to scale its wafer-scale engine compute offerings.",
+      "source": "U.S. SEC",
+      "url": "https://www.sec.gov/edgar",
+      "category": "infra",
+      "tag": "Hardware",
+      "time": "Today",
+      "published_at": "2026-11-14T08:16:37.000Z",
+      "image_url": "",
+      "signal": {
+        "move": "Cerebras Systems filed its initial public offering documentation, revealing financial and operational details of its high-speed wafer-scale inference and training architecture.",
+        "consequence": "Provides a direct market valuation benchmark for alternative non-GPU hardware architectures optimized for real-time inference.",
+        "tension": "High client concentration and specialized manufacturing dependencies present commercial risks compared to standard GPU clusters.",
+        "why_now": "The demand for ultra-low latency inference creates a distinct window for alternative silicon architectures to raise public capital.",
+        "evidence_posture": "unverified"
+      },
+      "evidence_posture": "unverified",
+      "discussion_prompt": "Will specialized wafer-scale inference hardware capture market share from traditional GPU compute clusters?",
+      "claims": []
+    },
+    {
+      "event_id": "the-white-house-us-federal-government-releases-framework-on-ai-risk-mana",
+      "title": "US Federal Government Releases Framework on AI Risk Management in Defense",
+      "dek": "Directives establish guidelines for governance, procurement, and deployment of frontier models.",
+      "source": "THE WHITE HOUSE",
+      "url": "https://www.whitehouse.gov/briefing-room/",
+      "category": "policy",
+      "tag": "Governance",
+      "time": "Today",
+      "published_at": "2026-11-14T08:16:37.000Z",
+      "image_url": "",
+      "signal": {
+        "move": "The US National Security Council issued a National Security Memorandum detailing binding policies for federal agencies deploying AI within national security operations.",
+        "consequence": "Establishes concrete compliance and evaluation baselines for defense contractors and software vendors selling frontier models to government bodies.",
+        "tension": "Rigid procurement and safety compliance standards may slow down the operational rollout of fast-evolving model updates.",
+        "why_now": "Rapid adoption of commercial models by public agencies necessitated formal operational boundaries and threat vectors.",
+        "evidence_posture": "unverified"
+      },
+      "evidence_posture": "unverified",
+      "discussion_prompt": "How will strict federal testing requirements affect small open-source developers providing software to public institutions?",
+      "claims": []
+    },
+    {
+      "event_id": "pytorch-foundation-pytorch-2-5-released-with-enhanced-torchcompile-and-f",
+      "title": "PyTorch 2.5 Released with Enhanced TorchCompile and FlexAttention Features",
+      "dek": "Framework updates streamline compiler efficiency and custom attention mechanism authoring.",
+      "source": "PYTORCH FOUNDATION",
+      "url": "https://pytorch.org/blog/pytorch-2-5-released/",
+      "category": "infra",
+      "tag": "Frameworks",
+      "time": "Today",
+      "published_at": "2026-11-14T08:16:37.000Z",
+      "image_url": "",
+      "signal": {
+        "move": "The PyTorch team announced version 2.5, introducing FlexAttention for easier custom attention kernel development and expanded support for backend compilation targets.",
+        "consequence": "Reduces the need to write custom CUDA kernels for novel model architectures, accelerating low-level research iteration.",
+        "tension": "Compiler abstractions can obscure runtime execution bugs, making deep-stack hardware debugging more challenging.",
+        "why_now": "The proliferation of varying attention variants (e.g., sliding window, chunked) required unified compiler abstractions.",
+        "evidence_posture": "unverified"
+      },
+      "evidence_posture": "unverified",
+      "discussion_prompt": "Does flexible high-level kernel authoring diminish the competitive advantage of proprietary hardware micro-optimizations?",
+      "claims": []
+    },
+    {
+      "event_id": "deepseek-deepseek-releases-deepseek-v2-5-combining-chat-and-coder-models",
+      "title": "DeepSeek Releases DeepSeek-V2.5 Combining Chat and Coder Models",
+      "dek": "Unified open-weights model consolidates general instruction following with code generation.",
+      "source": "DEEPSEEK",
+      "url": "https://github.com/deepseek-ai/DeepSeek-V2.5",
+      "category": "open-weights",
+      "tag": "Model Merging",
+      "time": "Today",
+      "published_at": "2026-11-14T08:16:37.000Z",
+      "image_url": "",
+      "signal": {
+        "move": "DeepSeek consolidated its specialized DeepSeek-V2-Chat and DeepSeek-Coder-V2 checkpoints into a single unified base model named DeepSeek-V2.5.",
+        "consequence": "Simplifies deployment architecture by removing the need to route standard user queries and coding tasks to separate model endpoints.",
+        "tension": "Merging specialized capabilities into a single weight distribution requires careful balancing to avoid task-specific regression.",
+        "why_now": "Developers increasingly favor single, high-capability generalist models over maintaining multi-model routing pipelines.",
+        "evidence_posture": "unverified"
+      },
+      "evidence_posture": "unverified",
+      "discussion_prompt": "Are dedicated code-generation models obsolete now that general base models show strong coding proficiency?",
+      "claims": []
+    },
+    {
+      "event_id": "arxiv-stanford-researchers-release-benchmark-on-long-context-information",
+      "title": "Stanford Researchers Release Benchmark on Long-Context Information Retrieval",
+      "dek": "Study highlights performance drops when context windows exceed standard retrieval limits.",
+      "source": "ARXIV",
+      "url": "https://arxiv.org/abs/2407.00000",
+      "category": "research",
+      "tag": "Benchmarks",
+      "time": "Today",
+      "published_at": "2026-11-14T08:16:37.000Z",
+      "image_url": "",
+      "signal": {
+        "move": "Academic researchers published empirical findings evaluating long-context LLMs, demonstrating systemic degradation in middle-document recall under complex multi-query constraints.",
+        "consequence": "Re-emphasizes the necessity of structured RAG systems even as model context windows stretch into millions of tokens.",
+        "tension": "Marketing claims around giant context windows collide with empirical limitations in high-density retrieval tasks.",
+        "why_now": "Expanding context limits require rigorous evaluation beyond simple single-needle synthetic search tests.",
+        "evidence_posture": "unverified"
+      },
+      "evidence_posture": "unverified",
+      "discussion_prompt": "Will long-context context windows eventually eliminate RAG architectures, or simply change their indexing designs?",
+      "claims": []
+    },
+    {
+      "event_id": "langchain-langchain-launches-langgraph-studio-for-visual-agent-debugging",
+      "title": "LangChain Launches LangGraph Studio for Visual Agent Debugging",
+      "dek": "Integrated environment allows real-time visualization and editing of multi-agent state machines.",
+      "source": "LANGCHAIN",
+      "url": "https://blog.langchain.dev/introducing-langgraph-studio/",
+      "category": "agents",
+      "tag": "Developer Tools",
+      "time": "Today",
+      "published_at": "2026-11-14T08:16:37.000Z",
+      "image_url": "",
+      "signal": {
+        "move": "LangChain introduced LangGraph Studio, a specialized IDE that provides real-time visualization, state modification, and step-by-step execution tracking for agent workflows.",
+        "consequence": "Shortens the debug cycle for complex stateful loops by allowing engineers to inspect and modify agent memory mid-run.",
+        "tension": "Visual developer tools can introduce abstraction layers that obscure raw model output traces if not strictly coupled to telemetry.",
+        "why_now": "The shift from single-prompt chains to complex stateful agents exposed a lack of dedicated debugging tools.",
+        "evidence_posture": "unverified"
+      },
+      "evidence_posture": "unverified",
+      "discussion_prompt": "How essential are visual state manipulation tools for teams scaling agent systems beyond prototype stages?",
+      "claims": []
+    },
+    {
+      "event_id": "uk-aisi-uk-ai-safety-institute-open-sources-evaluation-platform-inspect",
+      "title": "UK AI Safety Institute Open-Sources Evaluation Platform Inspect",
+      "dek": "A technical framework built to standardize model safety and capability testing.",
+      "source": "UK AISI",
+      "url": "https://github.com/UKGovernmentBEIS/inspect",
+      "category": "policy",
+      "tag": "Safety",
+      "time": "Today",
+      "published_at": "2026-11-14T08:16:37.000Z",
+      "image_url": "",
+      "signal": {
+        "move": "The UK AI Safety Institute released 'Inspect', an open-source evaluation platform enabling developers, academic teams, and labs to run standardized capability and risk tests on models.",
+        "consequence": "Establishes a shared, programmatic baseline for safety benchmarks across independent institutions and vendor teams.",
+        "tension": "Standardizing safety evaluations risks turning safety compliance into a static 'teaching to the test' exercise.",
+        "why_now": "State-backed safety institutes need open tooling to enable reproducible evaluations across independent testing bodies.",
+        "evidence_posture": "unverified"
+      },
+      "evidence_posture": "unverified",
+      "discussion_prompt": "Can open-source evaluation frameworks gain industry trust faster than private evaluation vendor platforms?",
+      "claims": []
+    }
+  ]
+}
