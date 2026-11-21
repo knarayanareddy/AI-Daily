@@ -1,7 +1,266 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-20T16:31:25.000Z",
+  "generated_at": "2026-11-21T15:32:30.000Z",
   "editions": [
+    {
+      "date": "2026-11-21",
+      "edition": 242,
+      "run_id": "daily-curation-20261121",
+      "published_at": "2026-11-21T12:00:00.000Z",
+      "story_count": 25,
+      "stories": [
+        {
+          "event_id": "openai-misalignment-disclosure-update",
+          "title": "OpenAI expands its misalignment disclosure into an incident record",
+          "source": "OPENAI",
+          "category": "policy",
+          "keywords": [
+            "Safety",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-rd-automation-metrics",
+          "title": "Anthropic puts numbers on AI helping build AI",
+          "source": "ANTHROPIC INSTITUTE",
+          "category": "research",
+          "keywords": [
+            "Research loops",
+            "research"
+          ]
+        },
+        {
+          "event_id": "openai-government-access",
+          "title": "OpenAI widens subsidized AI access to state and local defenders",
+          "source": "OPENAI",
+          "category": "policy",
+          "keywords": [
+            "AI Daily",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-life-sciences-verification",
+          "title": "Anthropic creates a verification lane for life-science users",
+          "source": "ANTHROPIC",
+          "category": "policy",
+          "keywords": [
+            "AI Daily",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-misuse-report-september",
+          "title": "Anthropic says misuse monitoring is becoming an operating discipline",
+          "source": "ANTHROPIC",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-daybreak-frontline",
+          "title": "OpenAI commits subsidized cyber-AI support for frontline defenders",
+          "source": "OPENAI",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-ukraine-journalism",
+          "title": "A newsroom AI program tests whether access can strengthen independent reporting",
+          "source": "OPENAI · WAN-IFRA · AIRPPU",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-devday-2026",
+          "title": "DevDay 2026 is now a date on the developer calendar",
+          "source": "OPENAI",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "safeagent-runtime-protection",
+          "title": "A runtime controller treats agent safety as a state problem",
+          "source": "ARXIV",
+          "category": "research",
+          "keywords": [
+            "AI Daily",
+            "research"
+          ]
+        },
+        {
+          "event_id": "rag-safety-bench",
+          "title": "RAG safety tests ask whether helpful context can weaken a refusal",
+          "source": "ARXIV · EMNLP 2026",
+          "category": "research",
+          "keywords": [
+            "Safety",
+            "research"
+          ]
+        },
+        {
+          "event_id": "anthropic-announcement-anthropic-releases-claude-3-5-sonnet",
+          "title": "Anthropic releases Claude 3.5 Sonnet",
+          "source": "ANTHROPIC ANNOUNCEMENT",
+          "category": "product",
+          "keywords": [
+            "LLMs",
+            "product"
+          ]
+        },
+        {
+          "event_id": "anthropic-product-update-anthropic-introduces-artifacts-feature-in-claud",
+          "title": "Anthropic introduces Artifacts feature in Claude web interface",
+          "source": "ANTHROPIC PRODUCT UPDATE",
+          "category": "product",
+          "keywords": [
+            "UX",
+            "product"
+          ]
+        },
+        {
+          "event_id": "meta-ai-research-meta-releases-meta-3d-gen-for-text-to-3d-asset-creation",
+          "title": "Meta releases Meta 3D Gen for text-to-3D asset creation",
+          "source": "META AI RESEARCH",
+          "category": "research",
+          "keywords": [
+            "3D Generation",
+            "research"
+          ]
+        },
+        {
+          "event_id": "openai-newsroom-openai-acquires-rockset-to-enhance-enterprise-search-cap",
+          "title": "OpenAI acquires Rockset to enhance enterprise search capabilities",
+          "source": "OPENAI NEWSROOM",
+          "category": "infra",
+          "keywords": [
+            "Acquisitions",
+            "infra"
+          ]
+        },
+        {
+          "event_id": "nature-google-deepmind-deepmind-presents-alphafold-3-technical-details",
+          "title": "DeepMind presents AlphaFold 3 technical details",
+          "source": "NATURE / GOOGLE DEEPMIND",
+          "category": "research",
+          "keywords": [
+            "Science AI",
+            "research"
+          ]
+        },
+        {
+          "event_id": "qwen-team-blog-alibaba-releases-qwen2-open-weight-model-family",
+          "title": "Alibaba releases Qwen2 open-weight model family",
+          "source": "QWEN TEAM BLOG",
+          "category": "open-weights",
+          "keywords": [
+            "Open Weights",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "google-developer-blog-google-deepmind-open-sources-recurrentgemma-models",
+          "title": "Google DeepMind open-sources RecurrentGemma models",
+          "source": "GOOGLE DEVELOPER BLOG",
+          "category": "open-weights",
+          "keywords": [
+            "Architectures",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "microsoft-research-unwrapped-microsoft-releases-florence-2-vision-founda",
+          "title": "Microsoft releases Florence-2 vision foundation model",
+          "source": "MICROSOFT RESEARCH UNWRAPPED",
+          "category": "open-weights",
+          "keywords": [
+            "Computer Vision",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "mistral-ai-blog-mistral-ai-releases-codestral-model-for-code-generation",
+          "title": "Mistral AI releases Codestral model for code generation",
+          "source": "MISTRAL AI BLOG",
+          "category": "open-weights",
+          "keywords": [
+            "Code LLMs",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "cohere-blog-cohere-introduces-command-r-fine-tuning-capabilities",
+          "title": "Cohere introduces Command R+ fine-tuning capabilities",
+          "source": "COHERE BLOG",
+          "category": "product",
+          "keywords": [
+            "Enterprise AI",
+            "product"
+          ]
+        },
+        {
+          "event_id": "apple-machine-learning-research-apple-introduces-openelm-model-suite",
+          "title": "Apple introduces OpenELM model suite",
+          "source": "APPLE MACHINE LEARNING RESEARCH",
+          "category": "open-weights",
+          "keywords": [
+            "On-Device AI",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "u-s-department-of-commerce-us-and-uk-sign-bilateral-agreement-on-ai-safe",
+          "title": "US and UK Sign Bilateral Agreement on AI Safety Testing",
+          "source": "U.S. DEPARTMENT OF COMMERCE",
+          "category": "policy",
+          "keywords": [
+            "Governance",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "llamaindex-blog-llamaindex-releases-workflows-framework-for-multi-agent",
+          "title": "LlamaIndex releases Workflows framework for multi-agent execution",
+          "source": "LLAMAINDEX BLOG",
+          "category": "agents",
+          "keywords": [
+            "Agent Frameworks",
+            "agents"
+          ]
+        },
+        {
+          "event_id": "crewai-announcement-crewai-secures-seed-funding-to-scale-multi-agent-pla",
+          "title": "CrewAI secures seed funding to scale multi-agent platform",
+          "source": "CREWAI ANNOUNCEMENT",
+          "category": "agents",
+          "keywords": [
+            "Developer Tools",
+            "agents"
+          ]
+        },
+        {
+          "event_id": "nvidia-developer-blog-nvidia-publishes-nemotron-4-340b-model-family",
+          "title": "NVIDIA publishes Nemotron-4 340B model family",
+          "source": "NVIDIA DEVELOPER BLOG",
+          "category": "open-weights",
+          "keywords": [
+            "Synthetic Data",
+            "open-weights"
+          ]
+        }
+      ]
+    },
     {
       "date": "2026-11-20",
       "edition": 241,
