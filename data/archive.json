@@ -1,7 +1,266 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-21T15:32:30.000Z",
+  "generated_at": "2026-11-22T15:25:56.000Z",
   "editions": [
+    {
+      "date": "2026-11-22",
+      "edition": 243,
+      "run_id": "daily-curation-20261122",
+      "published_at": "2026-11-22T12:00:00.000Z",
+      "story_count": 25,
+      "stories": [
+        {
+          "event_id": "openai-misalignment-disclosure-update",
+          "title": "OpenAI expands its misalignment disclosure into an incident record",
+          "source": "OPENAI",
+          "category": "policy",
+          "keywords": [
+            "Safety",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-rd-automation-metrics",
+          "title": "Anthropic puts numbers on AI helping build AI",
+          "source": "ANTHROPIC INSTITUTE",
+          "category": "research",
+          "keywords": [
+            "Research loops",
+            "research"
+          ]
+        },
+        {
+          "event_id": "openai-government-access",
+          "title": "OpenAI widens subsidized AI access to state and local defenders",
+          "source": "OPENAI",
+          "category": "policy",
+          "keywords": [
+            "AI Daily",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-life-sciences-verification",
+          "title": "Anthropic creates a verification lane for life-science users",
+          "source": "ANTHROPIC",
+          "category": "policy",
+          "keywords": [
+            "AI Daily",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-misuse-report-september",
+          "title": "Anthropic says misuse monitoring is becoming an operating discipline",
+          "source": "ANTHROPIC",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-daybreak-frontline",
+          "title": "OpenAI commits subsidized cyber-AI support for frontline defenders",
+          "source": "OPENAI",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-ukraine-journalism",
+          "title": "A newsroom AI program tests whether access can strengthen independent reporting",
+          "source": "OPENAI · WAN-IFRA · AIRPPU",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-devday-2026",
+          "title": "DevDay 2026 is now a date on the developer calendar",
+          "source": "OPENAI",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "safeagent-runtime-protection",
+          "title": "A runtime controller treats agent safety as a state problem",
+          "source": "ARXIV",
+          "category": "research",
+          "keywords": [
+            "AI Daily",
+            "research"
+          ]
+        },
+        {
+          "event_id": "rag-safety-bench",
+          "title": "RAG safety tests ask whether helpful context can weaken a refusal",
+          "source": "ARXIV · EMNLP 2026",
+          "category": "research",
+          "keywords": [
+            "Safety",
+            "research"
+          ]
+        },
+        {
+          "event_id": "deepseek-ai-deepseek-releases-deepseek-v3",
+          "title": "DeepSeek Releases DeepSeek-V3",
+          "source": "DEEPSEEK AI",
+          "category": "open-weights",
+          "keywords": [
+            "DeepSeek-V3",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "anthropic-anthropic-launches-model-context-protocol-mcp",
+          "title": "Anthropic Launches Model Context Protocol (MCP)",
+          "source": "ANTHROPIC",
+          "category": "agents",
+          "keywords": [
+            "MCP",
+            "agents"
+          ]
+        },
+        {
+          "event_id": "openai-openai-announces-o1-reasoning-model-series",
+          "title": "OpenAI Announces o1 Reasoning Model Series",
+          "source": "OPENAI",
+          "category": "product",
+          "keywords": [
+            "OpenAI o1",
+            "product"
+          ]
+        },
+        {
+          "event_id": "google-deepmind-google-deepmind-releases-alphafold-3-code-and-weights",
+          "title": "Google DeepMind Releases AlphaFold 3 Code and Weights",
+          "source": "GOOGLE DEEPMIND",
+          "category": "research",
+          "keywords": [
+            "AlphaFold 3",
+            "research"
+          ]
+        },
+        {
+          "event_id": "meta-ai-meta-releases-llama-3-3-70b",
+          "title": "Meta Releases Llama 3.3 70B",
+          "source": "META AI",
+          "category": "open-weights",
+          "keywords": [
+            "Llama 3.3",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "mistral-ai-mistral-ai-releases-pixtral-large",
+          "title": "Mistral AI Releases Pixtral Large",
+          "source": "MISTRAL AI",
+          "category": "product",
+          "keywords": [
+            "Pixtral Large",
+            "product"
+          ]
+        },
+        {
+          "event_id": "aws-amazon-releases-nova-foundation-models",
+          "title": "Amazon Releases Nova Foundation Models",
+          "source": "AWS",
+          "category": "infra",
+          "keywords": [
+            "Amazon Nova",
+            "infra"
+          ]
+        },
+        {
+          "event_id": "microsoft-research-microsoft-launches-phi-4",
+          "title": "Microsoft Launches Phi-4",
+          "source": "MICROSOFT RESEARCH",
+          "category": "open-weights",
+          "keywords": [
+            "Phi-4",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "qwen-team-alibaba-cloud-releases-qwen2-5-coder-series",
+          "title": "Alibaba Cloud Releases Qwen2.5-Coder Series",
+          "source": "QWEN TEAM",
+          "category": "open-weights",
+          "keywords": [
+            "Qwen2.5-Coder",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "nvidia-nvidia-introduces-cosmos-foundation-models-for-physical-ai",
+          "title": "NVIDIA Introduces Cosmos Foundation Models for Physical AI",
+          "source": "NVIDIA",
+          "category": "infra",
+          "keywords": [
+            "NVIDIA Cosmos",
+            "infra"
+          ]
+        },
+        {
+          "event_id": "european-commission-eu-ai-act-implementation-timeline-advances",
+          "title": "EU AI Act Implementation Timeline Advances",
+          "source": "EUROPEAN COMMISSION",
+          "category": "policy",
+          "keywords": [
+            "EU AI Act",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "google-cloud-google-releases-gemini-1-5-flash-8b",
+          "title": "Google Releases Gemini 1.5 Flash-8B",
+          "source": "GOOGLE CLOUD",
+          "category": "product",
+          "keywords": [
+            "Gemini 1.5 Flash-8B",
+            "product"
+          ]
+        },
+        {
+          "event_id": "langchain-langchain-framework-releases-version-0-3",
+          "title": "LangChain Framework Releases Version 0.3",
+          "source": "LANGCHAIN",
+          "category": "agents",
+          "keywords": [
+            "LangChain 0.3",
+            "agents"
+          ]
+        },
+        {
+          "event_id": "hugging-face-hugging-face-introduces-smollm2",
+          "title": "Hugging Face Introduces SmolLM2",
+          "source": "HUGGING FACE",
+          "category": "open-weights",
+          "keywords": [
+            "SmolLM2",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "vllm-team-vllm-project-expands-multi-gpu-fp8-inference-support",
+          "title": "vLLM Project Expands Multi-GPU FP8 Inference Support",
+          "source": "VLLM TEAM",
+          "category": "infra",
+          "keywords": [
+            "vLLM",
+            "infra"
+          ]
+        }
+      ]
+    },
     {
       "date": "2026-11-21",
       "edition": 242,
