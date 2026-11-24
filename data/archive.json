@@ -1,7 +1,266 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-23T19:20:23.000Z",
+  "generated_at": "2026-11-24T18:57:56.000Z",
   "editions": [
+    {
+      "date": "2026-11-24",
+      "edition": 245,
+      "run_id": "daily-curation-20261124",
+      "published_at": "2026-11-24T12:00:00.000Z",
+      "story_count": 25,
+      "stories": [
+        {
+          "event_id": "openai-misalignment-disclosure-update",
+          "title": "OpenAI expands its misalignment disclosure into an incident record",
+          "source": "OPENAI",
+          "category": "policy",
+          "keywords": [
+            "Safety",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-rd-automation-metrics",
+          "title": "Anthropic puts numbers on AI helping build AI",
+          "source": "ANTHROPIC INSTITUTE",
+          "category": "research",
+          "keywords": [
+            "Research loops",
+            "research"
+          ]
+        },
+        {
+          "event_id": "openai-government-access",
+          "title": "OpenAI widens subsidized AI access to state and local defenders",
+          "source": "OPENAI",
+          "category": "policy",
+          "keywords": [
+            "AI Daily",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-life-sciences-verification",
+          "title": "Anthropic creates a verification lane for life-science users",
+          "source": "ANTHROPIC",
+          "category": "policy",
+          "keywords": [
+            "AI Daily",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-misuse-report-september",
+          "title": "Anthropic says misuse monitoring is becoming an operating discipline",
+          "source": "ANTHROPIC",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-daybreak-frontline",
+          "title": "OpenAI commits subsidized cyber-AI support for frontline defenders",
+          "source": "OPENAI",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-ukraine-journalism",
+          "title": "A newsroom AI program tests whether access can strengthen independent reporting",
+          "source": "OPENAI · WAN-IFRA · AIRPPU",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-devday-2026",
+          "title": "DevDay 2026 is now a date on the developer calendar",
+          "source": "OPENAI",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "safeagent-runtime-protection",
+          "title": "A runtime controller treats agent safety as a state problem",
+          "source": "ARXIV",
+          "category": "research",
+          "keywords": [
+            "AI Daily",
+            "research"
+          ]
+        },
+        {
+          "event_id": "rag-safety-bench",
+          "title": "RAG safety tests ask whether helpful context can weaken a refusal",
+          "source": "ARXIV · EMNLP 2026",
+          "category": "research",
+          "keywords": [
+            "Safety",
+            "research"
+          ]
+        },
+        {
+          "event_id": "anthropic-announcement-anthropic-introduces-claude-3-5-haiku",
+          "title": "Anthropic Introduces Claude 3.5 Haiku",
+          "source": "ANTHROPIC ANNOUNCEMENT",
+          "category": "product",
+          "keywords": [
+            "LLMs",
+            "product"
+          ]
+        },
+        {
+          "event_id": "meta-ai-blog-meta-releases-llama-3-3-70b",
+          "title": "Meta Releases Llama 3.3 70B",
+          "source": "META AI BLOG",
+          "category": "open-weights",
+          "keywords": [
+            "Open Source",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "openai-blog-openai-launches-o1-and-chatgpt-pro-tier",
+          "title": "OpenAI Launches O1 and ChatGPT Pro Tier",
+          "source": "OPENAI BLOG",
+          "category": "product",
+          "keywords": [
+            "LLMs",
+            "product"
+          ]
+        },
+        {
+          "event_id": "google-deepmind-google-deepmind-releases-gemini-2-0-flash-in-preview",
+          "title": "Google DeepMind Releases Gemini 2.0 Flash in Preview",
+          "source": "GOOGLE DEEPMIND",
+          "category": "product",
+          "keywords": [
+            "Multimodal",
+            "product"
+          ]
+        },
+        {
+          "event_id": "mistral-ai-news-mistral-ai-releases-pixtral-large",
+          "title": "Mistral AI Releases Pixtral Large",
+          "source": "MISTRAL AI NEWS",
+          "category": "open-weights",
+          "keywords": [
+            "Multimodal",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "microsoft-research-microsoft-launches-magnetic-one-agent-framework",
+          "title": "Microsoft Launches Magnetic-One Agent Framework",
+          "source": "MICROSOFT RESEARCH",
+          "category": "agents",
+          "keywords": [
+            "Agent Frameworks",
+            "agents"
+          ]
+        },
+        {
+          "event_id": "aws-news-blog-aws-announces-trainium2-instances",
+          "title": "AWS Announces Trainium2 Instances",
+          "source": "AWS NEWS BLOG",
+          "category": "infra",
+          "keywords": [
+            "Hardware",
+            "infra"
+          ]
+        },
+        {
+          "event_id": "alibaba-cloud-community-qwen-team-publishes-qwen2-5-coder-series",
+          "title": "Qwen Team Publishes Qwen2.5-Coder Series",
+          "source": "ALIBABA CLOUD COMMUNITY",
+          "category": "open-weights",
+          "keywords": [
+            "Coding Models",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "european-commission-eu-ai-act-implementation-timelines-clarified",
+          "title": "EU AI Act Implementation Timelines Clarified",
+          "source": "EUROPEAN COMMISSION",
+          "category": "policy",
+          "keywords": [
+            "Governance",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "deepseek-announcement-deepseek-releases-deepseek-v3",
+          "title": "DeepSeek Releases DeepSeek-V3",
+          "source": "DEEPSEEK ANNOUNCEMENT",
+          "category": "open-weights",
+          "keywords": [
+            "LLMs",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "langchain-blog-langgraph-releases-version-0-2",
+          "title": "LangGraph Releases Version 0.2",
+          "source": "LANGCHAIN BLOG",
+          "category": "agents",
+          "keywords": [
+            "Agent Frameworks",
+            "agents"
+          ]
+        },
+        {
+          "event_id": "arxiv-computer-science-paper-proposes-test-time-compute-scaling-law-fram",
+          "title": "Paper Proposes Test-Time Compute Scaling Law Framework",
+          "source": "ARXIV COMPUTER SCIENCE",
+          "category": "research",
+          "keywords": [
+            "Scaling Laws",
+            "research"
+          ]
+        },
+        {
+          "event_id": "nvidia-developer-blog-nvidia-launches-nemotron-4-340b-synthetic-data-gen",
+          "title": "NVIDIA Launches Nemotron-4 340B Synthetic Data Generation Pipeline",
+          "source": "NVIDIA DEVELOPER BLOG",
+          "category": "infra",
+          "keywords": [
+            "Synthetic Data",
+            "infra"
+          ]
+        },
+        {
+          "event_id": "baidu-world-conference-baidu-unveils-ernie-4-0-turbo",
+          "title": "Baidu Unveils Ernie 4.0 Turbo",
+          "source": "BAIDU WORLD CONFERENCE",
+          "category": "product",
+          "keywords": [
+            "LLMs",
+            "product"
+          ]
+        },
+        {
+          "event_id": "stanford-ai-lab-stanford-researchers-release-swe-bench-verified",
+          "title": "Stanford Researchers Release SWE-bench Verified",
+          "source": "STANFORD AI LAB",
+          "category": "research",
+          "keywords": [
+            "Benchmarking",
+            "research"
+          ]
+        }
+      ]
+    },
     {
       "date": "2026-11-23",
       "edition": 244,
