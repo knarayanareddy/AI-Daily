@@ -1,7 +1,266 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-24T18:57:56.000Z",
+  "generated_at": "2026-11-25T18:08:28.000Z",
   "editions": [
+    {
+      "date": "2026-11-25",
+      "edition": 246,
+      "run_id": "daily-curation-20261125",
+      "published_at": "2026-11-25T12:00:00.000Z",
+      "story_count": 25,
+      "stories": [
+        {
+          "event_id": "openai-misalignment-disclosure-update",
+          "title": "OpenAI expands its misalignment disclosure into an incident record",
+          "source": "OPENAI",
+          "category": "policy",
+          "keywords": [
+            "Safety",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-rd-automation-metrics",
+          "title": "Anthropic puts numbers on AI helping build AI",
+          "source": "ANTHROPIC INSTITUTE",
+          "category": "research",
+          "keywords": [
+            "Research loops",
+            "research"
+          ]
+        },
+        {
+          "event_id": "openai-government-access",
+          "title": "OpenAI widens subsidized AI access to state and local defenders",
+          "source": "OPENAI",
+          "category": "policy",
+          "keywords": [
+            "AI Daily",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-life-sciences-verification",
+          "title": "Anthropic creates a verification lane for life-science users",
+          "source": "ANTHROPIC",
+          "category": "policy",
+          "keywords": [
+            "AI Daily",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "anthropic-misuse-report-september",
+          "title": "Anthropic says misuse monitoring is becoming an operating discipline",
+          "source": "ANTHROPIC",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-daybreak-frontline",
+          "title": "OpenAI commits subsidized cyber-AI support for frontline defenders",
+          "source": "OPENAI",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-ukraine-journalism",
+          "title": "A newsroom AI program tests whether access can strengthen independent reporting",
+          "source": "OPENAI · WAN-IFRA · AIRPPU",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "openai-devday-2026",
+          "title": "DevDay 2026 is now a date on the developer calendar",
+          "source": "OPENAI",
+          "category": "product",
+          "keywords": [
+            "AI Daily",
+            "product"
+          ]
+        },
+        {
+          "event_id": "safeagent-runtime-protection",
+          "title": "A runtime controller treats agent safety as a state problem",
+          "source": "ARXIV",
+          "category": "research",
+          "keywords": [
+            "AI Daily",
+            "research"
+          ]
+        },
+        {
+          "event_id": "rag-safety-bench",
+          "title": "RAG safety tests ask whether helpful context can weaken a refusal",
+          "source": "ARXIV · EMNLP 2026",
+          "category": "research",
+          "keywords": [
+            "Safety",
+            "research"
+          ]
+        },
+        {
+          "event_id": "deepseek-ai-deepseek-releases-deepseek-v3",
+          "title": "DeepSeek Releases DeepSeek-V3",
+          "source": "DEEPSEEK AI",
+          "category": "open-weights",
+          "keywords": [
+            "Open Weights",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "openai-announcement-openai-introduces-operator-agent-preview",
+          "title": "OpenAI Introduces Operator Agent Preview",
+          "source": "OPENAI ANNOUNCEMENT",
+          "category": "agents",
+          "keywords": [
+            "Agents",
+            "agents"
+          ]
+        },
+        {
+          "event_id": "anthropic-engineering-blog-anthropic-updates-claude-system-prompts-and-a",
+          "title": "Anthropic Updates Claude System Prompts and Agent Toolkit",
+          "source": "ANTHROPIC ENGINEERING BLOG",
+          "category": "product",
+          "keywords": [
+            "Developer Tools",
+            "product"
+          ]
+        },
+        {
+          "event_id": "meta-ai-blog-meta-releases-llama-3-3-70b",
+          "title": "Meta Releases Llama 3.3 70B",
+          "source": "META AI BLOG",
+          "category": "open-weights",
+          "keywords": [
+            "Open Weights",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "google-deepmind-research-google-deepmind-details-gemini-flash-2-0-thinki",
+          "title": "Google DeepMind Details Gemini Flash 2.0 Thinking Model",
+          "source": "GOOGLE DEEPMIND RESEARCH",
+          "category": "research",
+          "keywords": [
+            "Reasoning",
+            "research"
+          ]
+        },
+        {
+          "event_id": "mistral-ai-blog-mistral-ai-releases-pixtral-large",
+          "title": "Mistral AI Releases Pixtral Large",
+          "source": "MISTRAL AI BLOG",
+          "category": "open-weights",
+          "keywords": [
+            "Multimodal",
+            "open-weights"
+          ]
+        },
+        {
+          "event_id": "langchain-blog-langchain-releases-langgraph-v0-2",
+          "title": "LangChain Releases LangGraph v0.2",
+          "source": "LANGCHAIN BLOG",
+          "category": "agents",
+          "keywords": [
+            "Agent Frameworks",
+            "agents"
+          ]
+        },
+        {
+          "event_id": "vllm-blog-vllm-project-adds-native-fp8-moe-kernels",
+          "title": "vLLM Project Adds Native FP8 MoE Kernels",
+          "source": "VLLM BLOG",
+          "category": "infra",
+          "keywords": [
+            "Inference Infrastructure",
+            "infra"
+          ]
+        },
+        {
+          "event_id": "microsoft-research-microsoft-announces-autogen-0-4-architecture",
+          "title": "Microsoft Announces AutoGen 0.4 Architecture",
+          "source": "MICROSOFT RESEARCH",
+          "category": "agents",
+          "keywords": [
+            "Agent Frameworks",
+            "agents"
+          ]
+        },
+        {
+          "event_id": "european-commission-eu-ai-act-implementation-timelines-clarified",
+          "title": "EU AI Act Implementation Timelines Clarified",
+          "source": "EUROPEAN COMMISSION",
+          "category": "policy",
+          "keywords": [
+            "Governance",
+            "policy"
+          ]
+        },
+        {
+          "event_id": "nvidia-developer-blog-nvidia-releases-tensorrt-llm-support-for-deepseek",
+          "title": "NVIDIA Releases TensorRT-LLM Support for DeepSeek Architecture",
+          "source": "NVIDIA DEVELOPER BLOG",
+          "category": "infra",
+          "keywords": [
+            "GPU Acceleration",
+            "infra"
+          ]
+        },
+        {
+          "event_id": "ai2-blog-allen-institute-for-ai-releases-olmo-e2-structural-updates",
+          "title": "Allen Institute for AI Releases OLMo E2 Structural Updates",
+          "source": "AI2 BLOG",
+          "category": "research",
+          "keywords": [
+            "Open Research",
+            "research"
+          ]
+        },
+        {
+          "event_id": "qwen-research-qwen-team-publishes-qwen2-5-coder-evaluation-suite",
+          "title": "Qwen Team Publishes Qwen2.5-Coder Evaluation Suite",
+          "source": "QWEN RESEARCH",
+          "category": "research",
+          "keywords": [
+            "Evaluation",
+            "research"
+          ]
+        },
+        {
+          "event_id": "aws-news-blog-aws-bedrock-adds-custom-model-import-for-open-weights",
+          "title": "AWS Bedrock Adds Custom Model Import for Open Weights",
+          "source": "AWS NEWS BLOG",
+          "category": "infra",
+          "keywords": [
+            "Cloud Services",
+            "infra"
+          ]
+        },
+        {
+          "event_id": "stanford-nlp-dspy-project-dspy-framework-introduces-automated-prompt-opt",
+          "title": "DSPy Framework Introduces Automated Prompt Optimization 2.0",
+          "source": "STANFORD NLP / DSPY PROJECT",
+          "category": "product",
+          "keywords": [
+            "Frameworks",
+            "product"
+          ]
+        }
+      ]
+    },
     {
       "date": "2026-11-24",
       "edition": 245,
